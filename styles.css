@@ -1,4 +1,46 @@
-h1 
+header, ul
 {
-    color: blue;
+    display: flex;
+    justify-content: space-between; 
+    /*padding provisoire*/
+    padding: 10px;  
+    /*padding provisoire*/
+    align-items: center;
+}
+
+#hebergements, #activités  img
+{
+    max-width: 20%;
+}
+#hebergements
+{
+    display: flex;
+}
+.toprated, .activitésville
+{
+    display: flex;
+    flex-direction: row;
+
+}
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hebergementsvilleciblée, .toprated, footer
+{
+    background-color:#F2F2F2;
+}
+
+@media screen and (max-width: 1280px)
+{
+    .toprated, .activitésville, #hebergements
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
 }
