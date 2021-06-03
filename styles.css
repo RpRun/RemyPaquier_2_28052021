@@ -8,6 +8,12 @@ header, ul
     align-items: center;
 }
 
+nav
+{
+    display: flex;
+
+}
+
 #hebergements, #activités  img
 {
     max-width: 20%;
@@ -34,13 +40,19 @@ footer
     background-color:#F2F2F2;
 }
 
-@media screen and (max-width: 1280px)
+@media screen and (max-width: 900px)
 {
     .toprated, .activitésville, #hebergements
 {
     display: flex;
     flex-direction: column;
 }
+    nav
+    {
+        flex-direction: column;
+    }
 
-
+    footer{
+        flex-direction: column;
+    }
 }
