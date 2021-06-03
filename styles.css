@@ -13,8 +13,19 @@ nav
     display: flex;
 
 }
+#recherchemenu
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.filtres
+{
+    display: flex;
 
-#hebergements, #activités  img
+}
+
+#hebergements, .activités  img
 {
     max-width: 20%;
 }
@@ -22,7 +33,7 @@ nav
 {
     display: flex;
 }
-.toprated, .activitésville
+.hebergementsnotés, .activitésville
 {
     display: flex;
     flex-direction: row;
@@ -35,24 +46,28 @@ footer
     justify-content: space-between;
 }
 
-.hebergementsvilleciblée, .toprated, footer
+.hebergementsvilleciblée, .hebergementsnotés, footer
 {
     background-color:#F2F2F2;
 }
 
 @media screen and (max-width: 900px)
 {
-    .toprated, .activitésville, #hebergements
+
+
+    .filtres
+    {
+        flex-wrap: wrap;
+    }
+    .hebergementsnotés, .activitésville, #hebergements
 {
     display: flex;
     flex-direction: column;
 }
-    nav
+    nav, footer
     {
         flex-direction: column;
     }
 
-    footer{
-        flex-direction: column;
-    }
+    
 }
