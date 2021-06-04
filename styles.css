@@ -1,39 +1,37 @@
-header, ul
+header
 {
     display: flex;
-    justify-content: space-between; 
-    /*padding provisoire*/
-    padding: 10px;  
-    /*padding provisoire*/
+    flex-direction: column;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-}
-
-nav
-{
-    display: flex;
 
 }
-#recherchemenu
+.menu
 {
     display: flex;
     flex-direction: column;
     
 }
-.filtres
+.filters
 {
     display: flex;
 
 }
 
-#hebergements, .activités  img
+#accomodationByTown, .activities  img
 {
     max-width: 20%;
 }
-#hebergements
+#accomodationByTown
 {
     display: flex;
 }
-.hebergementsnotés, .activitésville
+.hebergementsnotes, .activitiesByTown
 {
     display: flex;
     flex-direction: row;
@@ -46,7 +44,7 @@ footer
     justify-content: space-between;
 }
 
-.hebergementsvilleciblée, .hebergementsnotés, footer
+.hebergementsvilleciblée, .hebergementsnotes, footer
 {
     background-color:#F2F2F2;
 }
@@ -55,16 +53,16 @@ footer
 {
 
 
-    .filtres
+    .filters
     {
         flex-wrap: wrap;
     }
-    .hebergementsnotés, .activitésville, #hebergements
+    .hebergementsnotes, .activitiesByTown, #accomodationByTown
 {
     display: flex;
     flex-direction: column;
 }
-    nav, footer
+footer
     {
         flex-direction: column;
     }
