@@ -16,8 +16,9 @@
 
 body {
     font-family: 'ralewaythin', 'sans-serif';
+    font-weight: 400;
     margin: auto;
-    max-width: 1600px;
+    max-width: 100%;
     height: 100vh;
     margin-left: 50px;
     margin-right: 50px;
@@ -31,12 +32,31 @@ header {
 
 header img {
     width: 60px;
+    
+    
+}
+
+nav
+{
+    
+    border: solid 1px red;
+    margin-top: 0px;
+    
+    
 }
 
 nav ul {
     display: flex;    
-    align-items:center;
-    justify-content: space-between;
+    align-items: center;
+    border: solid 1px pink;
+    justify-content: flex-end;   
+}
+
+nav li 
+{   
+    border: solid 1px green;
+    margin-left: 30px;
+    font-size: 0.6em;
     
 }
 
@@ -44,17 +64,23 @@ nav ul {
 nav button {
     color: #0065FC;
     border: hidden;
+    
 }
 nav a
 {
   text-transform: none;
   text-decoration: none;
+  display: flex;
+  align-content: stretch;
+  
 }
 
 
-nav a:focus{
+nav a:hover{
     color:#0065FC;
-    background-color: #F2F2F2;
+    background-color: pink;
+    border-top: solid#0065FC;
+  padding-top: 25px;
   }
  
 button {
@@ -63,15 +89,18 @@ button {
     cursor: pointer;
 }
 
+
+
 h1,
 h2,
 h3 {
-    font-weight: bold;
+    font-weight:bold;
+    border: solid 1px pink;
     
 }
 h1,h3
 {
-    font-size: 0.9em;
+    font-size: 1.2em;
 }
  p
 {
@@ -81,6 +110,10 @@ h1,h3
 /*margin provisoire*/
 main {
     min-width: 500px;
+}
+section,aside
+{
+    padding: 15px 10px 15px 10px;
 }
 
 /*margin provisoire*/
@@ -105,8 +138,11 @@ footer, main
 
 .search-filters {
     display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;  
+    align-items: center;
+    
+    flex-wrap: wrap; 
+    border: solid 1px greenyellow; 
+    
 }
 
 
@@ -114,8 +150,16 @@ footer, main
 {
     display: flex;
     
+   
+    
 }
-
+.search-filters button
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
 
 .search-filters i {
     background-color: #DEEBFF;
@@ -123,15 +167,25 @@ footer, main
     font-size: small;
     border-radius: 25px;  
     width: 25px;
+    height: 25px;
+    border: solid 1px blue;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    
+    
 }
 
 .search-filters li
 {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+    
     min-width: fit-content;
-    height: 35px;
+    height: fit-content;
+    border: solid 1px red;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -143,6 +197,9 @@ footer, main
     border: solid 1px #F2F2F2;
     border-radius: 50%;
     width: 10px;
+    height: 10px
+    
+    
 }
 
 #accomodation-by-town,
@@ -172,7 +229,19 @@ footer {
 /*partie responsive*/
 @media screen and (max-width: 400px) {
     ul {
+        flex-wrap: wrap;       
+    }
+    nav ul
+    {
+        
+        justify-content: space-between;
         flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    .register
+    {
+        order: -5;
     }
 
     aside {
