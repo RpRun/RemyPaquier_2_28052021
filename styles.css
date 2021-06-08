@@ -15,13 +15,13 @@
 
 
 body {
-    font-family: 'ralewaythin', 'sans-serif';
-    font-weight: 400;
-    margin: auto;
+    font-family: 'raleway', 'sans-serif';
+    font-weight: 400;   
     max-width: 100%;
     height: 100vh;
-    margin-left: 50px;
-    margin-right: 50px;
+
+
+    margin: 40px;
 }
 
 header {
@@ -31,9 +31,7 @@ header {
 }
 
 header img {
-    width: 60px;
-    
-    
+    width: 60px;   
 }
 
 nav
@@ -41,22 +39,33 @@ nav
     
     border: solid 1px red;
     margin-top: 0px;
-    
-    
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+
 }
 
 nav ul {
     display: flex;    
     align-items: center;
     border: solid 1px pink;
-    justify-content: flex-end;   
+    justify-content: flex-end;  
+    position: relative; 
+    width: 100%;
+    height: 35px;
 }
 
-nav li 
+nav  
 {   
-    border: solid 1px green;
-    margin-left: 30px;
-    font-size: 0.6em;
+    margin-left: 20px;
+    font-size: 0.6em;  
+    
+}
+.logoD
+{
+    position: absolute;
+    left: 0;
+    top: 0;
     
 }
 
@@ -141,8 +150,7 @@ footer, main
     align-items: center;
     
     flex-wrap: wrap; 
-    border: solid 1px greenyellow; 
-    
+    border: solid 1px greenyellow;   
 }
 
 
@@ -159,13 +167,17 @@ footer, main
     flex-direction: row;
     align-items: center;
     justify-items: center;
+    padding: 0 10px 0 0;
+    border: 1px solid black;
+    
 }
 
 .search-filters i {
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: small;
-    border-radius: 25px;  
+    border-radius: 25px; 
+    margin: -1.5px 5px -1.5px -1.5px;
     width: 25px;
     height: 25px;
     border: solid 1px blue;
@@ -188,7 +200,16 @@ footer, main
     justify-content: center;
 }
 
-
+.infoLogements p
+{
+    
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 2px 2px 2px black;
+    display: flex;
+    align-items: flex-start;
+    
+}
 
 .infoLogements i {
     background-color: #FFFF;
@@ -197,7 +218,9 @@ footer, main
     border: solid 1px #F2F2F2;
     border-radius: 50%;
     width: 10px;
-    height: 10px
+    height: 10px;
+    text-align: center;
+    padding: 1px;
     
     
 }
@@ -236,12 +259,15 @@ footer {
         
         justify-content: space-between;
         flex-wrap: wrap;
-        flex-direction: row;
-        
+        flex-direction: row;   
     }
     .register
     {
-        order: -5;
+        order: -1;
+    }
+    ul #logo
+    {
+        order: -1;
     }
 
     aside {
