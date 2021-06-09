@@ -95,6 +95,10 @@ a:visited
 { 
     color:#000000;
 }
+a:active
+{
+    background-color: #F2F2F2;
+}
 
 .nav-links:hover
 {
@@ -104,13 +108,13 @@ a:visited
 }
  
 
-h1,h2,h3
+h1,h2,h3/*textarea*/
 {
     font-weight:700;
     font-size: 0.7em;
-    /*font-stretch: ??;*/
-    
+    /*font-stretch: ??;*/   
 }
+
 
 
 .search-filters button
@@ -155,6 +159,24 @@ footer, main
     flex-direction: column;
 
 }
+
+.seek-by-town p
+{
+    border: 1px solid #F2F2F2;
+    max-width: fit-content;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.seek-by-town i
+{
+    padding: 5px;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 .search-filters {
     display: flex;
@@ -219,11 +241,13 @@ button {
 .search-filters button:hover
 {
     color:#0065FC;
+    background-color: #F2F2F2;
 }
 .search-filters button:focus
 {
     color: #0065FC;
-    border: 1px solid #0065FC;
+   /* /* border: 1px solid #0065FC; */
+    background-color: #F2F2F2;
 }
 
 

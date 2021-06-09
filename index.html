@@ -40,8 +40,22 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="seek-by-town">
-                <p>searchbar</p>
+               <form method="post" action="traitement.php">
+
+                   <p>
+                       
+                      <!--label icone ok?-->
+                      <label for="town"><i class="fas fa-map-marker-alt"></i></label>
+                       <!--label icone ok?-->
+                      <input type="text" name="town" id="town" placeholder="Marseille, France" size="15" maxlength="30"/>
+                       
+                       <input type="submit" value="Rechercher" />
+                    </p>
+               </form>
+
+
             </div>
+                
 
             <div class="search-filters">
                 <h3>Filtres</h3>
