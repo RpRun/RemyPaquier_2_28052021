@@ -17,8 +17,9 @@
 body {
     font-family: 'raleway', 'sans-serif';
     font-weight: 400;  
-    
-    max-width: 100%;
+    /*nz fonctionne pas*/
+    max-width: 1800px;
+    /*nz fonctionne pas*/
     height: 100vh;
 
 
@@ -59,6 +60,7 @@ nav ul {
 nav li
 {
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 
@@ -66,7 +68,7 @@ nav button
 {
     font-size: 0.9em; 
 }
-.logoD
+.logo
 {
     position: absolute;
     left: 0;
@@ -89,20 +91,24 @@ nav a
   align-content: stretch;
   
 }
+a:visited
+{ 
+    color:#000000;
+}
 
-
-nav .nav-links:hover{
+.nav-links:hover
+{
     color:#0065FC;
     padding: 12px;
     border-top: solid#0065FC;
- 
-  }
+}
  
 
 h1,h2,h3
 {
     font-weight:700;
     font-size: 0.7em;
+    /*font-stretch: ??;*/
     
 }
 
@@ -111,10 +117,7 @@ h1,h2,h3
 
  {
     font-weight:600;
-    font-size: 8px;
-    
-    border: solid 1px pink;
-    
+    font-size: 8px;   
 }
 
  p
@@ -144,7 +147,7 @@ footer {
 /*margin provisoire*/
 footer, main
  {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .menu {
@@ -164,7 +167,8 @@ footer, main
 .search-filters ul
 {
     display: flex;
-    margin-left: 15px;    
+    margin-left: 15px; 
+      
 }
 
 button {
@@ -182,13 +186,14 @@ button {
     align-items: center;
     justify-content: center;
     margin-left: 10px;
+    
 }
 .search-filters i {
     background-color: #DEEBFF;
     color: #0065FC;
     font-size: small;
     border-radius: 25px; 
-    margin: -1.5px 5px -1.5px -1.5px;
+    margin: -1.3px 5px -1.3px -1.3px;
     width: 25px;
     height: 25px;
     
@@ -206,9 +211,21 @@ button {
     justify-items: center;
     padding: 0 10px 0 0;
     border: 1px solid #F2F2F2;
-    border-radius: 25px;
-    
+    border-radius: 25px; 
+   
 }
+
+
+.search-filters button:hover
+{
+    color:#0065FC;
+}
+.search-filters button:focus
+{
+    color: #0065FC;
+    border: 1px solid #0065FC;
+}
+
 
 .infoLogements
 {
@@ -227,14 +244,16 @@ button {
     
 }
 
-.infoLogements i {
+.infoLogements i
+/*toujours un peu gros*/
+ {
     background-color: #FFFF;
     color: #0065FC;
-    font-size: smaller;
+    font-size: 0.1em;
     border: solid 1px #F2F2F2;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     text-align: center;
     padding: 1px;
     margin-right: 5px;
@@ -283,7 +302,7 @@ footer {
     {
         order: 2;
     }
-    .logoD
+    .logo
     {
         order: 1;
         position: relative;
