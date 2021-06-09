@@ -16,27 +16,29 @@
 
 body {
     font-family: 'raleway', 'sans-serif';
-    font-weight: 400;   
+    font-weight: 400;  
+    
     max-width: 100%;
     height: 100vh;
 
 
-    margin: 40px;
+    margin: 0px 20px 20px 20px;
 }
 
 header {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    
 }
 
 header img {
-    width: 60px;   
+    width: 50px; 
+    margin-top: 3px;  
 }
 
 nav
 {
-    
+    font-size: 0.6em; 
     border: solid 1px red;
     margin-top: 0px;
     display: flex;
@@ -54,18 +56,22 @@ nav ul {
     width: 100%;
     height: 35px;
 }
+nav li
+{
+    margin-left: 10px;
+}
 
-nav  
-{   
-    margin-left: 20px;
-    font-size: 0.6em;  
-    
+
+nav button
+{
+    font-size: 0.9em; 
 }
 .logoD
 {
     position: absolute;
     left: 0;
     top: 0;
+    margin-top: 5px;
     
 }
 
@@ -85,18 +91,14 @@ nav a
 }
 
 
-nav a:hover{
+nav .nav-links:hover{
     color:#0065FC;
-    background-color: pink;
+   padding: 12px;
     border-top: solid#0065FC;
-  padding-top: 25px;
+ 
   }
  
-button {
-    border-radius: 25px;
-    background-color: #FFFF;      
-    cursor: pointer;
-}
+
 
 
 
@@ -104,15 +106,19 @@ h1,
 h2,
 h3 {
     font-weight:bold;
+   
+    
     border: solid 1px pink;
     
 }
 h1,h3
 {
-    font-size: 1.2em;
+    font-size: 1em;
+    
 }
  p
 {
+    font-size: 0.6em;
     margin-top: 10px;
 }
 
@@ -161,6 +167,11 @@ footer, main
    
     
 }
+button {
+    
+    background-color: #FFFF;      
+    cursor: pointer;
+}
 .search-filters button
 {
     display: flex;
@@ -168,7 +179,8 @@ footer, main
     align-items: center;
     justify-items: center;
     padding: 0 10px 0 0;
-    border: 1px solid black;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
     
 }
 
@@ -180,7 +192,7 @@ footer, main
     margin: -1.5px 5px -1.5px -1.5px;
     width: 25px;
     height: 25px;
-    border: solid 1px blue;
+    
     align-items: center;
     justify-content: center;
     display: flex;
@@ -195,7 +207,7 @@ footer, main
     
     min-width: fit-content;
     height: fit-content;
-    border: solid 1px red;
+    
     align-items: center;
     justify-content: center;
 }
@@ -204,10 +216,10 @@ footer, main
 {
     
     display: flex;
-    align-items: flex-start;
-    box-shadow: 2px 2px 2px black;
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
+   
+    
+    
     
 }
 
@@ -221,6 +233,8 @@ footer, main
     height: 10px;
     text-align: center;
     padding: 1px;
+    margin-right: 5px;
+    
     
     
 }
