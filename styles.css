@@ -17,14 +17,38 @@
 body {
     font-family: 'raleway', 'sans-serif';
     font-weight: 400;  
-    /*nz fonctionne pas*/
-    max-width: 1800px;
-    /*nz fonctionne pas*/
+    max-width: 100%;
     height: 100vh;
-
-
     margin: 0px 20px 20px 20px;
 }
+
+/*margin provisoire*/
+header,main,footer
+ {
+    min-width: 500px;
+    margin: auto;    
+    max-width: 1600px;
+     
+}
+section,aside
+{
+    padding: 15px 10px 15px 10px;
+}
+
+/*margin provisoire*/
+footer {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 30px;
+    
+}
+/*margin provisoire*/
+footer, main
+ {
+    margin-top: 20px;
+}
+
 
 header {
     display: flex;
@@ -33,14 +57,13 @@ header {
 }
 
 header img {
-    width: 50px; 
+    width: 60px; 
     margin-top: 3px;  
 }
 
 nav
 {
     font-size: 0.6em; 
-    border: solid 1px red;
     margin-top: 0px;
     display: flex;
     justify-content: space-between; 
@@ -50,8 +73,7 @@ nav
 
 nav ul {
     display: flex;    
-    align-items: center;
-    border: solid 1px pink;
+    align-items: center;   
     justify-content: flex-end;  
     position: relative; 
     width: 100%;
@@ -67,6 +89,7 @@ nav li
 nav button
 {
     font-size: 0.9em; 
+    font-weight: bold;
 }
 .logo
 {
@@ -108,11 +131,11 @@ a:active
 }
  
 
-h1,h2,h3/*textarea*/
+h1,h2,h3
 {
-    font-weight:700;
-    font-size: 0.7em;
-    /*font-stretch: ??;*/   
+    font-weight:800;
+    font-size: 1em;
+      
 }
 
 
@@ -131,28 +154,6 @@ h1,h2,h3/*textarea*/
     
 }
 
-/*margin provisoire*/
-main {
-    min-width: 500px;
-}
-section,aside
-{
-    padding: 15px 10px 15px 10px;
-}
-
-/*margin provisoire*/
-footer {
-    display: flex;
-
-    justify-content: space-between;
-    padding: 30px;
-    margin-right: 50px;
-}
-/*margin provisoire*/
-footer, main
- {
-    margin-top: 20px;
-}
 
 .menu {
     display: flex;
@@ -189,6 +190,9 @@ footer, main
 {
    border-top:  1px solid #F2F2F2 ;
    border-bottom: 1px solid #F2F2F2;
+   font-weight: bold;
+   
+   
 }
 
 #seek
@@ -196,6 +200,7 @@ footer, main
     background: #0065FC;
     color: #FFFF;
     border-radius:   0 8px 8px 0;
+    
     
     
     
@@ -270,7 +275,7 @@ button {
 .search-filters button:focus
 {
     color: #0065FC;
-   /* /* border: 1px solid #0065FC; */
+   /* border: 1px solid #0065FC; */
     background-color: #F2F2F2;
 }
 
@@ -324,6 +329,7 @@ button {
 .activitiesByTown {
     display: flex;
     flex-direction: row;
+    
 }
 
 .accomodation-by-town,
@@ -331,6 +337,7 @@ button {
 footer {
     background-color: #F2F2F2;
 }
+
 
 
 
