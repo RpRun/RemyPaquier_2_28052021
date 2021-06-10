@@ -66,8 +66,7 @@ footer, main
 
 header {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
 }
 
 header img {
@@ -97,6 +96,7 @@ header img {
 {
     margin-left: 10px;
     margin-right: 20px;
+    
 }
 
 
@@ -112,8 +112,7 @@ header img {
     position: absolute;
     left: 0;
     top: 0;
-    margin-top: 5px;
-    
+    margin-top: 5px;   
 }
 
 
@@ -123,8 +122,9 @@ header img {
   text-decoration: none;
   display: flex;
   align-content: stretch;
-  
+  color:#000000  
 }
+
 a:visited
 { 
     color:#000000;
@@ -198,20 +198,14 @@ p
 {
    border-top:  1px solid #F2F2F2 ;
    border-bottom: 1px solid #F2F2F2;
-   font-weight: bold;
-   
-   
+   font-weight: bold; 
 }
 
 #seek
 {
     background: #0065FC;
     color: #FFFF;
-    border-radius:   0 8px 8px 0;
-    
-    
-    
-    
+    border-radius:   0 8px 8px 0;   
 }
 /*--------------FILTERS---------------------------*/
 
@@ -227,6 +221,7 @@ p
 {
     display: flex;
     margin-left: 15px; 
+    flex-wrap: wrap;
       
 }
 
@@ -375,17 +370,18 @@ h4
 
 }
 
-/*partie responsive*/
+/*--------------responsive design---------------------------*/
 @media screen and (max-width: 600px) {
-    ul {
+    
+    .search-filters   {
         flex-wrap: wrap;       
     }
-    .header-nav ul
+   li .header-nav
     {
         
         justify-content: space-between;
         flex-wrap: wrap;
-        flex-direction: row;   
+        flex-direction: column;   
     }
     .register
     {
@@ -432,4 +428,4 @@ h4
 
 }
 
-/*partie responsive*/
+/*--------------responsive design---------------------------*/
