@@ -162,18 +162,42 @@ footer, main
 
 .seek-by-town p
 {
-    border: 1px solid #F2F2F2;
+    
     max-width: fit-content;
-    border-radius: 5px;
     display: flex;
     flex-wrap: nowrap;
+    border-radius: 8px;
 }
 .seek-by-town i
 {
-    padding: 5px;
+    display: flex;
     background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
+    border-radius:  8px 0 0 8px;
+    height: 18px;
+    width: 18px;
+    padding: 3px 1px 3px 3px;
+   
+}
+#town,#seek,.seek-by-town i
+{
+    border: none;
+    padding: 5px;
+}
+#town
+{
+   border-top:  1px solid #F2F2F2 ;
+   border-bottom: 1px solid #F2F2F2;
+}
+
+#seek
+{
+    background: #0065FC;
+    color: #FFFF;
+    border-radius:   0 8px 8px 0;
+    
+    
     
 }
 
