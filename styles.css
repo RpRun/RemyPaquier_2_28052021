@@ -12,11 +12,23 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.eot');
+    src: url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.woff2') format('woff2'),
+        url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.woff') format('woff'),
+        url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.ttf') format('truetype'),
+        url('fonts/webfontkit-20210607-040103/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
 
 
 body {
     font-family: 'raleway', 'sans-serif';
-    font-weight: 400;  
+    font-weight: normal;  
     max-width: 100%;
     height: 100vh;
     margin: 0px 20px 20px 20px;
@@ -35,13 +47,51 @@ section,aside
     padding: 15px 10px 15px 10px;
 }
 
-/*margin provisoire*/
+/*margin provisoire 
 footer {
+    
     display: flex;
+    flex-direction: row;
+    
 
     justify-content: space-between;
-    padding: 30px;
+    padding: 30px;*/
+
+}
+
+.footer-nav
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px 10px 0;
+    align-content: flex-start;
     
+    
+}
+.footer-ul
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+    
+    padding-top: 30px;
+    
+}
+.footer-ul li
+{
+    margin: 0px;
+    padding-top: 10px;
+    
+}
+h4
+{
+    font-weight: 900;
+    
+}
+.foot-page
+{
+    margin: 15px 30px 15px 10px;
 }
 /*margin provisoire*/
 footer, main
@@ -61,7 +111,7 @@ header img {
     margin-top: 3px;  
 }
 
-nav
+.header-nav
 {
     font-size: 0.6em; 
     margin-top: 0px;
@@ -71,7 +121,7 @@ nav
 
 }
 
-nav ul {
+.header-nav ul {
     display: flex;    
     align-items: center;   
     justify-content: flex-end;  
@@ -79,17 +129,19 @@ nav ul {
     width: 100%;
     height: 35px;
 }
-nav li
+.header-nav li
 {
     margin-left: 10px;
     margin-right: 20px;
 }
 
 
-nav button
+.header-nav button
 {
     font-size: 0.9em; 
     font-weight: bold;
+    color: #0065FC;
+    border: hidden;
 }
 .logo
 {
@@ -101,12 +153,7 @@ nav button
 }
 
 
-nav button {
-    color: #0065FC;
-    border: hidden;
-    
-}
-nav a
+.header-nav a
 {
   text-transform: none;
   text-decoration: none;
