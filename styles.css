@@ -13,34 +13,59 @@ body {
     font-size: 20px;
     font-weight: normal;  
     max-width: 100%;
-    height: 100vh;
-    
+    height: 100vh;   
 }
 
 /*margin provisoire*/
 header,main,footer
  {
-    min-width: 500px;
-    margin: auto;    
+    min-width: 400px;
+    padding: 0 25px 0 25px;
     max-width: 1600px;
      
 }
-section,aside
-{
-    padding: 15px 10px 15px 10px;
-}
+
 
 
 /*margin provisoire*/
-footer, main
+main,section,footer
  {
     margin-top: 20px;
 }
+.header-content
+{
+    margin-bottom: 20px;
 
- p
+}
+.title
+{
+    margin-bottom: 20px;
+}
+.search-filters,.info-logements,.seek-by-town
+{
+    margin-bottom: 30px;
+}
+
+
+
+h1
+{
+    font-weight:800;
+    font-size: 22px;    
+}
+h2,h3
+{
+    font-weight: 700;
+}
+#accomodation h2, #activities h2
+{
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+p
 {
     
-   
+    font-weight: 500;
     margin: 10px 0 10px 0;    
 }
 
@@ -49,27 +74,42 @@ footer, main
 
 header {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
+   
+    
 }
 
-header img {
-    width: 60px; 
-    margin-top: 3px;  
+.logo
+{
+    position: absolute;
+    left: 25px;
+    top: 20px;
+    width: 100px;    
 }
+/*a tester
+a .logo
+{
+       
+        display: inline-block;     
+        position: relative;    
+        z-index: 1;     
+        padding: 2em;     
+        margin: -2em;     
+}
+*/
 
 .header-nav
 {
-    
-    margin-top: 0px;
-    padding: 20px;
     display: flex;
     justify-content: space-between; 
     flex-wrap: wrap;
     font-size: 15px;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
-.header-nav ul {
+.header-nav ul
+{
     display: flex;    
     align-items: center;   
     justify-content: flex-end;  
@@ -77,29 +117,19 @@ header img {
     width: 100%;
     height: 35px;
 }
+
 .header-nav li
 {
     margin-left: 10px;
-    margin-right: 20px;
-    
+    margin-right: 20px;  
 }
-
 
 .header-nav .submit-inscription
 {
-    
     font-weight: bold;
     color: #0065FC;
     border: hidden;
 }
-.logo
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 5px;   
-}
-
 
 .header-nav a
 {
@@ -122,22 +152,10 @@ a:active
 .nav-links:hover
 {
     color:#0065FC;
-    padding: 12px;
+    padding: 30px;
     border-top: solid#0065FC;
 }
  
-
-h1,h2,h3
-{
-    font-weight:800;
-    font-size: 1em;    
-}
-p
-{
-    font-size: 0.7em;
-    font-weight: 500;
-    margin: 10px 0 10px 0;    
-}
 
 /*--------------SEARCHBAR---------------------------*/
 
@@ -145,23 +163,23 @@ p
 
  {
     font-weight:600;
-    font-size: 8px;   
+    font-size: 18px;   
 }
 
-.header-content {
+.header-content
+ {
     display: flex;
     flex-direction: column;
-
 }
 
-.seek-by-town p
+.town-search
 {
-    
-    max-width: fit-content;
     display: flex;
     flex-wrap: nowrap;
     border-radius: 8px;
+    flex-direction: row;
 }
+
 .seek-by-town i
 {
     display: flex;
@@ -177,13 +195,15 @@ p
 #town,#seek,.seek-by-town i
 {
     border: none;
-    padding: 5px;
+    padding: 15px;
 }
+
 #town
 {
    border-top:  1px solid #F2F2F2 ;
    border-bottom: 1px solid #F2F2F2;
    font-weight: bold; 
+   
 }
 
 #seek
@@ -206,11 +226,11 @@ p
 {
     display: flex;
     margin-left: 15px; 
-    flex-wrap: wrap;
+    
       
 }
 
-button {
+button, label,a {
     
     background-color: #FFFF;      
     cursor: pointer;
@@ -270,26 +290,27 @@ button {
 
 
 
-.infoLogements p
+.info-logements small
 {
     
     display: flex;
     align-items: center;
-    /* align-items: flex-start;*/   
+    font-size: 15px;
+     
 }
 
-.infoLogements i
+.info-logements i
 
  {
     background-color: #FFFF;
     color: #0065FC;
-    font-size: 0.1em;
+    font-size: 10px;
     border: solid 1px #F2F2F2;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 10px;
+    height: 10px;
     text-align: center;
-    padding: 2px;
+    padding: 4px;
     margin-right: 5px;   
 }
 
@@ -301,30 +322,40 @@ button {
     max-width: 400px;
 }
 
-#accomodation-by-town {
+#accomodation {
     display: flex;
     background-color: #F2F2F2;
 }
 
-.accomodationByRating,
+.accomodation-by-rating,
 .activitiesByTown {
     display: flex;
     flex-direction: row;
     
 }
 
-.accomodation-by-town,
-.accomodationByRating,
+#accomodation,
 footer {
     background-color: #F2F2F2;
 }
+#activities
+{
+    padding: 15px 0;
+}
 /*--------------FOOTER---------------------------*/
+footer
+{
+    padding-top: 30px;
+    height: 100%;
+}
+
+
 .footer-nav
 {
     display: flex;
-    flex-direction: row;
-    padding: 10px 30px 10px 0;
-    align-content: flex-start;
+    flex-direction: row;   
+  
+    justify-content: flex-start;
     
     
 }
@@ -335,7 +366,7 @@ footer {
     align-items:flex-start;
     
     
-    padding-top: 30px;
+    padding-top: 20px;
     
 }
 .footer-ul li
@@ -360,14 +391,11 @@ h4
     
     .search-filters  ul
      {
-        display: flex;             
-    }
-    /* ne fonctionne pas, go back to the past marty^^*/
-    .search-filters li
-    {
         flex-wrap: wrap;
         
+           
     }
+   
    .header-nav
     {
         
