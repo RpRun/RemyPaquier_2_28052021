@@ -8,8 +8,8 @@
     <title>Reservia - Planifiez vos vacances</title>
 
     <meta name="description" content="Planifiez vos vacances.
-      Trouvez votre hébergement et des activités de tourisme dans la ville de votre choix.
-      Reservia vous permets de  filtrer les hébergements par thématique, par exemple leur budget ou leur ambiance." />
+      Trouvez votre hébergement et des activités de tourisme dans la ville de votre choix. Reservia vous permets de  filtrer les hébergements par thématique, par exemple leur budget ou leur ambiance." />
+      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
@@ -23,14 +23,16 @@
 <body>
     <header>
 
+        <a href="/"><img class="logo" src="images/logo/Reservia@3x.png" alt="logo reservia"></a>
+      
         <nav class="header-nav">
-
+           
             <ul>
-                <li class="logo"><img id="logo" src="images/logo/Reservia@3x.png" alt="logo reservia"></li>
+                
                 <li class="nav-accomodations"><a class="nav-links" href="#accomodation-by-town">Hébergements</a></li>
                 <li class="nav-activities"><a class="nav-links" href="#activities">Activités</a></li>
-                <li class="register"><a class="submit-inscription" href="#"><button type="submit">S'inscrire
-                        </button></a></li>
+                <li class="register"><a class="submit-inscription" href="#"> S'inscrire
+                       </a></li>
             </ul>
         </nav>
 
@@ -42,18 +44,12 @@
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
             <div class="seek-by-town">
-                <form method="post" action="traitement.php">
+                <form method="post">
 
-                    <p>
-
-                        <!--label icone ok?-->
-                        <label for="town"><i class="fas fa-map-marker-alt"></i></label>
-                        <!--label icone ok?-->
-                        <input type="text" name="town" id="town" placeholder="Marseille, France" size="15"
-                            maxlength="30" />
-
+                        <label for="town"><i class="fas fa-map-marker-alt"></i></label>                       
+                        <input type="text" name="town" id="town" placeholder="Marseille, France"/>
                         <input type="submit" id="seek" value="Rechercher" />
-                    </p>
+                   
                 </form>
 
 
@@ -96,7 +92,7 @@
 
             <!--h2 dans article? h2 OU h1?-->
 
-            <article class="hebergementsvilleciblée">
+            <div class="hebergementsvilleciblée">
                 <!--modifier section en div ou article?-->
                 <h2>Hébergements à Marseille</h2>
                 <div class="hebergementsnotes">
@@ -128,14 +124,12 @@
                         <img class="aperçu" alt="image de chambre avec lit superposé"
                             src="./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
                     </div>
-
-
+                    
+                    <a class="display-more" href="#">Afficher plus</a>
+                    
                 </div>
-                <!--a modifier h3?-->
-                <h3>Afficher plus</h3>
-                <!--a modifier-->
-                <!--modifier section en div ou article?-->
-            </article>
+               
+            </div>
             <!--modifier section en div ou article?-->
             <aside>
                 <h2>Les plus populaires</h2>
