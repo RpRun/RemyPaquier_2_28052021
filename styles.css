@@ -345,10 +345,7 @@ button, label,a {
 
 /*--------------MAIN---------------------------*/
 
-#accomodation,
-#activities img {
-    max-width: 400px;
-}
+
 
 #accomodation {
     display: flex;
@@ -481,4 +478,22 @@ h4
 
 }
 
-/*--------------responsive design---------------------------*/
+/*--------------CARDS---------------------------*/
+.card
+{
+    border-radius: 25px;
+    background-color: #fff;
+   
+}
+.card img
+{
+    max-width: 100%;
+    height: 150px;
+    object-fit:cover;
+    
+}
+p span
+{
+    font: style 900;
+}
+    
