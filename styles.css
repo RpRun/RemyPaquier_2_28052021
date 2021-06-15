@@ -85,9 +85,7 @@ p
 
 header {
     display: flex;
-    flex-direction: column; 
-   
-    
+    flex-direction: column;  
 }
 
 .logo
@@ -172,7 +170,7 @@ a:active
     padding: 30px;
     border-top: solid#0065FC;
 }
-.footer-content a, 
+.footer-content a
 {
     text-transform: none;
     text-decoration: none;
@@ -509,26 +507,29 @@ h4
 .card
 {
     border-radius: 25px;
+    
     background-color: #fff;
     padding: 3px;
-    margin: 20px;
-   
-   
+    margin: 20px; 
+}
+.most-pop .card 
+{
+    margin-top: 40px;
 }
 .accomodation-by-rating  img
 {
     max-width: 100%;
-    width:40%;
-    height: 100px;
-    width: 250px;
+    object-fit: cover;
+    height: 150px;
+    width: 400px;
     
     border-radius: 25px 25px 0 0;
     
 }
 .card .accomodation-by-rating
 {
-    width: 400px;
-    height: 200px;
+   
+    
 }
 p span
 {
@@ -543,7 +544,7 @@ p span
 .most-pop img
 {
     max-width: 100%;
-    width:40%;
+    object-fit: cover;
     height: 150px;
     width: 150px;
     
