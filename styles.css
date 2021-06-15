@@ -561,8 +561,11 @@ p span
     
 .rating .fa-star
 {
+    color: #F2F2F2;
+    
+    
+}
+.rating .blue
+{
     color: #0065FC;
-    height: 20px;
-    width: 20px;
-
 }
