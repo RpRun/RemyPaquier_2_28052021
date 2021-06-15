@@ -22,7 +22,9 @@ header,main,footer
     min-width: 400px;
     padding: 0 25px 0 25px;
     max-width: 1600px;
-     
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;    
 }
 
 
@@ -31,6 +33,7 @@ header,main,footer
 main,section,footer
  {
     margin-top: 20px;
+    
 }
 .header-content
 {
@@ -41,7 +44,7 @@ main,section,footer
 {
     margin-bottom: 20px;
 }
-.search-filters,.info-logements,.seek-by-town
+.search-filters,.seek-by-town
 {
     margin-bottom: 30px;
 }
@@ -57,11 +60,19 @@ h2,h3
 {
     font-weight: 700;
 }
-#accomodation h2, #activities h2
+#accomodation h2, .display-more
 {
-    padding: 15px 0;
-    margin-bottom: 15px;
+   margin-left: 20px; 
 }
+#accomodation h2
+{
+    margin-top: 20px;
+}
+.display-more
+{
+    max-height: fit-content;
+}
+
 p
 {
     
@@ -161,15 +172,22 @@ a:active
     padding: 30px;
     border-top: solid#0065FC;
 }
-.footer-content a, .display-more 
+.footer-content a, 
 {
     text-transform: none;
     text-decoration: none;
     background-color: #F2F2F2;
 }
-.footer-content a:active, .display-more a:active
+.footer-content a:active
 {
     background-color: #fff;
+}
+.display-more , .display-more a:active
+{
+    background-color: #F2F2F2;
+    text-decoration: none;
+    font-weight: bold;
+    
 }
  
 
@@ -349,7 +367,10 @@ button, label,a {
 
 #accomodation {
     display: flex;
-    background-color: #F2F2F2;
+    
+    align-items: flex-start;
+    justify-content: space-around;
+    
 }
 
 .accomodation-by-rating,
@@ -362,9 +383,15 @@ button, label,a {
     display: flex;
     flex-direction: column;
 }
-#accomodation,
+.town-accomodation, aside, 
 footer {
     background-color: #F2F2F2;
+}
+.town-accomodation, aside
+{
+    border-radius: 25px;
+    margin-right: 40px;
+    padding: 30px;
 }
 
 #activities
@@ -483,17 +510,43 @@ h4
 {
     border-radius: 25px;
     background-color: #fff;
+    padding: 3px;
+    margin: 20px;
+   
    
 }
-.card img
+.accomodation-by-rating  img
 {
     max-width: 100%;
-    height: 150px;
-    object-fit:cover;
+    width:40%;
+    height: 100px;
+    width: 250px;
     
+    border-radius: 25px 25px 0 0;
+    
+}
+.card .accomodation-by-rating
+{
+    width: 400px;
+    height: 200px;
 }
 p span
 {
     font: style 900;
+}
+.most-pop .card
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.most-pop img
+{
+    max-width: 100%;
+    width:40%;
+    height: 150px;
+    width: 150px;
+    
+    border-radius: 25px 0 0 25px ;
 }
     
