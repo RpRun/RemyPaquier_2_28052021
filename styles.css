@@ -94,7 +94,13 @@ a .logo
         position: relative;    
         z-index: 1;     
         padding: 2em;     
-        margin: -2em;     
+        margin: -2em;   
+        
+        Display: inline-block is required so that margins and padding can be set
+Position needs to be relative so that...
+z-index can be used to make the clickable area stay on top of any text that follows.
+The padding increases the area that can be clicked
+The negative margin keeps the flow of surrounding text as it should be (beware of over lapping links)
 }
 */
 
@@ -155,13 +161,13 @@ a:active
     padding: 30px;
     border-top: solid#0065FC;
 }
-.footer-content a
+.footer-content a, .display-more 
 {
     text-transform: none;
     text-decoration: none;
     background-color: #F2F2F2;
 }
-.footer-content a:active
+.footer-content a:active, .display-more a:active
 {
     background-color: #fff;
 }
