@@ -155,6 +155,16 @@ a:active
     padding: 30px;
     border-top: solid#0065FC;
 }
+.footer-content a
+{
+    text-transform: none;
+    text-decoration: none;
+    background-color: #F2F2F2;
+}
+.footer-content a:active
+{
+    background-color: #fff;
+}
  
 
 /*--------------SEARCHBAR---------------------------*/
@@ -366,7 +376,7 @@ footer
 }
 
 
-.footer-nav
+.foot-page
 {
     display: flex;
     flex-direction: row;   
@@ -396,7 +406,7 @@ h4
     font-weight: 900;
     
 }
-.foot-page
+.footer-content
 {
     margin: 15px 300px 15px 10px;
     /*a modifier 300px...flex?*/
@@ -458,7 +468,7 @@ h4
         flex-direction: column;
     }
 
-    .footer-nav {
+    .footer-content {
         flex-direction: column;
         align-content: space-between
     }
