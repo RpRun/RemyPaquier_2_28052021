@@ -26,8 +26,13 @@ header,main,footer
     margin-right: auto;
     margin-left: auto;    
 }
-
-
+/*comment centrer sans contener
+footer
+{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+/*comment centrer sans contener*/
 
 
 /*margin provisoire*/
@@ -87,6 +92,7 @@ p
 header {
     display: flex;
     flex-direction: column;  
+    position: relative;
 }
 
 .logo
@@ -94,9 +100,11 @@ header {
     position: absolute;
     left: 25px;
     top: 20px;
-    width: 100px;    
+    width: 100px;  
+    margin-right: auto;
+    margin-left: auto;   
 }
-/*a tester
+/*a tester pour etendre zone clickable sur le logo
 a .logo
 {
        
@@ -490,13 +498,18 @@ h4
     {
         margin-top: 20px;
     }
-        .hebergementsnotes,
-        .activitiesByTown,
-         #accomodation {
-
+    .activities-by-town
+    {
         flex-direction: column;
     }
 
+    .left, .right
+{
+    flex-direction: column;
+    
+}
+
+   
     .footer-content {
         flex-direction: column;
         align-content: space-between
@@ -504,11 +517,11 @@ h4
 
 }
 
-/*--------------CARDS---------------------------*/
+/*--------------CARDS ACCOMODATION---------------------------*/
 .card
 {
     border-radius: 25px;
-    
+    box-shadow: 2px 2px 2px 1px  #d3d3d3;
     background-color: #fff;
     padding: 4px;
     margin: 20px; 
@@ -569,3 +582,35 @@ p span
 {
     color: #0065FC;
 }
+
+/*--------------ACTIVITIES---------------------------*/
+.activities-by-town
+{
+    display: flex;
+}
+.left, .right
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.activities-by-town img
+{
+    max-width: 100%;
+    object-fit: cover;
+    height: 120px;
+    width: 400px;   
+    border-radius: 25px 25px 0 0; 
+      
+}
+.view-card
+{
+    box-shadow: 2px 2px 2px 1px  #d3d3d3;
+    border-radius: 25px 25px ; 
+    
+}
+.view-card h3
+{
+    padding: 20px; 
+}
+
