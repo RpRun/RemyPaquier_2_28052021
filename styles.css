@@ -171,13 +171,13 @@ a:active {
 }
 
 /*--------------SEARCHBAR---------------------------*/
-/*pb
 
-.search-filters label
+
+#seek, .town-search label
 {
     cursor: pointer;
 }
-*/
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -334,6 +334,7 @@ a:active {
 .town-accomodation {
   display: flex;
   flex-direction: column;
+
 }
 .town-accomodation,
 aside,
