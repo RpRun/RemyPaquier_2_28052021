@@ -327,8 +327,10 @@ a:active {
 }
 .accomodation-by-rating-info
 {
-    padding: 10px;
+  padding: 10px;
 }
+
+
 .town-accomodation {
   display: flex;
   flex-direction: column;
@@ -349,89 +351,6 @@ aside {
   padding: 15px 0;
   margin-top: 20px;
 }
-
-/*--------------FOOTER---------------------------*/
-footer {
-  padding-top: 30px;
-  height: 100%;
-}
-
-.foot-page {
-  display: flex;
-  flex-direction: row;
-
-  justify-content: flex-start;
-}
-.footer-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  padding-top: 20px;
-}
-.footer-ul li {
-  margin: 0px;
-  padding-top: 10px;
-}
-h4 {
-  font-weight: 900;
-}
-.footer-content {
-  margin: 15px 300px 15px 10px;
-  /*a modifier 300px...flex?*/
-}
-
-/*--------------responsive design---------------------------*/
-@media screen and (max-width: 600px) {
-  .search-filters ul {
-    flex-wrap: wrap;
-  }
-
-  .foot-page {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .register {
-    order: 2;
-  }
-  .logo {
-    order: 1;
-    position: relative;
-  }
-  .nav-accomodations {
-    order: 3;
-  }
-  .nav-activities {
-    order: 4;
-  }
-
-  aside {
-    order: -1;
-  }
-
-  footer h2 {
-    margin-top: 40px;
-  }
-  p h2 {
-    margin-top: 20px;
-  }
-  #activities,
-  .activities-by-town {
-    flex-direction: column;
-  }
-
-  .left,
-  .right {
-    flex-direction: column;
-  }
-
-  .footer-page {
-    flex-direction: column;
-    align-content: space-between;
-  }
-}
-
 /*--------------CARDS-ACCOMODATION---------------------------*/
 .card {
   border-radius: 25px;
@@ -455,7 +374,7 @@ h4 {
   min-width: 270px;
   max-width: 300px;
   min-height: 150px;
-  margin-top: 40px;
+  
 }
 .most-affordable {
   font-weight: 900;
@@ -466,7 +385,7 @@ h4 {
 
   width: 400px;
   height: 150px;
-  margin-top: 40px;
+  
   justify-content: space-between;
   align-items: center;
 }
@@ -499,14 +418,15 @@ h4 {
 
 /*--------------ACTIVITIES---------------------------*/
 #activities {
+  /*flex pas utile
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /*utile ou margin padding?*/
-  justify-content: space-between;
-  /*utile ou margin padding?*/
-  height: 500px;
-  width: 1600px;
+  */
+  /*dimensions a revoir */
+  
+  max-width: 100vh;
+  min-width: 900px;
 }
 
 .activities-by-town {
@@ -564,3 +484,89 @@ h4 {
   height: 80%;
   width: 100%;
 }
+
+/*--------------FOOTER---------------------------*/
+footer {
+  padding-top: 30px;
+  height: 250px;
+}
+
+.foot-page {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding-top: 20px;
+}
+.footer-ul li {
+  
+  margin: 0px;
+  padding-top: 10px;
+  
+  width: max-content;
+}
+h4 {
+  font-weight: 900;
+}
+.footer-content {
+  margin: 15px 250px 15px 15px;
+  /*a modifier margin-right...flex?*/
+}
+
+/*--------------responsive design---------------------------*/
+@media screen and (max-width: 600px) {
+  .search-filters ul {
+    flex-wrap: wrap;
+  }
+
+  .foot-page {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .register {
+    order: 2;
+  }
+  .logo {
+    order: 1;
+    position: relative;
+  }
+  .nav-accomodations {
+    order: 3;
+  }
+  .nav-activities {
+    order: 4;
+  }
+
+  aside {
+    order: -1;
+  }
+
+  footer h2 {
+    margin-top: 40px;
+  }
+  p h2 {
+    margin-top: 20px;
+  }
+  #activities,
+  .activities-by-town {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    flex-direction: column;
+  }
+
+  .footer-page {
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
+
