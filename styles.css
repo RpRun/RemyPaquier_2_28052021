@@ -372,12 +372,16 @@ button, label,a {
 
 
 
-#accomodation {
+#accomodation{
     display: flex;
     
     align-items: flex-start;
     justify-content: space-around;
     
+}
+#accomodation a, #activities a
+{
+    text-decoration: none;
 }
 
 .accomodation-by-rating
@@ -612,6 +616,7 @@ p span
     justify-content: space-between;
     /*utile ou margin padding?*/
     height: 500px;
+    width: 1600px;
 }
 
 .activities-by-town
@@ -626,7 +631,8 @@ p span
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 50%;
+    max-width: 45%;
+    
     
 }
 .double-left, .double-right
@@ -665,11 +671,7 @@ p span
     height: 100%; 
     
 }
-.higher img
-{
-    height: 100%;
-    width:100% ;
-}
+
 
 .half
 {
