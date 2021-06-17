@@ -74,10 +74,7 @@ h2,h3
 {
     margin-top: 20px;
 }
-.display-more
-{
-    max-height: fit-content;
-}
+
 
 p
 {
@@ -161,7 +158,7 @@ The negative margin keeps the flow of surrounding text as it should be (beware o
   text-decoration: none;
   display: flex;
   align-content: stretch;
-  color:#000000  
+  color:#000000 ; 
 }
 
 a:visited
@@ -199,14 +196,13 @@ a:active
  
 
 /*--------------SEARCHBAR---------------------------*/
+/*pb
 
-.search-filters button
-
- {
-    font-weight:600;
-    font-size: 18px;   
+.search-filters label
+{
+    cursor: pointer;
 }
-
+*/
 .header-content
  {
     display: flex;
@@ -262,7 +258,6 @@ a:active
       
 }
 
-
 .search-filters ul
 {
     display: flex;
@@ -270,13 +265,6 @@ a:active
     
       
 }
-
-button, label,a {
-    
-    background-color: #FFFF;      
-    cursor: pointer;
-}
-
 
 .search-filters li
 {
@@ -290,15 +278,13 @@ button, label,a {
 }
 .search-filters i {
     background-color: #DEEBFF;
-    color: #0065FC;
-    
+    color: #0065FC; 
     border-radius: 25px; 
     top: 50%;
     left: 25px;
     position: absolute;
     width: 50px;
-    height: 50px;
-    
+    height: 50px; 
     align-items: center;
     justify-content: center;
     display: flex;
@@ -324,9 +310,12 @@ button, label,a {
     height: 30px; 
     width: fit-content;
     margin-left: 25px;
+    font-weight:600;
+    font-size: 18px;   
+    background-color: #FFFF;      
+    cursor: pointer;
     
 }
-
 
 .search-filters button:hover
 {
@@ -379,15 +368,23 @@ button, label,a {
     justify-content: space-around;
     
 }
-#accomodation a, #activities a
+#accomodation a
 {
     text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 10px;
 }
-
+/*voire accomodation a margin
+.accomodation-by-rating-info
+{
+    padding: 10px;
+}
+*/
 .accomodation-by-rating
  {
     display: flex;
     flex-direction: row;   
+    margin: 10px;
 }
 .town-accomodation
 {
@@ -556,9 +553,10 @@ h4
    
     
 }
-p span
+.most-affordable 
 {
-    font: style 900;
+    
+    font-weight: 900;
 }
 .most-pop .card
 {
@@ -593,7 +591,9 @@ p span
 {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
+
     
 .rating .fa-star
 {
@@ -656,12 +656,12 @@ p span
     border-radius: 25px 25px ; 
       
 }
-/*  
+
 .view-card h3
 {
     padding: 20px; 
     
-}*/
+}
 
 
 
