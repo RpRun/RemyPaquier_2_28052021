@@ -23,8 +23,8 @@ footer {
   padding: 0 25px 0 25px;
   max-width: 1600px;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 /*comment centrer sans contener
 footer
@@ -351,6 +351,7 @@ aside {
 #activities {
   padding: 15px 0;
   margin-top: 20px;
+  height: 500px;
 }
 /*--------------CARDS-ACCOMODATION---------------------------*/
 .card {
@@ -419,10 +420,11 @@ aside {
 
 /*--------------ACTIVITIES---------------------------*/
 #activities {
-  /*flex pas utile
+  /*flex pas utile pour l instant?!pas ici--> voir .activities-by-town
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap: wrap;
   */
   /*dimensions a revoir */
   
