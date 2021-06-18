@@ -19,27 +19,11 @@ body {
 header,
 main,
 footer {
-  min-width: 400px;
-  padding: 0 25px 0 25px;
   max-width: 1600px;
-  width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-/*comment centrer sans contener
-footer
-{
-    margin-left: 40px;
-    margin-right: 40px;
-}
-/*comment centrer sans contener*/
+  margin: 0 auto;
 
-/*margin provisoire*/
-main,
-section,
-footer {
-  margin-top: 20px;
 }
+
 .header-content {
   margin-bottom: 20px;
 }
@@ -232,43 +216,16 @@ a:active {
 }
 
 .search-filters li {
-  min-width: fit-content;
-  height: fit-content;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-items: space-between;
   margin-left: 10px;
-}
-.search-filters i {
-  background-color: #deebff;
-  color: #0065fc;
-  border-radius: 25px;
-  top: 50%;
-  left: 25px;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  /* a revoir*/
-  transform: translate(-50%, -50%);
-  /* a revoir*/
-  line-height: 15px;
-}
-
-.search-filters button {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  padding: 25px 10px 25px 70px;
+  padding: 9px 9px 9px 0;
   border: 1px solid #f2f2f2;
   border-radius: 25px;
   height: 30px;
-  width: fit-content;
   margin-left: 25px;
   font-weight: 600;
   font-size: 18px;
@@ -276,15 +233,24 @@ a:active {
   cursor: pointer;
 }
 
-.search-filters button:hover {
+.search-filters li:hover {
   color: #0065fc;
   background-color: #f2f2f2;
 }
-.search-filters button:focus {
+.search-filters i {
+  background-color: #deebff;
   color: #0065fc;
-  /* border: 1px solid #0065FC; */
-  background-color: #f2f2f2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;
+  margin-right: 10px;
 }
+
+
 /*--------------INFO---------------------------*/
 
 .info-logements small {
@@ -310,14 +276,14 @@ a:active {
 
 #accomodation {
   display: flex;
-
+  flex-direction: row;
   align-items: flex-start;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 #accomodation a {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  margin: 10px;
 }
 /*pourquoi pas besoin de margin sur les liens de most-pop?
 */
@@ -325,6 +291,11 @@ a:active {
   display: flex;
   flex-direction: row;
 }
+
+.clickable-card {
+  margin: 20px;
+}
+
 .accomodation-by-rating-info
 {
   padding: 10px;
@@ -334,7 +305,6 @@ a:active {
 .town-accomodation {
   display: flex;
   flex-direction: column;
-
 }
 .town-accomodation,
 aside,
@@ -344,7 +314,6 @@ footer {
 .town-accomodation,
 aside {
   border-radius: 25px;
-  margin-right: 40px;
   padding: 30px;
 }
 
@@ -359,7 +328,6 @@ aside {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
   padding: 4px;
-  margin: 20px;
 }
 
 .accomodation-by-rating img {
