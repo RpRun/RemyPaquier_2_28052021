@@ -402,16 +402,18 @@ aside {
 
 .activities-by-town {
   display: flex;
-  justify-content: space-between; /*ne fonctionne pas*/
+  justify-content: space-between;
   width: 100%;
-  /*align-items: stretch;*/
+  height: 400px;
+  
 }
 .left,
 .right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 45%;
+  justify-content: space-around;
+  align-items: stretch;
+  
 }
 .double-left,
 .double-right {
@@ -430,7 +432,8 @@ aside {
 }
 
 .view-card h3 {
-  padding: 20px;
+  padding: 5px;
+  margin-left: 10px;
 }
 
 .higher {
@@ -439,17 +442,17 @@ aside {
 }
 
 .half {
-  width: 300px;
-  height: 210px;
+  width: 370px;
+  height: 190px;
 }
 .little-wide {
-  width: 300px;
-  height: 180px;
+  width: 370px;
+  height: 160px;
 }
 
 .third {
-  width: 300px;
-  height: 200px;
+  width: 370px;
+  height: 170px;
 }
 .view-card img {
   height: 80%;
