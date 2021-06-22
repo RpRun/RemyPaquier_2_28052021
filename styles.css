@@ -15,13 +15,17 @@ body {
   height: 100vh;
 }
 
-/*margin provisoire*/
+
 header,
-main,
-footer {
+main, .foot-page
+ {
   max-width: 1600px;
   margin: 0 auto;
-
+}
+footer
+{
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .header-content {
@@ -290,6 +294,7 @@ a:active {
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .clickable-card {
@@ -388,84 +393,22 @@ aside {
 
 /*--------------ACTIVITIES---------------------------*/
 #activities 
-  /*flex pas utile pour l instant?!pas ici--> voir .activities-by-town
+{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  
+  
   flex-wrap: wrap;
-  */
-  /*dimensions a revoir 
+}
+
   
-  max-width: 100vh;
-  min-width: 900px;
-}
 
-.activities-by-town {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 400px;
-  
-}
-.left,
-.right {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  
-}
-.double-left,
-.double-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.activities-by-town img {
-  object-fit: cover;
-
-  border-radius: 25px 25px 0 0;
-}
-.view-card {
-  box-shadow: 2px 2px 2px 1px #d3d3d3;
-  border-radius: 25px 25px;
-}
-
-.view-card h3 {
-  padding: 5px;
-  margin-left: 10px;
-}
-
-.higher {
-  width: 45%;
-  height: 100%;
-}
-
-.half {
-  width: 370px;
-  height: 190px;
-}
-.little-wide {
-  width: 370px;
-  height: 160px;
-}
-
-.third {
-  width: 370px;
-  height: 170px;
-}
-.view-card img {
-  height: 80%;
-  width: 100%;
-}
-*/
-
-
+ 
 
 .activities-by-town
  {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   
   
@@ -473,7 +416,8 @@ aside {
 .left, .right {
   display: flex;
   justify-content: space-between;
-  width: 45%;
+  width: 48%;
+  flex-wrap: wrap;
   
   
   
@@ -495,7 +439,7 @@ aside {
 .view-card {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   border-radius: 25px 25px;
-  width: 350px;
+  width: 360px;
   
   display: flex;
   flex-direction: column;
@@ -505,15 +449,15 @@ aside {
   padding: 20px;
 }
 
-.higher {
+.higher, .double-left, .double-right {
   
-  height: 600px;
+  height: 560px;
   
   
 }
 .view-card img
 {
-  height: 80%;
+  height: 75%;
   object-fit: cover;
 }
 .higher img
@@ -524,12 +468,12 @@ aside {
 
 .half {
  
-  height:230px;
+  height:270px;
 }
 
 .little-wide
 {
-  height: 230px;
+  height: 200px;
 }
 
 .third {
@@ -553,7 +497,7 @@ footer {
 .foot-page {
   display: flex;
   flex-direction: row;
-
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 .footer-ul {
