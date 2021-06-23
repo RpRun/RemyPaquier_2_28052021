@@ -277,6 +277,11 @@ a:active {
 }
 
 /*--------------MAIN---------------------------*/
+aside
+{
+  margin-left: 36px;
+  width: 25%;
+}
 
 #accomodation {
   display: flex;
@@ -395,52 +400,35 @@ aside {
 #activities 
 {
   display: flex;
-  
-  
   flex-wrap: wrap;
 }
-
-  
-
- 
-
 .activities-by-town
  {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  
-  
+  width: 100%; 
 }
 .left, .right {
   display: flex;
   justify-content: space-between;
   width: 48%;
-  flex-wrap: wrap;
-  
-  
-  
+  flex-wrap: wrap;  
 }
 .double-left, .double-right
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  
-
-  
+  justify-content: space-between; 
 }
-.activities-by-town img {
-  
-
+.view-card img {
   border-radius: 25px 25px 0 0;
+  object-fit: cover;
 }
 .view-card {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   border-radius: 25px 25px;
-  width: 360px;
-  
+  width: 355px;
   display: flex;
   flex-direction: column;
 }
@@ -449,36 +437,52 @@ aside {
   padding: 20px;
 }
 
-.higher, .double-left, .double-right {
-  
-  height: 560px;
-  
-  
-}
-.view-card img
+.higher, .double-left, .double-right
 {
-  height: 75%;
-  object-fit: cover;
+  height: 560px;
 }
+
 .higher img
 {
-  height: 90%;
+  height: 500px;
 }
 
-
 .half {
- 
-  height:270px;
+ height: 315px;
+}
+.half img
+{
+  height: 260px; ;
+}
+.almost-half
+{
+  height: 245px;
+}
+.almost-half img
+{
+  height: 190px;
 }
 
 .little-wide
 {
   height: 200px;
 }
+.little-wide img
+{
+  height: 140px;
+}
 
 .third {
   
-  height: 250px;
+  height: 240px;
+}
+.third img
+{
+  height: 180px;
+}
+.view-card h3
+{
+  height: 20px;
 }
 
 
