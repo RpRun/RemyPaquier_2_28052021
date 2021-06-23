@@ -279,7 +279,7 @@ a:active {
 /*--------------MAIN---------------------------*/
 aside
 {
-  margin-left: 36px;
+  
   width: 25%;
 }
 
@@ -287,19 +287,21 @@ aside
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  
 }
 #accomodation a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-/*pourquoi pas besoin de margin sur les liens de most-pop?
-*/
+
+
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+ 
 }
 
 .clickable-card {
@@ -313,8 +315,9 @@ aside
 
 
 .town-accomodation {
-  display: flex;
-  flex-direction: column;
+  
+  width: 60%;
+  
 }
 .town-accomodation,
 aside,
@@ -324,14 +327,17 @@ footer {
 .town-accomodation,
 aside {
   border-radius: 25px;
-  padding: 30px;
+  padding: 50px;
+  height: 596px;
+}
+.display-more
+{
+  position: relative;
+  top: 30px;
+  left: 0px;
 }
 
-#activities {
-  padding: 15px 0;
-  margin-top: 20px;
-  height: 660px;
-}
+
 /*--------------CARDS-ACCOMODATION---------------------------*/
 .card {
   border-radius: 25px;
@@ -351,9 +357,7 @@ aside {
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
-  min-width: 270px;
-  max-width: 300px;
-  min-height: 150px;
+  width: 272px;
   
 }
 .most-affordable {
@@ -373,7 +377,7 @@ aside {
 .fa-chart-line {
   float: right;
   vertical-align: top;
-  margin-right: 20px;
+  
 }
 
 .most-pop img {
@@ -401,6 +405,16 @@ aside {
 {
   display: flex;
   flex-wrap: wrap;
+  height: 600px;
+  padding: 15px 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  
+}
+
+  
+#activities h2{
+  margin-bottom: 30px;
 }
 .activities-by-town
  {
@@ -448,42 +462,44 @@ aside {
 }
 
 .half {
- height: 315px;
+ height: 293px;
 }
 .half img
 {
-  height: 260px; ;
+  height: 231px;
 }
 .almost-half
 {
-  height: 245px;
+  height: 259px;
 }
 .almost-half img
 {
-  height: 190px;
+  height: 203px;
 }
 
 .little-wide
 {
-  height: 200px;
+  height: 214px;
 }
 .little-wide img
 {
-  height: 140px;
+  height: 155px;
 }
 
 .third {
-  
-  height: 240px;
+  height: 245px;
 }
 .third img
 {
-  height: 180px;
+  height: 188px;
 }
 .view-card h3
 {
   height: 20px;
 }
+
+
+
 
 
 
