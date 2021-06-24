@@ -30,6 +30,7 @@ footer
 
 .header-content {
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 .title {
   margin-bottom: 20px;
@@ -221,7 +222,6 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-items: space-between;
   margin-left: 10px;
   padding: 9px 9px 9px 0;
   border: 1px solid #f2f2f2;
@@ -335,6 +335,7 @@ aside {
 }
 
 
+
 /*--------------CARDS-ACCOMODATION---------------------------*/
 .card {
   border-radius: 25px;
@@ -360,12 +361,16 @@ aside {
 .most-affordable {
   font-weight: 900;
 }
+.most-pop
+{
+  height: 600px;
+}
 .most-pop .card {
   display: flex;
   flex-direction: row;
 
   width: 400px;
-  height: 150px;
+  height: 170px;
   
   justify-content: space-between;
   align-items: center;
@@ -379,17 +384,26 @@ aside {
 
 .most-pop img {
   object-fit: cover;
-  height: 150px;
+  height: 170px;
   width: 150px;
 
   border-radius: 25px 0 0 25px;
 }
+/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
+
 .accomodation-info {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  height: 140px;
 }
-
+/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
+/*attention bricolage: */
+.accomodation-info .rating
+{
+  margin-top: 35px;
+}
+/*attention bricolage */
 .rating .fa-star {
   color: #f2f2f2;
 }
@@ -432,16 +446,17 @@ aside {
   flex-direction: column;
   justify-content: space-between; 
 }
-.view-card img {
-  border-radius: 25px 25px 0 0;
-  object-fit: cover;
-}
+
 .view-card {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   border-radius: 25px 25px;
   width: 355px;
   display: flex;
   flex-direction: column;
+}
+.view-card img {
+  border-radius: 25px 25px 0 0;
+  object-fit: cover;
 }
 .view-card h3
 {
