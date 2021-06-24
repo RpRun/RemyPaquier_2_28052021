@@ -15,43 +15,30 @@ body {
   height: 100vh;
 }
 
-
 header,
-main, .foot-page
- {
+main,
+.foot-page {
   max-width: 1600px;
   margin: 0 auto;
 }
-footer
-{
+
+footer {
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1680px;
 }
 
-.header-content {
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-.title {
-  margin-bottom: 20px;
-}
-.search-filters,
-.seek-by-town {
-  margin-bottom: 30px;
-}
+
 
 h1 {
   font-weight: 800;
   font-size: 22px;
 }
+
 h2,
 h3 {
   font-weight: 700;
 }
-.town-accomodation h2,
-.display-more {
-  margin-left: 20px;
-}
+
 
 p {
   font-weight: 500;
@@ -74,23 +61,38 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
+
+.header-content {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.search-filters,
+.seek-by-town {
+  margin-bottom: 30px;
+}
+
 /*a tester pour etendre zone clickable sur le logo
-a .logo
-{
-       
-        display: inline-block;     
-        position: relative;    
-        z-index: 1;     
-        padding: 2em;     
-        margin: -2em;   
-        
-        Display: inline-block is required so that margins and padding can be set
+Display: inline-block is required so that margins and padding can be set
 Position needs to be relative so that...
 z-index can be used to make the clickable area stay on top of any text that follows.
 The padding increases the area that can be clicked
 The negative margin keeps the flow of surrounding text as it should be (beware of over lapping links)
-}
 */
+a .logo {
+
+  display: inline-block;
+  /*position: relative; non sinon prends toute la largeur */
+  z-index: 1;
+  padding: 2em;
+  margin: -2em;
+
+}
+
 
 .header-nav {
   display: flex;
@@ -132,6 +134,7 @@ The negative margin keeps the flow of surrounding text as it should be (beware o
 a:visited {
   color: #000000;
 }
+
 a:active {
   background-color: #f2f2f2;
 }
@@ -141,14 +144,17 @@ a:active {
   padding: 30px;
   border-top: solid#0065FC;
 }
+
 .footer-content a {
   text-transform: none;
   text-decoration: none;
   background-color: #f2f2f2;
 }
+
 .footer-content a:active {
   background-color: #fff;
 }
+
 .display-more,
 .display-more a:active {
   background-color: #f2f2f2;
@@ -159,9 +165,9 @@ a:active {
 /*--------------SEARCHBAR---------------------------*/
 
 
-#seek, .town-search label
-{
-    cursor: pointer;
+#seek,
+.town-search label {
+  cursor: pointer;
 }
 
 .header-content {
@@ -186,6 +192,7 @@ a:active {
   width: 18px;
   padding: 3px 1px 3px 3px;
 }
+
 #town,
 #seek,
 .seek-by-town i {
@@ -204,6 +211,7 @@ a:active {
   color: #ffff;
   border-radius: 0 8px 8px 0;
 }
+
 /*--------------FILTERS---------------------------*/
 
 .search-filters {
@@ -238,6 +246,7 @@ a:active {
   color: #0065fc;
   background-color: #f2f2f2;
 }
+
 .search-filters i {
   background-color: #deebff;
   color: #0065fc;
@@ -246,7 +255,7 @@ a:active {
   height: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;      
+  align-items: center;
   justify-content: center;
   margin-right: 10px;
 }
@@ -274,9 +283,8 @@ a:active {
 }
 
 /*--------------MAIN---------------------------*/
-aside
-{
-  
+aside {
+
   width: 25%;
 }
 
@@ -286,9 +294,10 @@ aside
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
 }
-.clickable-card{
+
+.clickable-card {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
@@ -298,40 +307,47 @@ aside
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
- 
+
 }
 
 #accomodation .clickable-card {
   margin: 20px;
 }
 
-.accomodation-by-rating-info
-{
+.accomodation-by-rating-info {
   padding: 10px;
 }
 
 
 .town-accomodation {
-  
+
   width: 60%;
-  
+
 }
+
 .town-accomodation,
 aside,
 footer {
   background-color: #f2f2f2;
 }
+
 .town-accomodation,
 aside {
   border-radius: 25px;
   padding: 50px;
   height: 596px;
 }
-.display-more
-{
+
+.display-more {
   position: relative;
+  /*absolute quelque part ou ok comme ça?*/
   top: 30px;
   left: 0px;
+}
+
+.town-accomodation h2,
+.display-more {
+  margin-left: 20px;
 }
 
 
@@ -352,43 +368,47 @@ aside {
 
   border-radius: 25px 25px 0 0;
 }
+
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
   width: 272px;
-  
+
 }
+
 .most-affordable {
   font-weight: 900;
 }
-.most-pop
-{
+
+.most-pop {
   height: 600px;
 }
+
 .most-pop .card {
   display: flex;
   flex-direction: row;
 
   width: 400px;
   height: 170px;
-  
+
   justify-content: space-between;
   align-items: center;
 }
+
 /*ico dans h2 correct?*/
 .fa-chart-line {
   float: right;
   vertical-align: top;
-  
+
 }
 
 .most-pop img {
   object-fit: cover;
   height: 170px;
   width: 150px;
-
   border-radius: 25px 0 0 25px;
 }
+
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 
 .accomodation-info {
@@ -397,54 +417,57 @@ aside {
   padding: 20px;
   height: 140px;
 }
+
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 /*attention bricolage: */
-.accomodation-info .rating
-{
+.accomodation-info .rating {
   margin-top: 35px;
 }
-/*attention bricolage */
+
+/* bricolage??? */
 .rating .fa-star {
   color: #f2f2f2;
 }
+
 .rating .blue {
   color: #0065fc;
 }
 
 /*--------------ACTIVITIES---------------------------*/
-#activities 
-{
+#activities {
   display: flex;
   flex-wrap: wrap;
   height: 600px;
   padding: 15px 0;
   margin-top: 40px;
   margin-bottom: 40px;
-  
+
 }
 
-  
-#activities h2{
+#activities h2 {
   margin-bottom: 30px;
 }
-.activities-by-town
- {
+
+.activities-by-town {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%; 
+  width: 100%;
 }
-.left, .right {
+
+.left,
+.right {
   display: flex;
   justify-content: space-between;
   width: 48%;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
-.double-left, .double-right
-{
+
+.double-left,
+.double-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .view-card {
@@ -454,71 +477,57 @@ aside {
   display: flex;
   flex-direction: column;
 }
+
 .view-card img {
   border-radius: 25px 25px 0 0;
   object-fit: cover;
 }
-.view-card h3
-{
+
+.view-card h3 {
   padding: 20px;
 }
 
-.higher, .double-left, .double-right
-{
+.higher,
+.double-left,
+.double-right {
   height: 560px;
 }
 
-.higher img
-{
+.higher img {
   height: 500px;
 }
 
 .half {
- height: 293px;
+  height: 293px;
 }
-.half img
-{
+
+.half img {
   height: 231px;
 }
-.almost-half
-{
+
+.almost-half {
   height: 259px;
 }
-.almost-half img
-{
+
+.almost-half img {
   height: 203px;
 }
 
-.little-wide
-{
+.little-wide {
   height: 214px;
 }
-.little-wide img
-{
+
+.little-wide img {
   height: 155px;
 }
 
 .third {
   height: 245px;
 }
-.third img
-{
+
+.third img {
   height: 188px;
 }
-.view-card h3
-{
-  height: 20px;
-}
-
-
-
-
-
-
-
-
-
-
 
 /*--------------FOOTER---------------------------*/
 footer {
@@ -530,28 +539,27 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
 }
+
 .footer-ul {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-
   padding-top: 20px;
 }
+
 .footer-ul li {
-  
-  margin: 0px;
+
   padding-top: 10px;
-  
-  width: max-content;
+
 }
+
 h4 {
   font-weight: 900;
 }
+
 .footer-content {
   margin: 15px 250px 15px 15px;
-  /*a modifier margin-right...flex?*/
+  /*a modifier margin-right?...flex?*/
 }
 
 /*--------------responsive design---------------------------*/
@@ -565,16 +573,20 @@ h4 {
     flex-wrap: wrap;
     flex-direction: column;
   }
+
   .register {
     order: 2;
   }
+
   .logo {
     order: 1;
     position: relative;
   }
+
   .nav-accomodations {
     order: 3;
   }
+
   .nav-activities {
     order: 4;
   }
@@ -586,9 +598,7 @@ h4 {
   footer h2 {
     margin-top: 40px;
   }
-  p h2 {
-    margin-top: 20px;
-  }
+
   #activities,
   .activities-by-town {
     flex-direction: column;
@@ -604,4 +614,3 @@ h4 {
     align-content: space-between;
   }
 }
-
