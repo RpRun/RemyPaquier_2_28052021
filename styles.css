@@ -51,6 +51,19 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  height: 16vh;
+}
+#accomodation
+{
+  height: 27vh;
+}
+#activities
+{
+  height: 26vh;
+}
+footer
+{
+  height: 10vh;
 }
 
 .logo {
@@ -99,8 +112,8 @@ a .logo {
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 15px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 .header-nav ul {
@@ -335,7 +348,7 @@ footer {
 aside {
   border-radius: 25px;
   padding: 50px;
-  height: 596px;
+  height: 88%;
 }
 
 .display-more {
@@ -437,15 +450,14 @@ aside {
 #activities {
   display: flex;
   flex-wrap: wrap;
-  height: 600px;
-  padding: 15px 0;
-  margin-top: 40px;
-  margin-bottom: 40px;
-
+  /* height: 600px; */
+  /* padding: 15px 0; */
+  margin-top: 67px;
+  /* margin-bottom: 40px; */
 }
 
 #activities h2 {
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 
 .activities-by-town {
@@ -453,6 +465,7 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+  HEIGHT: 100%;
 }
 
 .left,
