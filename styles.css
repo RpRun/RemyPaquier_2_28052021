@@ -317,15 +317,18 @@ aside {
 }
 
 
+
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 43%;
+  width: 60%;
 }
 
 #accomodation .clickable-card {
   margin: 20px;
+  width: 30%;
 }
 
 .accomodation-by-rating-info {
@@ -378,7 +381,7 @@ aside {
   max-width: 100%;
   object-fit: cover;
   height: 120px;
-  width: 400px;
+  width: 100%;
 
   border-radius: 25px 25px 0 0;
 }
@@ -386,8 +389,7 @@ aside {
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
-  width: 272px;
-
+  width: 100%;
 }
 
 .most-affordable {
