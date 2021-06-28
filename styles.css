@@ -27,7 +27,7 @@ main,
 
 footer {
   margin: 0 auto;
-  max-width: 1680px;
+  
 }
 
 
@@ -62,11 +62,11 @@ header {
 }
 
 #activities {
-  height: 27vh;
+  min-height: 27vh;
 }
 
 footer {
-  height: 11vh;
+  min-height: 11vh;
 }
 
 .logo {
@@ -368,6 +368,7 @@ aside {
 .town-accomodation {
 
   width: 60%;
+  height: 100%;
 
 }
 
@@ -381,7 +382,7 @@ footer {
 aside {
   border-radius: 25px;
   padding: 3%;
-  height: 88%;
+  
 }
 
 .display-more {
@@ -493,7 +494,7 @@ aside {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  HEIGHT: 100%;
+  
 }
 
 .left,
@@ -574,7 +575,9 @@ aside {
 /*--------------FOOTER---------------------------*/
 footer {
   padding-top: 1%;
+  margin-top: 2%;
   height: 13%;
+  width: 100%;
 }
 
 .foot-page {
