@@ -12,15 +12,17 @@ body {
   font-size: 20px;
   font-weight: normal;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+
 }
 
 header,
 main,
 .foot-page {
   max-width: 1600px;
-  min-width: 500px;
+  min-width: 400px;
   margin: 0 auto;
+  min-height: fit-content;
 }
 
 footer {
@@ -54,16 +56,16 @@ header {
   position: relative;
   height: 23vh;
 }
-#accomodation
-{
-  height: 33vh;
+
+#accomodation {
+  min-height: 33vh;
 }
-#activities
-{
+
+#activities {
   height: 27vh;
 }
-footer
-{
+
+footer {
   height: 11vh;
 }
 
@@ -272,6 +274,16 @@ a:active {
   align-items: center;
   justify-content: center;
   margin-right: 10px;
+  -webkit-filter: grayscale(0) blur(0px);
+  filter: grayscale(0) blur(0px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search-filters li:hover i {
+
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 
@@ -299,7 +311,7 @@ a:active {
 /*--------------MAIN---------------------------*/
 aside {
 
-  width: 25%;
+  min-width: 25%;
 }
 
 #accomodation {
@@ -316,19 +328,36 @@ aside {
   color: rgb(0, 0, 0);
 }
 
+.card,
+.view-card {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.card:hover,
+.view-card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+
 
 
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  min-width: none;
   height: 43%;
-  width: 60%;
+  max-width: 93%;
+  justify-content: space-between;
 }
 
 #accomodation .clickable-card {
   margin: 20px;
-  width: 30%;
+  width: 24%;
 }
 
 .accomodation-by-rating-info {
@@ -389,23 +418,20 @@ aside {
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 272px;
 }
 
 .most-affordable {
   font-weight: 900;
 }
 
-.most-pop
-{
-  height: 100%;
-}
+
 
 .most-pop .card {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 29%;
+  width: 400px;
+  height: 170px;
   justify-content: space-between;
   align-items: center;
 }
@@ -579,7 +605,7 @@ h4 {
 }
 
 /*--------------responsive design---------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1240px) {
   .search-filters ul {
     flex-wrap: wrap;
   }
@@ -610,9 +636,35 @@ h4 {
   aside {
     order: -1;
   }
+  .town-accomodation
+  {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    margin: auto;
+    
+  }
+
+  aside,
+  .accomodation-by-rating,
+  header,
+  .activities-by-town {
+    width: 70%;
+    margin: auto;
+    align-content: space-around;
+
+  }
 
   footer h2 {
     margin-top: 40px;
+  }
+
+  #accomodation {
+    flex-direction: column;
+  }
+
+  .accomodation-by-rating {
+    flex-direction: column;
   }
 
   #activities,
