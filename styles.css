@@ -439,6 +439,7 @@ aside {
   height: 170px;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 /*ico dans h2 correct?*/
@@ -621,11 +622,7 @@ h4 {
     flex-wrap: wrap;
   }
 
-  .foot-page {
-    /* align-items: center; */
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+  
 
   .register {
     order: 2;
@@ -647,43 +644,38 @@ h4 {
   aside {
     order: -1;
   }
-  .town-accomodation
+  .accomodation-by-rating, .most-pop,  .activities-by-town
   {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    margin: auto;
-    min-width: 300px;
     
+    
+    align-items: flex-start;
   }
 
-  aside,
-  .accomodation-by-rating,
-  header,
-  .activities-by-town {
-    width: 70%;
-    margin: auto;
+  header, aside, #accomodation,  #activities
+   {
+    
+            margin: auto;
+            min-width: 500px;
+                   
+  }
+  #accomodation, .activities-by-town
+  {
+    display: flex;
+    flex-direction: column;
     align-content: space-around;
-
+    
+    
+    align-items: flex-start;
   }
 
   footer h2 {
     margin-top: 40px;
   }
 
-  #accomodation {
-    flex-direction: column;
-  }
-
-  .accomodation-by-rating {
-    flex-direction: column;
-  }
-
-  #activities,
-  .activities-by-town {
-    flex-direction: column;
-  }
-
+ 
   .left,
   .right {
     flex-direction: column;
@@ -692,8 +684,10 @@ h4 {
     align-items: center;
   }
 
-  .footer-page {
+  .foot-page {
+    
+    flex-wrap: wrap;
     flex-direction: column;
-    align-content: space-between;
   }
+
 }
