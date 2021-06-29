@@ -445,16 +445,7 @@ aside {
 
 
 
-.most-pop .card {
-  display: flex;
-  flex-direction: row;
-  width: 458px;
-  height: 254px;
-  flex-wrap: nowrap;
-  /* flex-grow: 2; */
-  align-items: center;
-  justify-content: space-around;
-}
+
 
 /*ico dans h2 correct?*/
 .fa-chart-line {
@@ -466,7 +457,7 @@ aside {
 .most-pop img {
   object-fit: cover;
   height: 100%;
-  width: 54%;
+  width: 42%;
   border-radius: 25px 0 0 25px;
 }
 
@@ -677,6 +668,15 @@ h4 {
     justify-content: space-around;
     /* flex-grow: 2; */
   }
+  .most-pop .card {
+    display: flex;
+    flex-direction: row;
+    width: 306px;
+    height: 245px;
+    /* flex-wrap: nowrap; */
+    /* align-items: center; */
+    justify-content: space-around;
+  }
 
   header, aside, #accomodation,  #activities
    {
@@ -691,7 +691,11 @@ min-width: 500px;
     width: 245px;
     height: 210px;
   }
-
+aside
+{
+  max-height: 25vh;
+  
+}
   aside h2
   {
     width: 25%;
