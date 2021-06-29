@@ -22,7 +22,8 @@ main,
   max-width: 1600px;
   min-width: 400px;
   margin: 0 auto;
-  min-height: fit-content;
+  
+  
 }
 
 footer {
@@ -55,15 +56,13 @@ header {
   flex-direction: column;
   position: relative;
   min-height: 23vh;
+
 }
 
 #accomodation {
   min-height: 33vh;
 }
-.town-accomodation
-{
-  min-width: 665px;
-}
+
 
 #activities {
   min-height: 27vh;
@@ -644,13 +643,11 @@ h4 {
   aside {
     order: -1;
   }
-  .accomodation-by-rating, .most-pop,  .activities-by-town
+  .most-pop
   {
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    
-    
     align-items: flex-start;
   }
 
@@ -661,15 +658,13 @@ h4 {
             min-width: 500px;
                    
   }
-  #accomodation, .activities-by-town
+  
+  .accomodation-by-rating .card
   {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    
-    
-    align-items: flex-start;
+    width: 400px;
+    height: 210px;
   }
+
 
   footer h2 {
     margin-top: 40px;
@@ -679,9 +674,26 @@ h4 {
   .left,
   .right {
     flex-direction: column;
-    width: 100%;
-    margin: auto;
+    width: 50%;
+    
     align-items: center;
+  }
+
+  .view-card
+  {
+   
+width: 400px;
+   
+height: 216px;
+  }
+
+  .view-card img
+  {
+    max-width: 100%;
+    object-fit: cover;
+    height: 155px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
   }
 
   .foot-page {
