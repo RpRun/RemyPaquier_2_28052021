@@ -142,12 +142,13 @@ a .logo {
   border: hidden;
 }
 
-.header-nav a {
+.header-nav a, h2 a {
   text-transform: none;
   text-decoration: none;
   display: flex;
   align-content: stretch;
   color: #000000;
+  justify-content: space-between;
 }
 
 a:visited {
@@ -354,13 +355,14 @@ aside {
   flex-wrap: wrap;
   min-width: none;
   height: 43%;
-  max-width: 93%;
+  width: 85%;
   justify-content: space-between;
+  align-content: center;
 }
 
 #accomodation .clickable-card {
   margin: 20px;
-  width: 24%;
+  /* width: 24%; */
 }
 
 .accomodation-by-rating-info {
@@ -370,9 +372,21 @@ aside {
 
 .town-accomodation {
 
-  width: 60%;
-  height: 100%;
+width: 90%;
 
+height: 100%;
+
+margin: auto;
+
+display: flex;
+
+flex-direction: column;
+
+flex-wrap: nowrap;
+
+justify-content: center;
+
+align-items: center;
 }
 
 .town-accomodation,
@@ -385,9 +399,7 @@ footer {
 aside {
   border-radius: 25px;
   padding: 3%;
-  
   height: 596px;
-  
 }
 
 .display-more {
@@ -436,11 +448,12 @@ aside {
 .most-pop .card {
   display: flex;
   flex-direction: row;
-  width: 400px;
-  height: 170px;
-  justify-content: space-between;
-  align-items: center;
+  width: 458px;
+  height: 254px;
   flex-wrap: nowrap;
+  /* flex-grow: 2; */
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*ico dans h2 correct?*/
@@ -453,7 +466,7 @@ aside {
 .most-pop img {
   object-fit: cover;
   height: 100%;
-  width: 38%;
+  width: 54%;
   border-radius: 25px 0 0 25px;
 }
 
@@ -469,7 +482,7 @@ aside {
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 /*attention bricolage: */
 .accomodation-info .rating {
-  margin-top: 35px;
+  margin-top: 32px;
 }
 
 /* bricolage??? */
@@ -491,6 +504,7 @@ aside {
   /* margin-bottom: 40px; */
   align-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 #activities h2 {
@@ -501,8 +515,8 @@ aside {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
-  
+  width: 85%;
+  /* margin: 2%; */
 }
 
 .left,
@@ -518,7 +532,7 @@ aside {
 .double-right {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .view-card {
@@ -592,8 +606,8 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: flex-start;
   align-content: space-around;
+  justify-content: center;
 }
 
 .footer-ul {
@@ -613,7 +627,7 @@ h4 {
 }
 
 .footer-content {
-  margin: 15px 250px 15px 15px;
+  margin: 15px 89px 15px 15px;
   /*a modifier margin-right?...flex?*/
 }
 
@@ -644,30 +658,47 @@ h4 {
 
   aside {
     order: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* align-items: center; */
+    justify-content: space-between;
+    background-color:#fff;
   }
   .most-pop
   {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-content: space-around;
+    flex-wrap: wrap-reverse;
+    width: 100%;
     align-items: flex-start;
+    justify-content: space-around;
+    /* flex-grow: 2; */
   }
 
   header, aside, #accomodation,  #activities
    {
     
-            margin: auto;
-            min-width: 500px;
-                   
+margin: 1%;
+    
+min-width: 500px;
   }
   
   .accomodation-by-rating .card
   {
-    width: 400px;
+    width: 245px;
     height: 210px;
   }
 
-
+  aside h2
+  {
+    width: 25%;
+    margin: auto;
+    background-color: cornflowerblue;
+    border: 1px solid #f2f2f2;
+  }
   footer h2 {
     margin-top: 40px;
   }
@@ -677,8 +708,8 @@ h4 {
   .right {
     flex-direction: column;
     width: 50%;
-    
     align-items: center;
+    height: 63vh;
   }
 
   .view-card
@@ -700,8 +731,9 @@ height: 216px;
 
   .foot-page {
     
-    flex-wrap: wrap;
-    flex-direction: column;
+flex-wrap: wrap;
+    
+/* flex-direction: column; */
   }
 
 }
