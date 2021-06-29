@@ -687,6 +687,9 @@ h4 {
   .left,
   .right {
     flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
   }
 
   .footer-page {
