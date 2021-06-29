@@ -59,15 +59,6 @@ header {
 
 }
 
-#accomodation {
-  min-height: 33vh;
-}
-
-
-#activities {
-  min-height: 27vh;
-}
-
 footer {
   min-height: 11vh;
 }
@@ -354,8 +345,7 @@ aside {
   flex-direction: row;
   flex-wrap: wrap;
   min-width: none;
-  height: 43%;
-  width: 85%;
+ 
   justify-content: space-between;
   align-content: center;
 }
@@ -693,7 +683,8 @@ min-width: 500px;
   }
 aside
 {
-  max-height: 25vh;
+  height: 330px;
+  max-height: 600px;
   
 }
   aside h2
