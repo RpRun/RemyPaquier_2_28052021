@@ -318,7 +318,6 @@ aside {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .clickable-card {
@@ -391,8 +390,7 @@ footer {
 .town-accomodation,#activities,
 aside {
   border-radius: 25px;
-  padding: 3%;
-  
+  padding: 50px;
 }
 
 .display-more {
@@ -404,7 +402,7 @@ aside {
 
 .town-accomodation h2,
 .display-more {
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 
@@ -452,9 +450,9 @@ aside {
 
 .most-pop img {
   object-fit: cover;
-  height: 100%;
-  width: 42%;
-  border-radius: 25px 0 0 25px;
+  height: 50%;
+  width: 100%;
+  border-radius: 25px 25px 0 0;
 }
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
@@ -469,7 +467,7 @@ aside {
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 /*attention bricolage: */
 .accomodation-info .rating {
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 
 /* bricolage??? */
@@ -669,12 +667,11 @@ h4 {
   }
   .most-pop .card {
     display: flex;
-    flex-direction: row;
-    width: 284px;
-    height: 218px;
+    flex-direction: column;
+    width: 260px;
+    height: 273px;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
   }
 
   
