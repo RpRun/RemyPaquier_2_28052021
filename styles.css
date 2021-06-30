@@ -344,14 +344,14 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-width: none;
- 
   justify-content: space-between;
   align-content: center;
+  height: 250px;
+  width: 88%;
 }
 
 #accomodation .clickable-card {
-  margin: 20px;
+  /* margin: 20px; */
   /* width: 24%; */
 }
 
@@ -362,7 +362,7 @@ aside {
 
 .town-accomodation {
 
-width: 90%;
+width: 100%;
 
 height: 100%;
 
@@ -385,11 +385,11 @@ footer {
   background-color: #f2f2f2;
 }
 
-.town-accomodation,
+.town-accomodation,#activities,
 aside {
   border-radius: 25px;
   padding: 3%;
-  height: 596px;
+  
 }
 
 .display-more {
@@ -427,6 +427,9 @@ aside {
   display: flex;
   flex-direction: column;
   width: 272px;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
 }
 
 .most-affordable {
@@ -481,11 +484,13 @@ aside {
   flex-wrap: wrap;
   /* height: 600px; */
   /* padding: 15px 0; */
-  margin-top: 4%;
+  /* margin-top: 4%; */
   /* margin-bottom: 40px; */
   align-content: center;
   align-items: center;
   justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 25px;
 }
 
 #activities h2 {
@@ -496,17 +501,18 @@ aside {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 85%;
+  width: 100%;
   /* margin: 2%; */
 }
 
 .left,
 .right {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 48%;
   flex-wrap: wrap;
   height: 100%;
+  align-content: space-around;
 }
 
 .double-left,
@@ -522,6 +528,7 @@ aside {
   width: 355px;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .view-card img {
@@ -607,10 +614,7 @@ h4 {
   font-weight: 900;
 }
 
-.footer-content {
-  margin: 15px 89px 15px 15px;
-  /*a modifier margin-right?...flex?*/
-}
+
 
 /*--------------responsive design---------------------------*/
 @media screen and (max-width: 1240px) {
@@ -639,64 +643,81 @@ h4 {
 
   aside {
     order: -1;
-    width: 100%;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* align-items: center; */
-    justify-content: space-between;
-    background-color:#fff;
+    align-items: center;
+    
+    height: 354px;
   }
+ 
   .most-pop
   {
     display: flex;
     flex-direction: row;
-    align-content: space-around;
-    flex-wrap: wrap-reverse;
-    width: 100%;
-    align-items: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-around;
+    /* background-color: #f2f2f2; */
     /* flex-grow: 2; */
+    width: 96%;
   }
   .most-pop .card {
     display: flex;
     flex-direction: row;
-    width: 306px;
-    height: 245px;
-    /* flex-wrap: nowrap; */
-    /* align-items: center; */
+    width: 284px;
+    height: 218px;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-around;
   }
 
-  header, aside, #accomodation,  #activities
-   {
-    
-margin: 1%;
-    
-min-width: 500px;
-  }
+  
+  
   
   .accomodation-by-rating .card
   {
     width: 245px;
     height: 210px;
   }
-aside
-{
-  height: 330px;
-  max-height: 600px;
-  
-}
+  header,aside, #activities, .town-accomodation
+  {
+    width: 900px;
+    margin-top: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
+
+
+
+
+
+  aside h2, #activities h2, #accomodation h2
+  {
+    width: 900px;
+    white-space: nowrap;
+    border: 3px solid #fff;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 1px #d3d3d3;
+    background-color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
   aside h2
   {
-    width: 25%;
-    margin: auto;
-    background-color: cornflowerblue;
-    border: 1px solid #f2f2f2;
+    display: flex;
+    justify-content: center;
   }
-  footer h2 {
-    margin-top: 40px;
-  }
+ .fa-chart-line 
+ {
+   margin-left: 30px;
+
+ }
 
  
   .left,
@@ -728,7 +749,12 @@ height: 216px;
     
 flex-wrap: wrap;
     
-/* flex-direction: column; */
+/* flex-direction: column; SUR MOBILE */
+  }
+
+  .footer-content {
+    margin: 15px 89px 15px 15px;
+    /*a modifier margin-right?...flex?*/
   }
 
 }
