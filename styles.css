@@ -691,7 +691,7 @@ h4 {
   .double-left,
   .double-right {
 
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   .foot-page {
@@ -739,15 +739,7 @@ h4 {
     height: 210px;
   }
 
-  .header-content,
-  aside,
-  #activities,
-  .town-accomodation {
-    width: 900px;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   header {
     width: 1000px;
@@ -780,6 +772,15 @@ h4 {
     background-color: #fff;
     padding: 10px;
     text-align: center;
+  }
+  .header-content,
+  aside,
+  #activities,
+  .town-accomodation {
+    width: 900px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   aside h2 {
@@ -836,7 +837,7 @@ h4 {
 }
 
 
-}
+
 
 
 
@@ -856,89 +857,127 @@ h4 {
 
 /*--------------responsive design MOBILE---------------------------*/
 
-@media screen and (max-width: 1080px) {
-  .search-filters ul {
-    flex-wrap: wrap;
-  }
+@media screen and (max-width: 1080px)
+ {
+            .search-filters ul {
+              flex-wrap: wrap;
+            }
 
 
 
-  .register {
-    order: 2;
-  }
+            .register {
+              order: 2;
+            }
 
-  .logo {
-    order: 1;
-    position: relative;
-  }
+            .logo {
+              order: 1;
+              position: relative;
+            }
 
-  .nav-accomodations {
-    order: 3;
-  }
+            .nav-accomodations {
+              order: 3;
+            }
 
-  .nav-activities {
-    order: 4;
-  }
+            .nav-activities {
+              order: 4;
+            }
 
-  aside {
-    order: -1;
-  }
+            aside {
+              order: -1;
+            }
 
-  .most-pop {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: flex-start;
-  }
+            .most-pop {
+              flex-wrap: wrap;
+              flex-direction: column;
+              align-content: space-around;
+              align-items: flex-start;
+            }
 
-  header,
-  aside,
-  #accomodation,
-  #activities {
+            header,
+            aside,
+            #accomodation,
+            #activities,.footer-content {
 
-    margin: auto;
-    min-width: 500px;
+              margin: auto;
+              min-width: 400px;
 
-  }
+            }
 
-  .accomodation-by-rating .card {
-    width: 400px;
-    height: 210px;
-  }
+            .accomodation-by-rating .card {
+              width: 400px;
+              height: 210px;
+            }
+            .town-accomodation {
+
+              width: 100%;
+          
+              height: 100%;
+          
+              margin: auto;
+          
+              display: flex;
+          
+              flex-direction: column;
+          
+              flex-wrap: wrap;
+          
+              justify-content: center;
+          
+              align-items: center;
+            }
+            .accomodation-by-rating {
+              display: flex;
+              flex-direction: column;
+              flex-wrap: wrap;
+              
+              height: 43%;
+              max-width: 93%;
+              justify-content: space-between;}
+
+              .activities-by-town {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                flex-direction: column;}
+
+            .left,
+            .right {
+              display: flex;
+              justify-content: center;
+              width: 48%;
+              flex-wrap: wrap;
+              height: 100%;
+              flex-direction: column;}
+
+            .view-card {
+
+              width: 400px;
+
+              height: 216px;
+            }
+
+            .view-card img {
+              max-width: 100%;
+              object-fit: cover;
+              height: 155px;
+              width: 100%;
+              border-radius: 25px 25px 0 0;
+            }
+
+            footer h2 {
+              margin-top: 40px;
+            }
 
 
-  footer h2 {
-    margin-top: 40px;
-  }
+            .foot-page {
 
-
-  .left,
-  .right {
-    flex-direction: column;
-    width: 50%;
-
-    align-items: center;
-  }
-
-  .view-card {
-
-    width: 400px;
-
-    height: 216px;
-  }
-
-  .view-card img {
-    max-width: 100%;
-    object-fit: cover;
-    height: 155px;
-    width: 100%;
-    border-radius: 25px 25px 0 0;
-  }
-
-  .foot-page {
-
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              align-content: flex-start;
+              justify-content: center;
+              
+            }
 
 }
