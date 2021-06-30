@@ -95,12 +95,15 @@ The negative margin keeps the flow of surrounding text as it should be (beware o
 */
 a .logo {
 
-  display: inline-block;
-  /*position: relative; non sinon prends toute la largeur */
-  z-index: 1;
-  padding: 2em;
-  margin: -2em;
+display: inline-block;
 
+/*position: relative; non sinon prends toute la largeur */
+
+z-index: 1;
+
+padding: 2em;
+
+margin: -2em;
 }
 
 
@@ -630,7 +633,7 @@ h4 {
 
   .logo {
     order: 1;
-    position: relative;
+    /* position: relative; */
   }
 
   .nav-accomodations {
