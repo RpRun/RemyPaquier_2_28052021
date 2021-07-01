@@ -22,8 +22,6 @@ main,
   max-width: 1600px;
   min-width: 400px;
   margin: 0 auto;
-
-
 }
 
 footer {
@@ -315,7 +313,6 @@ aside {
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .clickable-card {
@@ -346,13 +343,13 @@ aside {
   flex-wrap: wrap;
   min-width: none;
   height: 43%;
-  max-width: 93%;
+  /* max-width: 93%; */
   justify-content: space-between;
 }
 
-#accomodation .clickable-card {
-  margin: 20px;
-  width: 24%;
+aside .clickable-card {
+  /* margin: 20px; */
+  /* width: 24%; */
 }
 
 .accomodation-by-rating-info {
@@ -377,9 +374,7 @@ footer {
 aside {
   border-radius: 25px;
   padding: 3%;
-
   height: 596px;
-
 }
 
 .display-more {
@@ -476,17 +471,18 @@ aside {
 /*--------------ACTIVITIES---------------------------*/
 #activities {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   /* height: 600px; */
   /* padding: 15px 0; */
-  margin-top: 4%;
+  margin-top: 20px;
   /* margin-bottom: 40px; */
-  align-content: center;
-  align-items: center;
+  align-content: space-between;
+  /* align-items: center; */
+  flex-direction: column;
 }
 
-#activities h2 {
-  margin-bottom: 2%;
+#accomodation h2, aside h2, #activities h2 {
+  margin-bottom: 20px;
 }
 
 .activities-by-town {
@@ -611,13 +607,16 @@ h4 {
 }
 
 /*--------------responsive design TABLETTE---------------------------*/
-@media screen and (max-width: 1500px) {
+@media screen and (min-width:1080px) and (max-width: 1500px) {
   .accomodation-by-rating {
 
-    align-content: center;
-    height: 250px;
-    width: 88%;
-  }
+align-content: center;
+
+height: 250px;
+
+width: 100%;
+
+}
 
   .header-content {
     margin-bottom: 0;
@@ -715,11 +714,11 @@ h4 {
     flex-direction: row;
     align-content: center;
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     /* background-color: #f2f2f2; */
     /* flex-grow: 2; */
-    width: 96%;
+    width: 100%;
+    align-items: center;
   }
 
   .most-pop .card {
@@ -739,7 +738,7 @@ h4 {
     height: 210px;
   }
 
-  
+
 
   header {
     width: 1000px;
@@ -763,7 +762,7 @@ h4 {
   aside h2,
   #activities h2,
   #accomodation h2 {
-    width: 900px;
+    width: 100%;
     white-space: nowrap;
     border: 3px solid #fff;
     margin-bottom: 30px;
@@ -773,6 +772,7 @@ h4 {
     padding: 10px;
     text-align: center;
   }
+
   .header-content,
   aside,
   #activities,
@@ -857,127 +857,228 @@ h4 {
 
 /*--------------responsive design MOBILE---------------------------*/
 
-@media screen and (max-width: 1080px)
- {
-            .search-filters ul {
-              flex-wrap: wrap;
-            }
+@media screen and (max-width: 1080px) {
+  .search-filters ul {
+    flex-wrap: wrap;
+  }
 
 
 
-            .register {
-              order: 2;
-            }
+  .register {
+    order: 2;
+  }
 
-            .logo {
-              order: 1;
-              position: relative;
-            }
+  .logo {
+    order: 1;
+    position: relative;
+  }
 
-            .nav-accomodations {
-              order: 3;
-            }
+  .nav-accomodations {
+    order: 3;
+  }
 
-            .nav-activities {
-              order: 4;
-            }
+  .nav-activities {
+    order: 4;
+  }
 
-            aside {
-              order: -1;
-            }
+  aside {
+    order: -1;
+  }
 
-            .most-pop {
-              flex-wrap: wrap;
-              flex-direction: column;
-              align-content: space-around;
-              align-items: flex-start;
-            }
+  
+element.style {
+}
+.accomodation-info .rating {
+    margin-top: 10px;}
 
-            header,
-            aside,
-            #accomodation,
-            #activities,.footer-content {
+  .most-pop {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
 
-              margin: auto;
-              min-width: 400px;
+  header,
+  aside,
+  #accomodation,
+  #activities,
+  .footer-content {
 
-            }
+    margin: auto;
 
-            .accomodation-by-rating .card {
-              width: 400px;
-              height: 210px;
-            }
-            .town-accomodation {
+    width: 400px;
 
-              width: 100%;
-          
-              height: 100%;
-          
-              margin: auto;
-          
-              display: flex;
-          
-              flex-direction: column;
-          
-              flex-wrap: wrap;
-          
-              justify-content: center;
-          
-              align-items: center;
-            }
-            .accomodation-by-rating {
-              display: flex;
-              flex-direction: column;
-              flex-wrap: wrap;
-              
-              height: 43%;
-              max-width: 93%;
-              justify-content: space-between;}
+    display: flex;
 
-              .activities-by-town {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                width: 100%;
-                flex-direction: column;}
+    flex-direction: column;
 
-            .left,
-            .right {
-              display: flex;
-              justify-content: center;
-              width: 48%;
-              flex-wrap: wrap;
-              height: 100%;
-              flex-direction: column;}
+    flex-wrap: nowrap;
 
-            .view-card {
+    align-content: space-between;
 
-              width: 400px;
-
-              height: 216px;
-            }
-
-            .view-card img {
-              max-width: 100%;
-              object-fit: cover;
-              height: 155px;
-              width: 100%;
-              border-radius: 25px 25px 0 0;
-            }
-
-            footer h2 {
-              margin-top: 40px;
-            }
+    align-items: flex-start;
+  }
 
 
-            .foot-page {
+  .town-accomodation {
 
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              align-content: flex-start;
-              justify-content: center;
-              
-            }
+    width: 100%;
+
+    height: 100%;
+
+    /* margin: 2%; */
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+  }
+
+  .accomodation-by-rating {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* height: 50%; */
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  .activities-by-town {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: column;
+  }
+  aside
+  {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+  .double-left,
+  .double-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 490px;
+  }
+
+  .higher {
+    height: 300px;
+  }
+
+
+
+
+
+
+
+
+
+  .left,
+  .right {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .town-accomodation {
+    background-color: #fff;
+  }
+
+  .view-card,
+  .clickable-card,
+  .accomodation-by-rating .card {
+
+    width: 386px;
+
+    height: 222px;
+
+  }
+
+  .accomodation-by-rating .card img {
+
+    height: 55%;
+  }
+
+  
+  .clickable-card img {
+
+    object-fit: cover;
+
+    height: 155px;
+
+    width: 100%;
+
+    border-radius: 25px 25px 0 0;
+  }
+
+  footer h2 {
+    margin-top: 40px;
+  }
+  .town-accomodation h2, .display-more {
+    margin-left: 0px;
+}
+
+ 
+
+  .foot-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    align-content: flex-start;
+
+    height: 41vh;
+
+    padding-left: 11%;
+
+  }
+
+  .most-pop .card {
+    display: flex;
+    flex-direction: row;
+    width: 386px;
+    height: 170px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  /*ico dans h2 correct?*/
+  .fa-chart-line {
+    float: right;
+    vertical-align: top;
+  }
+  
+  .most-pop img {
+    object-fit: cover;
+    height: 100%;
+    width: 38%;
+    border-radius: 25px 0 0 25px;
+  }
+  .display-more,
+.display-more a:active {
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 }
