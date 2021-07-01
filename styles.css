@@ -334,23 +334,15 @@ aside {
   transform: scale(1.1);
 }
 
-
-
-
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-width: none;
   height: 43%;
-  /* max-width: 93%; */
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-aside .clickable-card {
-  /* margin: 20px; */
-  /* width: 24%; */
-}
+
 
 .accomodation-by-rating-info {
   padding: 10px;
@@ -388,6 +380,18 @@ aside {
 .display-more {
   margin-left: 20px;
 }
+
+
+.most-pop
+  {
+    display: flex;
+    flex-direction: column;
+    
+    height: 560px;
+    
+    justify-content: space-between;
+
+  }
 
 
 
@@ -477,7 +481,7 @@ aside {
   margin-top: 20px;
   /* margin-bottom: 40px; */
   align-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
 }
 
@@ -487,10 +491,9 @@ aside {
 
 .activities-by-town {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: 89%;
   flex-wrap: wrap;
-  width: 100%;
-
 }
 
 .left,
@@ -629,28 +632,27 @@ width: 100%;
 
   .town-accomodation {
 
-    width: 100%;
+width: 100%;
 
-    height: 100%;
+height: 100%;
 
-    margin: auto;
+margin: auto;
 
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
 
-    flex-wrap: nowrap;
+flex-wrap: nowrap;
 
-    justify-content: center;
+align-items: center;
 
-    align-items: center;
-  }
+}
 
   .town-accomodation,
   #activities,
   aside {
     border-radius: 25px;
-    padding: 50px;
+    /* padding: 50px; */
   }
 
   .accomodation-by-rating .card {
@@ -714,7 +716,7 @@ width: 100%;
     flex-direction: row;
     align-content: center;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* background-color: #f2f2f2; */
     /* flex-grow: 2; */
     width: 100%;
@@ -762,7 +764,7 @@ width: 100%;
   aside h2,
   #activities h2,
   #accomodation h2 {
-    width: 100%;
+    /* width: 100%; */
     white-space: nowrap;
     border: 3px solid #fff;
     margin-bottom: 30px;
@@ -777,7 +779,7 @@ width: 100%;
   aside,
   #activities,
   .town-accomodation {
-    width: 900px;
+    width: 100%;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -802,22 +804,22 @@ width: 100%;
   .left,
   .right {
     flex-direction: column;
-    width: 50%;
+    width: 44%;
     align-items: center;
-
   }
 
   .view-card {
 
-    width: 400px;
+width: 430px;
 
-    height: 216px;
-  }
+height: 242px;
+
+}
 
   .view-card img {
     max-width: 100%;
     object-fit: cover;
-    height: 155px;
+    height: 178px;
     width: 100%;
     border-radius: 25px 25px 0 0;
   }
@@ -825,6 +827,10 @@ width: 100%;
   .foot-page {
 
     flex-wrap: wrap;
+
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
 
     /* flex-direction: column; SUR MOBILE */
   }
@@ -892,60 +898,45 @@ element.style {
     margin-top: 10px;}
 
   .most-pop {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: flex-start;
+    align-content: center;
     padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
   }
 
   header,
-  aside,
+  
   #accomodation,
   #activities,
   .footer-content {
 
-    margin: auto;
+/* margin: auto; */
 
-    width: 400px;
+min-width: 400px;
 
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+flex-direction: column;
 
-    flex-wrap: nowrap;
+flex-wrap: nowrap;
 
-    align-content: space-between;
+align-items: flex-start;
 
-    align-items: flex-start;
-  }
-
+}
 
   .town-accomodation {
 
     width: 100%;
-
     height: 100%;
-
-    /* margin: 2%; */
-
     display: flex;
-
     flex-direction: column;
-
     flex-wrap: wrap;
-
     align-items: flex-start;
   }
 
-  .accomodation-by-rating {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    /* height: 50%; */
-    justify-content: space-between;
-    width: 400px;
-  }
+  
 
   .activities-by-town {
     display: flex;
@@ -954,15 +945,26 @@ element.style {
     width: 100%;
     flex-direction: column;
   }
-  aside
+  aside,.town-accomodation
   {
-    width: 100%;
+    
+
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    align-items: center;
   }
 
-
-
-
-
+  .town-accomodation, aside {
+    border-radius: 0px;
+    padding: 10px;
+    height: fit-content;
+    width: 100%;
+    flex-wrap: nowrap;
+}
 
 
   .double-left,
@@ -976,14 +978,6 @@ element.style {
   .higher {
     height: 300px;
   }
-
-
-
-
-
-
-
-
 
   .left,
   .right {
@@ -1005,7 +999,6 @@ element.style {
   .accomodation-by-rating .card {
 
     width: 386px;
-
     height: 222px;
 
   }
@@ -1031,26 +1024,26 @@ element.style {
     margin-top: 40px;
   }
   .town-accomodation h2, .display-more {
-    margin-left: 0px;
+    margin-left: 20px;
 }
 
  
 
   .foot-page {
 
-    display: flex;
+display: flex;
 
-    flex-direction: column;
+align-items: flex-start;
 
-    align-items: flex-start;
+align-content: center;
 
-    align-content: flex-start;
+height: 37vh;
 
-    height: 41vh;
+justify-content: center;
 
-    padding-left: 11%;
+}
 
-  }
+  
 
   .most-pop .card {
     display: flex;
