@@ -306,6 +306,26 @@ aside {
 
   min-width: 25%;
 }
+/*
+.img1{
+  background-image:url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
+  background-position:fill;
+  height: 100%;
+  width: 38%;
+  border-radius: 25% 0 0 25%;
+}
+.img2{
+  background-image:url(images/hebergements/4_small/Au-coeur-de-l'eau-chambres-d-hôtes.jpg);
+
+}
+
+.img3
+{
+  background-image:url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
+
+}
+*/
+
 
 #accomodation {
   display: flex;
@@ -626,25 +646,32 @@ width: 100%;
     margin-top: 2%;
   }
 
+  
+  header,
+  aside,
+  #activities,
+  .town-accomodation {
+    width: 1000px;    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-
+  header {
+    
+    margin-top: 1%;
+    
+  }
 
 
   .town-accomodation {
 
-width: 100%;
-
-height: 100%;
-
-margin: auto;
-
-display: flex;
-
-flex-direction: column;
-
-flex-wrap: nowrap;
-
-align-items: center;
+    
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 
 }
 
@@ -742,12 +769,7 @@ align-items: center;
 
 
 
-  header {
-    width: 1000px;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+ 
 
   aside,
   .town-accomodation,
@@ -775,15 +797,7 @@ align-items: center;
     text-align: center;
   }
 
-  .header-content,
-  aside,
-  #activities,
-  .town-accomodation {
-    width: 100%;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
 
   aside h2 {
     display: flex;
@@ -810,9 +824,8 @@ align-items: center;
 
   .view-card {
 
-width: 430px;
-
-height: 242px;
+    width: 430px;
+    height: 242px;
 
 }
 
@@ -831,13 +844,11 @@ height: 242px;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-evenly;
-
-    /* flex-direction: column; SUR MOBILE */
   }
 
   .footer-content {
     margin: 15px 89px 15px 15px;
-    /*a modifier margin-right?...flex?*/
+   
   }
 
 }
@@ -891,9 +902,6 @@ height: 242px;
     order: -1;
   }
 
-  
-element.style {
-}
 .accomodation-info .rating {
     margin-top: 10px;}
 
@@ -912,7 +920,7 @@ element.style {
   #activities,
   .footer-content {
 
-/* margin: auto; */
+margin: auto;
 
 min-width: 400px;
 
@@ -923,7 +931,6 @@ flex-direction: column;
 flex-wrap: nowrap;
 
 align-items: flex-start;
-
 }
 
   .town-accomodation {
@@ -1035,12 +1042,11 @@ display: flex;
 
 align-items: flex-start;
 
-align-content: center;
+align-content: space-around;
 
 height: 37vh;
 
 justify-content: center;
-
 }
 
   
