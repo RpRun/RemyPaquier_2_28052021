@@ -362,7 +362,7 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .accomodation-by-rating-info {
@@ -901,6 +901,7 @@ align-items: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
     background-color: #fff;
+    margin-bottom: 30px;
     
   }
   .activities-by-town {
@@ -956,6 +957,10 @@ align-items: flex-start;
     height: 222px;
 
   }
+  .accomodation-by-rating .clickable-card
+  {
+    margin-bottom: 30px;
+  }
 
   .accomodation-by-rating .card img {
 
@@ -977,10 +982,7 @@ align-items: flex-start;
   footer h2 {
     margin-top: 40px;
   }
-  .town-accomodation h2, .display-more {
-    margin-left: 20px;
-}
-
+  
  
 
   .foot-page {
