@@ -11,7 +11,7 @@ body {
   font-family: "ralewaythin", "sans-serif";
   font-size: 20px;
   font-weight: normal;
-  width: 100%;
+  
   padding: 2%;
 }
 
@@ -307,7 +307,7 @@ a:active {
 */
 aside {
 
-  min-width: 25%;
+  
   padding: 3%;
 }
 /*
@@ -362,21 +362,15 @@ aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 43%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-
-
 
 .accomodation-by-rating-info {
   padding: 10px;
 }
 
-
 .town-accomodation {
 
-  width: 60%;
-  height: 100%; 
   display: flex;
   flex-direction: column;
   align-items: center; 
@@ -411,9 +405,6 @@ aside {
   {
     display: flex;
     flex-direction: column;
-    
-    height: 560px;
-    
     justify-content: space-between;
 
   }
@@ -543,7 +534,7 @@ aside {
   justify-content: space-between;
   width: 48%;
   flex-wrap: wrap;
-  height: 100%;
+  
 }
 
 .double-left,
@@ -625,14 +616,11 @@ aside {
 footer {
   padding-top: 1%;
   margin-top: 2%;
-  height: 13%;
-  width: 100%;
 }
 
 .foot-page {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  
   align-items: flex-start;
   align-content: space-around;
 }
@@ -668,32 +656,8 @@ h4 {
    ##    ##     ## ########  ######## ########    ##       ##    ########
 */
 @media screen and (min-width:768px) and (max-width: 1024px) {
-  .accomodation-by-rating {
-
-align-content: center;
-
-height: 250px;
-
-width: 100%;
-
-}
-
-  .header-content {
-    margin-bottom: 0;
-    margin-top: 2%;
-  }
-
-  
-  header,
-  aside,
-  #activities,
-  .town-accomodation {
-    width: 1000px;    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3%;
-  }
-
+ 
+ 
   .accomodation-by-rating .card {
 
     justify-content: space-between;
@@ -726,12 +690,6 @@ width: 100%;
 
     justify-content: space-evenly;
   }
-
-  .foot-page {
-
-    justify-content: center;
-  }
-
   aside {
     order: -1;
 
@@ -741,6 +699,11 @@ width: 100%;
     align-items: center;
 
     height: 354px;
+  }
+
+  #accomodation
+  {
+    justify-content: center;
   }
 
   .most-pop {
@@ -840,15 +803,6 @@ width: 100%;
     height: 178px;
     width: 100%;
     border-radius: 25px 25px 0 0;
-  }
-
-  .foot-page {
-
-    flex-wrap: wrap;
-
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
 
   .footer-content {
@@ -1031,15 +985,11 @@ align-items: flex-start;
 
   .foot-page {
 
-display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
 
-align-items: flex-start;
-
-align-content: space-around;
-
-height: 37vh;
-
-justify-content: center;
 }
 
   
