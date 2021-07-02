@@ -295,8 +295,33 @@ a:active {
 /*--------------MAIN---------------------------*/
 aside {
 
-  width: 25%;
+/* width: 25%; */
 }
+
+
+
+.img1
+{
+  background-image:url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
+  background-repeat: no-repeat;
+  height: 146px;
+  width: 140px;
+  border-radius: 25% 0 0 25%;
+  /* object-fit: contain; */
+  /* object-fit: scale-down; */
+  background-position: center;
+}
+.img2{
+  background-image:url(images/hebergements/4_small/Au-coeur-de-l-eau-chambres-d-hôtes.jpg);
+
+}
+
+.img3
+{
+  background-image:url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
+
+}
+
 
 #accomodation {
   display: flex;
@@ -310,6 +335,8 @@ aside {
 .clickable-card {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  display: flex;
+    flex-direction: row;
 }
 .card, .view-card  {
 	-webkit-transform: scale(1);
@@ -330,8 +357,9 @@ aside {
 
 }
 
+
 #accomodation .clickable-card {
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .accomodation-by-rating-info {
@@ -354,7 +382,7 @@ footer {
 .town-accomodation,
 aside {
   border-radius: 25px;
-  padding: 50px;
+  /* padding: 50px; */
   height: 596px;
 }
 
@@ -401,18 +429,16 @@ aside {
 }
 
 .most-pop {
-  height: 600px;
+  /* height: 600px; */
 }
 
 .most-pop .card {
   display: flex;
-  flex-direction: row;
-
+  flex-direction: column;
   width: 400px;
-  height: 170px;
-
-  justify-content: space-between;
-  align-items: center;
+  /* height: 170px; */
+  /* justify-content: flex-end; */
+  align-items: flex-end;
 }
 
 /*ico dans h2 correct?*/
@@ -434,8 +460,11 @@ aside {
 .accomodation-info {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
   height: 140px;
+  /* align-items: flex-start; */
+  flex-wrap: nowrap;
+  /* justify-content: center; */
 }
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
