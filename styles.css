@@ -12,8 +12,7 @@ body {
   font-size: 20px;
   font-weight: normal;
   width: 100%;
-
-
+  padding: 2%;
 }
 
 header,
@@ -24,12 +23,10 @@ main,
   margin: 0 auto;
 }
 
-footer {
+footer
+ {
   margin: 0 auto;
-
 }
-
-
 
 h1 {
   font-weight: 800;
@@ -41,26 +38,26 @@ h3 {
   font-weight: 700;
 }
 
-
 p {
   font-weight: 500;
   margin: 10px 0 10px 0;
 }
 
-/*--------------HEADER-NAV---------------------------*/
+/*
+##     ## ########    ###    ########  ######## ########          ##    ##    ###    ##     ##
+##     ## ##         ## ##   ##     ## ##       ##     ##         ###   ##   ## ##   ##     ##
+##     ## ##        ##   ##  ##     ## ##       ##     ##         ####  ##  ##   ##  ##     ##
+######### ######   ##     ## ##     ## ######   ########  ####### ## ## ## ##     ## ##     ##
+##     ## ##       ######### ##     ## ##       ##   ##           ##  #### #########  ##   ##
+##     ## ##       ##     ## ##     ## ##       ##    ##          ##   ### ##     ##   ## ##
+##     ## ######## ##     ## ########  ######## ##     ##         ##    ## ##     ##    ###
+*/
 
 header {
   display: flex;
   flex-direction: column;
   position: relative;
-
-
 }
-
-
-
-
-
 
 .logo {
   position: absolute;
@@ -101,7 +98,6 @@ a .logo {
   margin: -2em;
 
 }
-
 
 .header-nav {
   display: flex;
@@ -173,7 +169,6 @@ a:active {
 
 /*--------------SEARCHBAR---------------------------*/
 
-
 #seek,
 .town-search label {
   cursor: pointer;
@@ -199,7 +194,7 @@ a:active {
   border-radius: 8px 0 0 8px;
   height: 18px;
   width: 18px;
-  padding: 3px 1px 3px 3px;
+  
 }
 
 #town,
@@ -301,10 +296,19 @@ a:active {
   margin-right: 5px;
 }
 
-/*--------------MAIN---------------------------*/
+/*
+##     ##    ###    #### ##    ##
+###   ###   ## ##    ##  ###   ##
+#### ####  ##   ##   ##  ####  ##
+## ### ## ##     ##  ##  ## ## ##
+##     ## #########  ##  ##  ####
+##     ## ##     ##  ##  ##   ###
+##     ## ##     ## #### ##    ##
+*/
 aside {
 
   min-width: 25%;
+  padding: 3%;
 }
 /*
 .img1{
@@ -372,8 +376,11 @@ aside {
 .town-accomodation {
 
   width: 60%;
-  height: 100%;
-
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 3% 3% 8% 3%;
 }
 
 .town-accomodation,
@@ -385,8 +392,6 @@ footer {
 .town-accomodation,
 aside {
   border-radius: 25px;
-  padding: 3%;
-  height: 596px;
 }
 
 .display-more {
@@ -415,8 +420,16 @@ aside {
 
 
 
-/*--------------CARDS-ACCOMODATION---------------------------*/
-.card {
+/*
+   _____          _____  _____   _____              _____ _____ ____  __  __  ____  _____       _______ _____ ____  _   _
+  / ____|   /\   |  __ \|  __ \ / ____|       /\   / ____/ ____/ __ \|  \/  |/ __ \|  __ \   /\|__   __|_   _/ __ \| \ | |
+ | |       /  \  | |__) | |  | | (___ ______ /  \ | |   | |   | |  | | \  / | |  | | |  | | /  \  | |    | || |  | |  \| |
+ | |      / /\ \ |  _  /| |  | |\___ \______/ /\ \| |   | |   | |  | | |\/| | |  | | |  | |/ /\ \ | |    | || |  | | . ` |
+ | |____ / ____ \| | \ \| |__| |____) |    / ____ \ |___| |___| |__| | |  | | |__| | |__| / ____ \| |   _| || |__| | |\  |
+  \_____/_/    \_\_|  \_\_____/|_____/    /_/    \_\_____\_____\____/|_|  |_|\____/|_____/_/    \_\_|  |_____\____/|_| \_|
+
+
+*/.card {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
@@ -492,7 +505,15 @@ aside {
   color: #0065fc;
 }
 
-/*--------------ACTIVITIES---------------------------*/
+/*
+   ###     ######  ######## #### ##     ## #### ######## #### ########  ######
+  ## ##   ##    ##    ##     ##  ##     ##  ##     ##     ##  ##       ##    ##
+ ##   ##  ##          ##     ##  ##     ##  ##     ##     ##  ##       ##
+##     ## ##          ##     ##  ##     ##  ##     ##     ##  ######    ######
+######### ##          ##     ##   ##   ##   ##     ##     ##  ##             ##
+##     ## ##    ##    ##     ##    ## ##    ##     ##     ##  ##       ##    ##
+##     ##  ######     ##    ####    ###    ####    ##    #### ########  ######
+*/
 #activities {
   display: flex;
   flex-wrap: nowrap;
@@ -592,7 +613,15 @@ aside {
   height: 188px;
 }
 
-/*--------------FOOTER---------------------------*/
+/*
+########  #######   #######  ######## ######## ########
+##       ##     ## ##     ##    ##    ##       ##     ##
+##       ##     ## ##     ##    ##    ##       ##     ##
+######   ##     ## ##     ##    ##    ######   ########
+##       ##     ## ##     ##    ##    ##       ##   ##
+##       ##     ## ##     ##    ##    ##       ##    ##
+##        #######   #######     ##    ######## ##     ##
+*/
 footer {
   padding-top: 1%;
   margin-top: 2%;
@@ -629,8 +658,16 @@ h4 {
   /*a modifier margin-right?...flex?*/
 }
 
-/*--------------responsive design TABLETTE---------------------------*/
-@media screen and (min-width:1080px) and (max-width: 1500px) {
+/*
+########    ###    ########  ##       ######## ######## ######## ########
+   ##      ## ##   ##     ## ##       ##          ##       ##    ##
+   ##     ##   ##  ##     ## ##       ##          ##       ##    ##
+   ##    ##     ## ########  ##       ######      ##       ##    ######
+   ##    ######### ##     ## ##       ##          ##       ##    ##
+   ##    ##     ## ##     ## ##       ##          ##       ##    ##
+   ##    ##     ## ########  ######## ########    ##       ##    ########
+*/
+@media screen and (min-width:768px) and (max-width: 1024px) {
   .accomodation-by-rating {
 
 align-content: center;
@@ -657,32 +694,6 @@ width: 100%;
     margin-bottom: 3%;
   }
 
-  header {
-    
-    margin-top: 1%;
-    
-  }
-
-
-  .town-accomodation {
-
-    
-    
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-
-}
-
-  .town-accomodation,
-  #activities,
-  aside {
-    border-radius: 25px;
-    /* padding: 50px; */
-  }
-
   .accomodation-by-rating .card {
 
     justify-content: space-between;
@@ -698,12 +709,6 @@ width: 100%;
   }
 
   #activities {
-
-    /* height: 600px; */
-    /* padding: 15px 0; */
-    /* margin-top: 4%; */
-    /* margin-bottom: 40px; */
-
     justify-content: center;
     background-color: #f2f2f2;
     border-radius: 25px;
@@ -713,7 +718,6 @@ width: 100%;
   .right {
 
     justify-content: space-around;
-
     align-content: space-around;
   }
 
@@ -915,22 +919,16 @@ width: 100%;
     flex-direction: column;
   }
 
-  header,
-  
-  #accomodation,
+  header,#accomodation,
   #activities,
-  .footer-content {
+  .footer-content
+   {
 
 margin: auto;
-
 min-width: 400px;
-
 display: flex;
-
 flex-direction: column;
-
 flex-wrap: nowrap;
-
 align-items: flex-start;
 }
 
@@ -942,6 +940,8 @@ align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-color: #fff;
+    
   }
 
   
@@ -955,25 +955,16 @@ align-items: flex-start;
   }
   aside,.town-accomodation
   {
-    
-
     display: flex;
-    justify-content: center;
-    
-    flex-wrap: wrap;
+    justify-content: center; 
     
     flex-direction: column;
     align-items: center;
-  }
-
-  .town-accomodation, aside {
+    width: 100%;
     border-radius: 0px;
     padding: 10px;
-    height: fit-content;
-    width: 100%;
     flex-wrap: nowrap;
-}
-
+  }
 
   .double-left,
   .double-right {
@@ -998,9 +989,7 @@ align-items: flex-start;
     align-items: center;
   }
 
-  .town-accomodation {
-    background-color: #fff;
-  }
+  
 
   .view-card,
   .clickable-card,
