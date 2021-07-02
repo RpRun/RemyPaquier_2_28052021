@@ -11,7 +11,7 @@ body {
   font-family: "ralewaythin", "sans-serif";
   font-size: 20px;
   font-weight: normal;
-  
+
   padding: 2%;
 }
 
@@ -192,7 +192,7 @@ a:active {
   border-radius: 8px 0 0 8px;
   height: 18px;
   width: 18px;
-  
+
 }
 
 #town,
@@ -260,16 +260,17 @@ a:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 10px; 
+  margin-right: 10px;
   filter: grayscale(0) blur(0px);
   transition: all 0.5s ease;
 }
 
 .search-filters li:hover i {
 
-  
+
   transform: rotate(360deg);
 }
+
 /*
 #### ##    ## ########  #######
  ##  ###   ## ##       ##     ##
@@ -297,6 +298,7 @@ a:active {
   padding: 4px;
   margin-right: 5px;
 }
+
 /*
 ##     ##    ###    #### ##    ##
 ###   ###   ## ##    ##  ###   ##
@@ -308,9 +310,10 @@ a:active {
 */
 aside {
 
-  
+
   padding: 3%;
 }
+
 /*
 .img1{
   background-image:url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
@@ -347,22 +350,22 @@ aside {
 
 .card,
 .view-card {
-  
+
   transform: scale(1);
-  
+
   transition: .1s ease-in-out;
 }
 
 .card:hover,
 .view-card:hover {
-  
+
   transform: scale(1.1);
 }
 
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
-  
+
   justify-content: center;
 }
 
@@ -374,10 +377,10 @@ aside {
 
   display: flex;
   flex-direction: column;
-  
+
   padding: 3% 3% 8% 3%;
   align-content: flex-start;
-  
+
 }
 
 
@@ -408,13 +411,12 @@ aside {
 }
 
 
-.most-pop
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.most-pop {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-  }
+}
 
 
 
@@ -427,7 +429,8 @@ aside {
   \_____/_/    \_\_|  \_\_____/|_____/    /_/    \_\_____\_____\____/|_|  |_|\____/|_____/_/    \_\_|  |_____\____/|_| \_|
 
 
-*/.card {
+*/
+.card {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
@@ -521,7 +524,9 @@ aside {
   align-items: flex-start;
 }
 
-#accomodation h2, aside h2, #activities h2 {
+#accomodation h2,
+aside h2,
+#activities h2 {
   margin-bottom: 20px;
 }
 
@@ -538,7 +543,7 @@ aside {
   justify-content: space-between;
   width: 48%;
   flex-wrap: wrap;
-  
+
 }
 
 .double-left,
@@ -624,7 +629,7 @@ footer {
 
 .foot-page {
   display: flex;
-  
+
   align-items: flex-start;
   align-content: space-around;
 }
@@ -643,7 +648,7 @@ footer {
 
 h4 {
   font-weight: 900;
-  
+
 }
 
 .footer-content {
@@ -661,8 +666,8 @@ h4 {
    ##    ##     ## ########  ######## ########    ##       ##    ########
 */
 @media screen and (min-width:768px) and (max-width: 1024px) {
- 
- 
+
+
   .accomodation-by-rating .card {
 
     justify-content: space-between;
@@ -695,6 +700,7 @@ h4 {
 
     justify-content: space-evenly;
   }
+
   aside {
     order: -1;
 
@@ -706,13 +712,11 @@ h4 {
     height: 354px;
   }
 
-  #accomodation
-  {
+  #accomodation {
     justify-content: center;
   }
 
-  .town-accomodation
-  {
+  .town-accomodation {
     margin-top: 20px;
     align-items: flex-start;
   }
@@ -723,7 +727,7 @@ h4 {
     align-content: center;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    
+
     width: 100%;
     align-items: center;
   }
@@ -791,7 +795,7 @@ h4 {
     width: 430px;
     height: 242px;
 
-}
+  }
 
   .view-card img {
     max-width: 100%;
@@ -803,7 +807,7 @@ h4 {
 
   .footer-content {
     margin: 15px 89px 15px 15px;
-   
+
   }
 
 }
@@ -865,10 +869,11 @@ h4 {
     order: -1;
   }
 
-.accomodation-info .rating {
+  .accomodation-info .rating {
 
-    
-    margin-top: 10px;}
+
+    margin-top: 10px;
+  }
 
   .most-pop {
     align-content: center;
@@ -879,18 +884,18 @@ h4 {
     flex-direction: column;
   }
 
-  header,#accomodation,
+  header,
+  #accomodation,
   #activities,
-  .footer-content
-   {
+  .footer-content {
 
-margin: auto;
-min-width: 400px;
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-align-items: flex-start;
-}
+    margin: auto;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
 
   .town-accomodation {
 
@@ -900,8 +905,9 @@ align-items: flex-start;
     align-items: flex-start;
     background-color: #fff;
     margin-bottom: 30px;
-    
+
   }
+
   .activities-by-town {
     display: flex;
     justify-content: space-between;
@@ -909,17 +915,17 @@ align-items: flex-start;
     width: 100%;
     flex-direction: column;
   }
-  aside,.town-accomodation
-  {
+
+  aside,
+  .town-accomodation {
     display: flex;
-    justify-content: center; 
-    
+    justify-content: center;
+
     flex-direction: column;
     /*align-items: center; a revoir pour recentrer/contenir n impacte pas aside qui est deja centré???*/
     margin: auto;
     border-radius: 0px;
-    
-    
+
   }
 
   .double-left,
@@ -944,6 +950,7 @@ align-items: flex-start;
     flex-direction: column;
     align-items: center;
   }
+
   .most-pop .card {
     display: flex;
     flex-direction: row;
@@ -954,22 +961,22 @@ align-items: flex-start;
     flex-wrap: nowrap;
 
   }
-  .accomodation-by-rating
-  {
-    flex-wrap: wrap; 
+
+  .accomodation-by-rating {
+    flex-wrap: wrap;
   }
 
   .view-card,
-  
+
   .accomodation-by-rating .card {
 
     width: 386px;
     height: 222px;
 
   }
- 
-  .accomodation-by-rating .clickable-card, .most-pop .card
-  {
+
+  .accomodation-by-rating .clickable-card,
+  .most-pop .card {
     margin-bottom: 30px;
   }
 
@@ -978,7 +985,7 @@ align-items: flex-start;
     height: 55%;
   }
 
-  
+
   .clickable-card img {
 
     object-fit: cover;
@@ -990,13 +997,10 @@ align-items: flex-start;
     border-radius: 25px 25px 0 0;
   }
 
- 
-  
-  footer h4
-  {
+  footer h4 {
     margin-top: 45px;
   }
- 
+
 
   .foot-page {
 
@@ -1005,29 +1009,26 @@ align-items: flex-start;
     align-items: flex-start;
     align-content: space-around;
 
-}
+  }
 
-  
-
-  
-  
   /*ico dans h2 correct?*/
   .fa-chart-line {
     float: right;
     vertical-align: top;
   }
-  
+
   .most-pop img {
     object-fit: cover;
     height: 100%;
     width: 38%;
     border-radius: 25px 0 0 25px;
   }
+
   .display-more,
-.display-more a:active {
-  background-color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+  .display-more a:active {
+    background-color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
 }
