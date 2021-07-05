@@ -322,15 +322,15 @@ a:active {
   display: flex;
   flex-direction: column;
 
-  padding: 3% 3% 8% 3%;
+  padding: 3% 3% 4% 3%;
   align-content: flex-start;
 
 }
 .accomodation-by-rating {
   display: flex;
   flex-direction: row;
-
   justify-content: center;
+  margin-bottom: 20px;
 }
 aside {
 
@@ -340,7 +340,15 @@ aside {
   flex-wrap: nowrap;
   padding: 3%;
   
-  
+}
+aside h2
+{
+  display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
 }
 .most-pop {
   display: flex;
@@ -355,6 +363,7 @@ aside {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
   padding: 4px;
+  margin-bottom: 20px;
  
 }
 
@@ -382,12 +391,21 @@ aside {
 {
   background-repeat: no-repeat;
   /* height: 100%; */
-  width: 140px;
+ 
   border-radius: 25px 0 0 25px;
   object-fit: cover;
-  object-fit: scale-down;
+  
   background-position: center;
   background-size: cover;
+}
+.img1, .img3
+{
+  width: 140px;
+}
+.img2
+{
+  width: 192px;
+  
 }
 
 
@@ -407,7 +425,9 @@ aside {
 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  
+  width: 426px;
+  align-items: stretch;
 }
 
 
@@ -498,6 +518,8 @@ aside {
   display: flex;
   flex-direction: column;
   width: 272px;
+  margin-left: 10px;
+    margin-right: 10px;
 }
 
 .most-affordable {
