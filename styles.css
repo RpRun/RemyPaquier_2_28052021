@@ -167,8 +167,7 @@ a:active {
 
 /*--------------SEARCHBAR---------------------------*/
 
-#seek,
-.town-search label {
+.seek,.picture,.town-search label {
   cursor: pointer;
 }
 
@@ -194,9 +193,13 @@ a:active {
   width: 18px;
 
 }
-
+.picture
+{
+  display: none;
+}
+/*faire en sorte que la loupe n apparraissent pas en mode desktop/ne fonctionne pas*/
 #town,
-#seek,
+.seek,
 .seek-by-town i {
   border: none;
   padding: 15px;
@@ -208,7 +211,7 @@ a:active {
   font-weight: bold;
 }
 
-#seek {
+.seek {
   background: #0065fc;
   color: #ffff;
   border-radius: 0 8px 8px 0;
@@ -224,7 +227,7 @@ a:active {
 
 .search-filters ul {
   display: flex;
-  margin-left: 15px;
+  
 }
 
 .search-filters li {
@@ -232,7 +235,7 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
   padding: 9px 9px 9px 0;
   border: 1px solid #f2f2f2;
@@ -467,12 +470,7 @@ aside {
   border-radius: 25px;
 }
 
-.display-more {
-  position: relative;
-  /*absolute quelque part ou ok comme ça?*/
-  top: 30px;
-  left: 0px;
-}
+
 
 .town-accomodation h2,
 .display-more {
@@ -728,14 +726,17 @@ h4 {
 */
 @media screen and (min-width:768px) and (max-width: 1024px) {
 
-
+ 
   .accomodation-by-rating .card {
 
     justify-content: space-between;
     align-content: space-around;
     align-items: center;
   }
+.most-pop
+{
 
+}
   .most-pop img {
 
     height: 50%;
@@ -830,10 +831,7 @@ h4 {
     justify-content: center;
   }
 
-  .town-accomodation h2,
-  .display-more {
-    margin-left: 0px;
-  }
+  
 
   .fa-chart-line {
     margin-left: 30px;
@@ -916,7 +914,24 @@ h4 {
   .nav-activities {
     order: 4;
   }
-
+ .fa-search
+  {
+    border-color: red;
+    color: #0065fc;
+    
+  }
+  .picture
+  {
+    color: red;
+    border-radius: 25%;
+    font-size: medium;
+    background-color: royalblue;
+    display: block;
+  }
+  .seek
+  {
+    display: none;
+  }
   aside {
     order: -1;
   }
