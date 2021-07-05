@@ -308,32 +308,6 @@ a:active {
 ##     ## ##     ##  ##  ##   ###
 ##     ## ##     ## #### ##    ##
 */
-aside {
-
-
-  padding: 3%;
-}
-
-/*
-.img1{
-  background-image:url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
-  background-position:fill;
-  height: 100%;
-  width: 38%;
-  border-radius: 25% 0 0 25%;
-}
-.img2{
-  background-image:url(images/hebergements/4_small/Au-coeur-de-l'eau-chambres-d-hôtes.jpg);
-
-}
-
-.img3
-{
-  background-image:url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
-
-}
-*/
-
 
 #accomodation {
   display: flex;
@@ -343,10 +317,100 @@ aside {
   flex-wrap: wrap;
 }
 
+.town-accomodation {
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 3% 3% 8% 3%;
+  align-content: flex-start;
+
+}
+.accomodation-by-rating {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+aside {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 3%;
+  
+  
+}
+.most-pop {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+
+}
+
+.most-pop .card {
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 1px #d3d3d3;
+  background-color: #fff;
+  padding: 4px;
+ 
+}
+
+
+
+
+
+
+.img1
+{
+  background-image:url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
+  
+}
+.img2{
+  background-image:url(images/hebergements/4_small/Au-coeur-de-l-eau-chambres-d-hôtes.jpg);
+
+}
+
+.img3
+{
+  background-image:url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
+
+}
+.img1, .img2, .img3
+{
+  background-repeat: no-repeat;
+  /* height: 100%; */
+  width: 140px;
+  border-radius: 25px 0 0 25px;
+  object-fit: cover;
+  object-fit: scale-down;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
 .clickable-card {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  /*modif pour img en background*/
+  display: flex;
+  flex-direction: column;
+   /*modif pour img en background*/
 }
+.most-pop .clickable-card .card
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
 
 .card,
 .view-card {
@@ -362,30 +426,15 @@ aside {
   transform: scale(1.1);
 }
 
-.accomodation-by-rating {
-  display: flex;
-  flex-direction: row;
 
-  justify-content: center;
-}
 
 .accomodation-by-rating-info {
   padding: 10px;
 }
 
-.town-accomodation {
-
-  display: flex;
-  flex-direction: column;
-
-  padding: 3% 3% 8% 3%;
-  align-content: flex-start;
-
-}
 
 
 
-/*  */
 
 .town-accomodation,
 aside,
@@ -411,12 +460,7 @@ aside {
 }
 
 
-.most-pop {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
-}
 
 
 
@@ -430,13 +474,17 @@ aside {
 
 
 */
+
+
 .card {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
   padding: 4px;
+ 
 }
 
+    
 .accomodation-by-rating img {
   max-width: 100%;
   object-fit: cover;
@@ -455,18 +503,14 @@ aside {
 .most-affordable {
   font-weight: 900;
 }
+/*
+width: 400px;
+height: 140px;
+align-items: flex-start;
+flex-wrap: nowrap;
+*/
 
 
-
-.most-pop .card {
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  height: 170px;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
-}
 
 /*ico dans h2 correct?*/
 .fa-chart-line {
@@ -475,12 +519,7 @@ aside {
 
 }
 
-.most-pop img {
-  object-fit: cover;
-  height: 100%;
-  width: 38%;
-  border-radius: 25px 0 0 25px;
-}
+
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 
@@ -488,7 +527,7 @@ aside {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 140px;
+  /* height: 140px; */
 }
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
@@ -703,13 +742,11 @@ h4 {
 
   aside {
     order: -1;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-start;
-
-    height: 354px;
+    /* height: 354px; */
   }
 
   #accomodation {
@@ -724,21 +761,20 @@ h4 {
   .most-pop {
     display: flex;
     flex-direction: row;
-    align-content: center;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
-
+    justify-content: flex-start;
     width: 100%;
     align-items: center;
   }
 
   .most-pop .card {
     display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 273px;
+    /* width: 260px; */
+    /* height: 273px; */
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
 
