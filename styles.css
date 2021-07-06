@@ -946,6 +946,15 @@ aside
 */
 
 @media screen and (max-width: 767px) {
+
+  .town-search{
+    justify-content: center;
+    
+  }
+  
+
+
+
   .search-filters ul {
     flex-wrap: wrap;
   }
@@ -1024,9 +1033,16 @@ aside
   {
     display: none;
   }
+
+
+  .info-logements
+  {
+    margin-bottom: 25px;
+  }
+
   aside {
     order: -1;
-    width: 100vw;
+    width: 100%;
   }
 
   .accomodation-info .rating {
@@ -1053,7 +1069,7 @@ aside
   .footer-content {
 
     
-    min-width: 375px;
+    width: 370px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1069,9 +1085,13 @@ aside
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
+    
     background-color: #fff;
     margin-bottom: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
   }
 
