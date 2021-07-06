@@ -899,20 +899,26 @@ h4 {
   .nav-activities {
     order: 4;
   }
- .fa-search
-  {
-    border-color: red;
-    color: #0065fc;
-    
-  }
+ 
   .picture
   {
-    color: red;
+    
     border-radius: 25%;
     font-size: medium;
-    background-color: royalblue;
+    background-color: #0065fc;
     display: block;
   }
+  .picture i
+  {
+    background-color: #0065FC;
+    color: #fff;
+    padding: 8px;
+  }
+  button .picture
+  {
+    border-color: #fff;
+  }
+
   .seek
   {
     display: none;
