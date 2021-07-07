@@ -16,7 +16,7 @@ body {
 header,
 main,.foot-page
  {
-  max-width: 1600px;
+  max-width: 1460px;
   min-width: 300px;
   margin: 0 auto;
 }
@@ -336,6 +336,7 @@ header,aside, #activities, .town-accomodation, .foot-page
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  
   flex-wrap: wrap;
 }
 
@@ -343,15 +344,18 @@ header,aside, #activities, .town-accomodation, .foot-page
 
   display: flex;
   flex-direction: column;
-  padding: 3% 3% 4% 3%;
+  padding:2%;
   align-content: flex-start;
-  width: 60%;
+  WIDTH: 63%;
+  min-width: 43%;
+  
 
 }
 .accomodation-by-rating {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+ /* justify-content: center;*/
   margin-bottom: 40px;
 }
 aside {
@@ -522,8 +526,7 @@ aside {
   display: flex;
   flex-direction: column;
   width: 272px;
-  margin-left: 10px;
-    margin-right: 10px;
+  margin:10px
 }
 
 .most-affordable {
@@ -730,16 +733,22 @@ footer {
 
 
 
-.accomodation-by-rating {
-  
-  align-content: center;
-  
-  width: 70%;
-}
+
 aside
 {
-  width: 27%;
+  width: 35%;
   flex-direction: column;
+}
+
+.town-accomodation {
+  
+  
+  min-width: 43%;
+ max-width: 50%;
+}
+.accomodation-by-rating
+{
+  justify-content: center;
 }
 
 
@@ -1053,7 +1062,7 @@ aside
 
   aside {
     order: -1;
-    width: 100%;
+    width: 100vw;
   }
 
   .accomodation-info .rating {
@@ -1085,16 +1094,22 @@ aside
   header,
   #accomodation,
   #activities,
-  .footer-content {
+  .footer-page{
 
     
-    width: 370px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 
-   
+  .header-content, .most-pop, .town-accomodation, .left , .right, .footer-content
+  {
+    width:370px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1104,14 +1119,9 @@ aside
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
-    
     background-color: #fff;
     margin-bottom: 30px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-
+  
   }
 
   .activities-by-town {
@@ -1120,18 +1130,6 @@ aside
     flex-wrap: wrap;
     width: 100%;
     flex-direction: column;
-  }
-
-  aside,
-  .town-accomodation {
-    display: flex;
-    justify-content: center;
-
-    flex-direction: column;
-    /*align-items: center; a revoir pour recentrer/contenir n impacte pas aside qui est deja centré???*/
-   
-    border-radius: 0px;
-
   }
 
   .double-left,
@@ -1180,11 +1178,6 @@ aside
     width: 386px;
     height: 222px;
 
-  }
-
-  .accomodation-by-rating .clickable-card,
-  .most-pop .card {
-    margin-bottom: 30px;
   }
 
   .accomodation-by-rating .card img {
