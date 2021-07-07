@@ -361,7 +361,7 @@ aside {
   align-items: flex-start;
   flex-wrap: nowrap;
   padding: 2%;
-  width: 27%;
+  width: 26%;
   
 }
 aside h2
@@ -399,7 +399,7 @@ aside h2
 .img1, .img2, .img3
 {
   background-repeat: no-repeat;
-  height: 100%;
+  
  
   border-radius: 25px 0 0 25px;
   object-fit: cover;
@@ -434,7 +434,7 @@ aside h2
 {
   display: flex;
   flex-direction: row;
-  width: 390px;
+  width: auto;
   margin-bottom: 20px;
  
 }
@@ -554,7 +554,7 @@ flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-around;
   padding: 20px 40px 20px 20px;
-  height: 140px;
+  
 }
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
@@ -774,17 +774,20 @@ aside
 */
 @media screen and (min-width:768px) and (max-width: 1023px) {
 
- 
+  
+  header, aside, #activities, .town-accomodation {
+      width: 900px;
+      margin-top: 3%;
+      margin-left: auto;
+      margin-right: auto;
+  }
   .accomodation-by-rating .card {
 
     justify-content: space-between;
     align-content: space-around;
     align-items: center;
   }
-.most-pop
-{
 
-}
   .most-pop img {
 
     height: 50%;
@@ -803,6 +806,12 @@ aside
 
     justify-content: space-around;
     align-content: space-around;
+  
+    flex-direction: column;
+   
+    align-items: center;
+  
+
   }
 
   .double-left,
@@ -817,7 +826,7 @@ aside
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-end;
-    WIDTH: 100vw;
+    
   }
 
 
@@ -829,7 +838,7 @@ aside
   .town-accomodation {
     margin-top: 20px;
     align-items: center;
-    width: 100vw;
+    
   }
 
   .most-pop {
@@ -839,6 +848,7 @@ aside
     justify-content: space-around;
     width: 100%;
     
+    
   }
  
 
@@ -846,8 +856,8 @@ aside
 
   .most-pop .card {
     display: flex;
-    /* width: 260px; */
-    /* height: 273px; */
+    width: 372px;
+     height: 157px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
@@ -891,15 +901,16 @@ aside
     margin-left: 30px;
 
   }
+  p {
+    font-weight: 400;
+    margin: 7px 0 10px 0;
+    FONT-SIZE: smaller;
+}
+.accomodation-info .rating {
+  margin-top: 25px;
+}
 
-
-  .left,
-  .right {
-    flex-direction: column;
-    width: 50%;
-    align-items: center;
-  }
-
+  
   .view-card {
 
     width: 430px;
@@ -1060,7 +1071,15 @@ aside
     flex-direction: column;
   }
 
- 
+  .img1, .img3 {
+    width: 140px;
+    height: 100%;
+}
+
+.img2 {
+  width: 207px;
+  HEIGHT: 100%;
+}
   
 
   header,
