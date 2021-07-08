@@ -1004,6 +1004,10 @@ aside
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .header-nav ul 
+  {
+    margin-top: 40px;
+  }
   .header-nav li
   {
     width: 50%
@@ -1019,13 +1023,22 @@ aside
     
      
     position: absolute;
-    top: -67px;
-    RIGHT: -56px;
+    top: -55px;
+    RIGHT: -51px;
   }
-
   .logo {
     
-    position: relative;
+    left: 18px;
+  }
+
+  h1
+  {
+    width: 300px;
+    line-height: 1.2;
+  }
+  p 
+  {
+    font-size: smaller;
   }
 
   .picture
@@ -1101,10 +1114,16 @@ aside
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
+   /* align-items: center;
+    margin-left: auto;
+    margin-right: auto;*/
+    
+  }
+
+  #activities
+  {
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .header-content, .most-pop, .town-accomodation, .left , .right, .footer-content
@@ -1121,6 +1140,7 @@ aside
     flex-wrap: wrap;
     background-color: #fff;
     margin-bottom: 30px;
+    margin-top: 30px;
   
   }
 
@@ -1206,11 +1226,16 @@ aside
 
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-around;
-
+    padding-bottom: 30px;
   }
 
+  .footer-ul
+  {
+    padding-top: 10px;
+  }
+  .footer-ul li {
+    padding-top: 16px;
+  }
   /*ico dans h2 correct?*/
   .fa-chart-line {
     float: right;
