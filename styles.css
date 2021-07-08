@@ -439,7 +439,7 @@ aside h2 {
   /*modif pour img en background*/
 }
 
-.most-pop .clickable-card .card {
+.clickable-card .card {
   display: flex;
   flex-direction: row;
   width: auto;
@@ -606,7 +606,7 @@ aside h2,
 .right {
   display: flex;
   justify-content: space-between;
-  width: 48%;
+  width: 50%;
   flex-wrap: wrap;
 
 }
@@ -621,10 +621,14 @@ aside h2,
 .view-card {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   border-radius: 25px 25px;
-  width: 355px;
+  width: 336px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
+}
+.double-left
+{
+  margin-right: auto;
 }
 
 .view-card img {
@@ -751,6 +755,7 @@ footer {
 
     min-width: 43%;
     max-width: 50%;
+    align-items: center;
   }
 
   .accomodation-by-rating {
@@ -761,13 +766,23 @@ footer {
   .left,
   .right {
     display: flex;
-
+    height: 560px;
     width: 100%;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 43px;
   }
+  .clickable-card .view-card
+  {
+    height: 560px;
+  }
+  .clickable-card .view-card img 
+  {
+    height: 500px;
+  }
+  
+
 
   .double-left,
   .double-right {
@@ -777,10 +792,13 @@ footer {
     align-items: flex-start;
 
     width: 70%;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
-
+  .double-right
+  {
+    margin-right: auto;
+  }
 
 
 
@@ -807,6 +825,15 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  .header-content
+  {
+    MARGIN-LEFT: 2%;
+    margin-right: 2%;
+  }
+  .logo
+  {
+    left: 17px;
+  }
 
   .accomodation-by-rating .card {
 
@@ -827,13 +854,17 @@ footer {
 
   #activities {
     justify-content: center;
-    background-color: #f2f2f2;
-    border-radius: 25px;
+    align-items: center;
+    
   }
 
   #activities h2 {
     width: 100%;
     text-align: center;
+  }
+  .activities-by-town
+  {
+    width: 94%;
   }
 
 
@@ -846,6 +877,13 @@ footer {
     flex-direction: column;
 
     align-items: center;
+
+    
+  
+      width: 46%;
+      flex-wrap: nowrap;
+      MARGIN-LEFT: 10px;
+      margin-right: 10px;
 
   }
 
@@ -867,14 +905,21 @@ footer {
     align-items: flex-end;
 
   }
-
+  .wrap-tab
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
   #accomodation {
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 40px;
   }
 
   .town-accomodation {
+    display: flex;
     margin-top: 20px;
     align-items: center;
 
@@ -889,9 +934,15 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 100%;
+    
+  }
+  .search-filters ul {
+    flex-wrap: wrap;
+  }
 
-
+  .search-filters li {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 
@@ -899,12 +950,13 @@ footer {
 
   .most-pop .card {
     display: flex;
-    width: 372px;
-    height: 157px;
+    width: 272px;
+    height: 197px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    MARGIN: 10px;
   }
 
 
@@ -932,10 +984,12 @@ footer {
 
   aside h2 {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
+  #accomodation h2, aside h2, #activities h2 {
+    margin-bottom: 40px;
 
-
+  }
 
   .fa-chart-line {
     margin-left: 30px;
@@ -955,7 +1009,7 @@ footer {
 
   .view-card {
 
-    width: 430px;
+    width: auto;
     height: 242px;
 
   }
@@ -972,10 +1026,21 @@ footer {
     margin: 15px 89px 15px 15px;
 
   }
+  .img1, .img3 {
+    width: 212px;
+    height: 100%;
+  
+}
+    .img2
+    {
+      width: 312px;
+      height: 100%;
+    }
+
+
+  
 
 }
-
-
 /*.header-nav a, h2 a {
     text-transform: none;
     text-decoration: none;
@@ -1137,23 +1202,16 @@ footer {
     margin-bottom: 25px;
   }
 
-  /*
-  ##     ##  #######  ########  #### ##       ########    ########  ########  ######  ########   #######  ##    ##  ######  #### ##     ## ########
-  ###   ### ##     ## ##     ##  ##  ##       ##          ##     ## ##       ##    ## ##     ## ##     ## ###   ## ##    ##  ##  ##     ## ##
-  #### #### ##     ## ##     ##  ##  ##       ##          ##     ## ##       ##       ##     ## ##     ## ####  ## ##        ##  ##     ## ##
-  ## ### ## ##     ## ########   ##  ##       ######      ########  ######    ######  ########  ##     ## ## ## ##  ######   ##  ##     ## ######
-  ##     ## ##     ## ##     ##  ##  ##       ##          ##   ##   ##             ## ##        ##     ## ##  ####       ##  ##   ##   ##  ##
-  ##     ## ##     ## ##     ##  ##  ##       ##          ##    ##  ##       ##    ## ##        ##     ## ##   ### ##    ##  ##    ## ##   ##
-  ##     ##  #######  ########  #### ######## ########    ##     ## ########  ######  ##         #######  ##    ##  ######  ####    ###    ########
-        #### #### #### ##     ##     ######    #######  ##    ## ##    ##    ###       ########  ########   #######  ##    ## ########    ######## ##     ## ######## ########  ##    ## ######## ##     ## #### ##    ##  ######   #### #### ####
-        #### ####  ##  ###   ###    ##    ##  ##     ## ###   ## ###   ##   ## ##      ##     ## ##     ## ##     ## ##   ##  ##          ##       ##     ## ##       ##     ##  ##  ##     ##    ##     ##  ##  ###   ## ##    ##  #### #### ####
-         ##   ##   ##  #### ####    ##        ##     ## ####  ## ####  ##  ##   ##     ##     ## ##     ## ##     ## ##  ##   ##          ##       ##     ## ##       ##     ##   ####      ##    ##     ##  ##  ####  ## ##        ####  ##   ##
-                   ##  ## ### ##    ##   #### ##     ## ## ## ## ## ## ## ##     ##    ########  ########  ##     ## #####    ######      ######   ##     ## ######   ########     ##       ##    #########  ##  ## ## ## ##   ####  ##
-                   ##  ##     ##    ##    ##  ##     ## ##  #### ##  #### #########    ##     ## ##   ##   ##     ## ##  ##   ##          ##        ##   ##  ##       ##   ##      ##       ##    ##     ##  ##  ##  #### ##    ##
-                   ##  ##     ##    ##    ##  ##     ## ##   ### ##   ### ##     ##    ##     ## ##    ##  ##     ## ##   ##  ##          ##         ## ##   ##       ##    ##     ##       ##    ##     ##  ##  ##   ### ##    ##  ####
-                  #### ##     ##     ######    #######  ##    ## ##    ## ##     ##    ########  ##     ##  #######  ##    ## ########    ########    ###    ######## ##     ##    ##       ##    ##     ## #### ##    ##  ######   ####
-  */
+/*
+  __  __  ____  ____ _____ _      ______   _____  ______  _____ _____   ____  _   _  _____ _______      ________
+ |  \/  |/ __ \|  _ \_   _| |    |  ____| |  __ \|  ____|/ ____|  __ \ / __ \| \ | |/ ____|_   _\ \    / /  ____|
+ | \  / | |  | | |_) || | | |    | |__    | |__) | |__  | (___ | |__) | |  | |  \| | (___   | |  \ \  / /| |__
+ | |\/| | |  | |  _ < | | | |    |  __|   |  _  /|  __|  \___ \|  ___/| |  | | . ` |\___ \  | |   \ \/ / |  __|
+ | |  | | |__| | |_) || |_| |____| |____  | | \ \| |____ ____) | |    | |__| | |\  |____) |_| |_   \  /  | |____
+ |_|  |_|\____/|____/_____|______|______| |_|  \_\______|_____/|_|     \____/|_| \_|_____/|_____|   \/   |______|
 
+
+*/
   main {
     display: flex;
     justify-content: flex-start;
@@ -1162,8 +1220,8 @@ footer {
 
   aside {
     order: -1;
-    width: 100vw;
-
+    width: 100%;
+    border-radius: 0;
   }
 
   header,
