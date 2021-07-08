@@ -172,7 +172,7 @@ a:active {
 /*--------------      ## ##       ######### ##   ##   ##       ##     ## ##     ## ######### ##   ##
 /*--------------##    ## ##       ##     ## ##    ##  ##    ## ##     ## ##     ## ##     ## ##    ##
 /*-------------- ######  ######## ##     ## ##     ##  ######  ##     ## ########  ##     ## ##     ##
-/*--------------*/---------------------------*/
+/*--------------*/
 
 .seek,.picture,.town-search label {
   cursor: pointer;
@@ -1022,10 +1022,39 @@ aside
   {
     margin-top: 40px;
   }
-  .nav-activities  ,.nav-accomodations 
+
+/*
+  _                            _              _                             _ _  __            _     _ _   _
+ (_)                          | |            | |                           | (_)/ _|          (_)   | | | | |
+  _ _ __ ___  _ __   ___  _ __| |_ __ _ _ __ | |_ ___   _ __ ___   ___   __| |_| |_  __      ___  __| | |_| |__
+ | | '_ ` _ \| '_ \ / _ \| '__| __/ _` | '_ \| __/ _ \ | '_ ` _ \ / _ \ / _` | |  _| \ \ /\ / / |/ _` | __| '_ \
+ | | | | | | | |_) | (_) | |  | || (_| | | | | ||  __/ | | | | | | (_) | (_| | | |    \ V  V /| | (_| | |_| | | |
+ |_|_| |_| |_| .__/ \___/|_|   \__\__,_|_| |_|\__\___| |_| |_| |_|\___/ \__,_|_|_|     \_/\_/ |_|\__,_|\__|_| |_|
+             | |
+             |_|
+*/  .nav-activities  ,.nav-accomodations 
   {
     width: 50%
   }
+  .register {
+    
+     
+    position: absolute;
+    top: -33px;
+    RIGHT: 38px;
+  }
+
+/*
+    _                            _              _                             _ _  __
+   (_)                          | |            | |                           | (_)/ _|
+    _ _ __ ___  _ __   ___  _ __| |_ __ _ _ __ | |_ ___   _ __ ___   ___   __| |_| |_
+   | | '_ ` _ \| '_ \ / _ \| '__| __/ _` | '_ \| __/ _ \ | '_ ` _ \ / _ \ / _` | |  _|
+   | | | | | | | |_) | (_) | |  | || (_| | | | | ||  __/ | | | | | | (_) | (_| | | |
+   |_|_| |_| |_| .__/ \___/|_|   \__\__,_|_| |_|\__\___| |_| |_| |_|\___/ \__,_|_|_|
+               | |
+               |_|
+*/
+
   .header-nav a 
   {
     justify-content: center;
@@ -1033,13 +1062,7 @@ aside
   }
 
 
-  .register {
-    
-     
-    position: absolute;
-    top: -55px;
-    RIGHT: -51px;
-  }
+  
   .logo {
     
     left: 18px;
@@ -1062,7 +1085,7 @@ aside
     font-size: medium;
     background-color: #0065fc;
     display: block;
-    border-block-style: none;
+    border-block-style: none; /*erreur css check*/
     border: chocolate;
   }
   .picture i
@@ -1170,7 +1193,7 @@ footer h4 {
 .footer-ul li {
   padding-top: 16px;
 }
-/*ico dans h2 correct?*/
+
 .fa-chart-line {
   float: right;
   vertical-align: top;
@@ -1199,6 +1222,7 @@ footer h4 {
   margin-bottom: 30px;
   margin-top: 30px;
 
+
 }
 
 .town-search{
@@ -1221,10 +1245,36 @@ db      d88888b d888888b .d8888.      d8888b. d8888b.  .d88b.  db   dD d88888b
 Y88888P Y88888P    YP    `8888Y'      Y8888P' 88   YD  `Y88P'  YP   YD Y88888P
 
 */ 
+main
+{
+  display: flex;
+  flex-direction: column;
+}
 
+#accomodation
+{
+  display: flex;
+  flex-direction: column;
+}
+.activities-by-town
+{
+  flex-direction: column;
+}
+.left,.right
+{
+  flex-wrap: wrap;
+}
+/*dejà appellé plus haut*/
+.town-accomodation
+{
+  padding: 0;
+}
+/*dejà appellé plus haut*/
 
-
-
+body
+{
+  padding: 0;
+}
 
 
 
