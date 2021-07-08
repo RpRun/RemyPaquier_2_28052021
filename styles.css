@@ -988,10 +988,6 @@ aside
 
 @media screen and (max-width: 767px) {
 
-  .town-search{
-    justify-content: center;
-    
-  }
   
   .search-filters ul {
     flex-wrap: wrap;
@@ -1026,7 +1022,7 @@ aside
   {
     margin-top: 40px;
   }
-  .header-nav li
+  .nav-activities  ,.nav-accomodations 
   {
     width: 50%
   }
@@ -1090,32 +1086,12 @@ aside
   {
     margin-bottom: 25px;
   }
-
-  aside {
-    order: -1;
-    
-  }
-
- header, aside, #accomodation, #activities, footer 
- {
-  width: 100vw;
- }
-
   .accomodation-info .rating {
 
 
     margin-top: 10px;
   }
-
-  .most-pop {
-    align-content: center;
-    padding-top: 20px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: column;
-  }
-
+ 
   .img1, .img3 {
     width: 140px;
     height: 100%;
@@ -1125,171 +1101,140 @@ aside
   width: 207px;
   HEIGHT: 100%;
 }
+.higher {
+  height: 300px;
+  margin-right: 0px;
   
+}
 
-  header,
-  #accomodation,
-  #activities,
-  .footer-page{
+.accomodation-by-rating {
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
 
-    
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-   /* align-items: center;
-    margin-left: auto;
-    margin-right: auto;*/
-    
-  }
-  #accomodation
-  {
-    align-items: center;
-  }
-  .most-pop, .footer-content
-  {
-    margin-left: auto;
-    margin-right: auto;
-  }
+.accomodation-by-rating .card img {
 
+  height: 55%;
+}
+
+
+.clickable-card img {
+
+  object-fit: cover;
+
+  height: 155px;
+
+  width: 100%;
+
+  border-radius: 25px 25px 0 0;
+}
+
+footer h4 {
+  margin-top: 45px;
+}
+
+
+.view-card,
+
+.accomodation-by-rating .card {
+
+  width: auto;
+  height: 222px;
+
+}
+
+
+.most-pop .card {
+  display: flex;
+  flex-direction: row;
   
-  #activities,#accomodation
-  {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  height: 170px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 
-  .header-content, .most-pop, .town-accomodation, .left , .right, .footer-content
-  {
-    width:370px;
-    
-  }
+}
 
-  .town-accomodation {
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #fff;
-    margin-bottom: 30px;
-    margin-top: 30px;
+.foot-page {
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.footer-ul
+{
+  padding-top: 10px;
+}
+.footer-ul li {
+  padding-top: 16px;
+}
+/*ico dans h2 correct?*/
+.fa-chart-line {
+  float: right;
+  vertical-align: top;
+}
+
+.most-pop img {
+  object-fit: cover;
+  height: 100%;
+  width: 38%;
+  border-radius: 25px 0 0 25px;
+}
+
+.display-more,
+.display-more a:active {
+  background-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.town-accomodation {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+.town-search{
+  justify-content: center;
+  /*width: 348px; ne fonctionne pas */
   
-  }
+}
 
-  .activities-by-town {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: column;
-  }
+aside {
+  order: -1;
+  
+}
 
-  .double-left,
-  .double-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 490px;
-  }
+/*
+db      d88888b d888888b .d8888.      d8888b. d8888b.  .d88b.  db   dD d88888b
+88      88'     `~~88~~' 88'  YP      88  `8D 88  `8D .8P  Y8. 88 ,8P' 88'
+88      88ooooo    88    `8bo.        88oooY' 88oobY' 88    88 88,8P   88ooooo
+88      88~~~~~    88      `Y8b.      88~~~b. 88`8b   88    88 88`8b   88~~~~~
+88booo. 88.        88    db   8D      88   8D 88 `88. `8b  d8' 88 `88. 88.
+Y88888P Y88888P    YP    `8888Y'      Y8888P' 88   YD  `Y88P'  YP   YD Y88888P
 
-  .higher {
-    height: 300px;
-    margin-right: 0px;
-    
-  }
-
-  .left,
-  .right {
-    display: flex;
-    justify-content: center;
-    
-    flex-wrap: wrap;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .most-pop .card {
-    display: flex;
-    flex-direction: row;
-    
-    height: 170px;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-
-  }
-
-  .accomodation-by-rating {
-    flex-wrap: wrap;
-    margin-bottom: 8px;
-  }
-
-  .view-card,
-
-  .accomodation-by-rating .card {
-
-    width: auto;
-    height: 222px;
-
-  }
-
-  .accomodation-by-rating .card img {
-
-    height: 55%;
-  }
+*/ 
 
 
-  .clickable-card img {
-
-    object-fit: cover;
-
-    height: 155px;
-
-    width: 100%;
-
-    border-radius: 25px 25px 0 0;
-  }
-
-  footer h4 {
-    margin-top: 45px;
-  }
 
 
-  .foot-page {
 
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 30px;
-  }
 
-  .footer-ul
-  {
-    padding-top: 10px;
-  }
-  .footer-ul li {
-    padding-top: 16px;
-  }
-  /*ico dans h2 correct?*/
-  .fa-chart-line {
-    float: right;
-    vertical-align: top;
-  }
 
-  .most-pop img {
-    object-fit: cover;
-    height: 100%;
-    width: 38%;
-    border-radius: 25px 0 0 25px;
-  }
 
-  .display-more,
-  .display-more a:active {
-    background-color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
 
+
+
+
+ 
+
+ 
+  
 }
