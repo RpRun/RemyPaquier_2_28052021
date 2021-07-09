@@ -17,7 +17,6 @@ header,
 main,
 .foot-page {
   max-width: 1460px;
-  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -35,7 +34,6 @@ h4 {
   font-weight: 900;
 
 }
-
 
 p {
   font-weight: 500;
@@ -209,7 +207,6 @@ a:active {
 }
 
 /*faire en sorte que la loupe n apparraissent pas en mode desktop/ne fonctionne pas*/
-#town,
 .seek,
 .seek-by-town i {
   border: none;
@@ -217,6 +214,8 @@ a:active {
 }
 
 #town {
+  border: none;
+  padding: 15px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
   font-weight: bold;
@@ -346,7 +345,7 @@ a:active {
   flex-direction: column;
   padding: 2%;
   align-content: flex-start;
-  WIDTH: 63%;
+  width: 63%;
   min-width: 43%;
 
 
@@ -356,19 +355,24 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* justify-content: center;*/
+  justify-content: space-around;
   margin-bottom: 40px;
 }
 
+.accomodation-by-rating .clickable-card {
+  width: 30%;
+  min-width: 272px;
+}
+
 aside {
+  background-color: #f2f2f2;
+  border-radius: 25px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap: nowrap;
   padding: 2%;
   width: 26%;
-
 }
 
 aside h2 {
@@ -465,13 +469,11 @@ aside h2 {
 }
 
 .town-accomodation,
-aside,
 footer {
   background-color: #f2f2f2;
 }
 
-.town-accomodation,
-aside {
+.town-accomodation {
   border-radius: 25px;
 }
 
@@ -736,9 +738,6 @@ footer {
 */
 @media screen and (min-width:1024px) and (max-width: 1366px) {
 
-
-
-
   aside {
     width: 35%;
     flex-direction: column;
@@ -756,10 +755,6 @@ footer {
     min-width: 43%;
     max-width: 50%;
     align-items: center;
-  }
-
-  .accomodation-by-rating {
-    justify-content: center;
   }
 
 
@@ -815,23 +810,33 @@ footer {
 */
 @media screen and (min-width:768px) and (max-width: 1023px) {
 
+  aside {
+    width: auto;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+  }
 
   header,
-  aside,
-  #activities,
-  .town-accomodation {
+  #activities {
     width: auto;
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
   }
-  .header-content
-  {
+  .town-accomodation {
+    width: 100%;
+  }
+  .header-content {
     MARGIN-LEFT: 2%;
     margin-right: 2%;
   }
-  .logo
-  {
+  .logo {
     left: 17px;
   }
 
@@ -897,14 +902,6 @@ footer {
     justify-content: space-evenly;
   }
 
-  aside {
-    order: -1;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-
-  }
   .wrap-tab
   {
     display: flex;
@@ -1088,16 +1085,22 @@ footer {
     width: 50%
   }
   .register {
-    
-     
     position: absolute;
     top: -60px;
-    RIGHT: 8px;
+    right: 8px;
+  }
+
+  .header-content {
+    margin: auto;
   }
 
   .town-search
   {
     justify-content: center;
+  }
+
+  #town {
+    width: 100%;
   }
 /*
   _                            _              _                                  _ _  __
@@ -1164,7 +1167,6 @@ footer {
   }
 
   h1 {
-    width: 300px;
     /* à modifier peut etre, mise à la ligne? flex wrap?*/
     line-height: 1.2;
   }
@@ -1174,13 +1176,13 @@ footer {
   }
 
   .picture {
-
     border-radius: 25%;
     font-size: medium;
     background-color: #0065fc;
     display: block;
     border-block-style: none;
     border: chocolate;
+    margin-left: -15px;
   }
 
   .picture i {
@@ -1218,12 +1220,6 @@ footer {
     flex-direction: column;
   }
 
-  aside {
-    order: -1;
-    width: 100%;
-    border-radius: 0;
-  }
-
   header,
   #accomodation,
   #activities,
@@ -1235,6 +1231,12 @@ footer {
 
 
     margin-top: 10px;
+  }
+
+  aside {
+    order: -1;
+    width: 100%;
+    border-radius: 0;
   }
 
   .most-pop {
@@ -1262,9 +1264,6 @@ footer {
   #accomodation,
   #activities,
   .footer-page {
-
-
-    width: 400px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1293,14 +1292,14 @@ footer {
     margin-right: auto;
   }
 
-  .header-content,
+
+
   .most-pop,
   .town-accomodation,
   .left,
   .right,
   .footer-content {
     width: 370px;
-
   }
 
   .town-accomodation {
