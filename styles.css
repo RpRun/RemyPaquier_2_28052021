@@ -820,6 +820,7 @@ footer {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: flex-end;
+    padding: 0;
   }
 
   header,
@@ -831,6 +832,7 @@ footer {
   }
   .town-accomodation {
     width: 100%;
+    padding: 0px;
   }
   .header-content {
     MARGIN-LEFT: 2%;
@@ -1079,6 +1081,10 @@ footer {
             | |
             |_|
 */
+    body {
+      padding: 0;
+    }
+
 
   .nav-activities  ,.nav-accomodations 
   {
