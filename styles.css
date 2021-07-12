@@ -78,7 +78,7 @@ header {
   margin-bottom: 30px;
 }
 
-/*a tester pour etendre zone clickable sur le logo
+/* pour étendre zone clickable sur le logo:
 Display: inline-block is required so that margins and padding can be set
 Position needs to be relative so that...
 z-index can be used to make the clickable area stay on top of any text that follows.
@@ -208,7 +208,6 @@ a:active {
   display: none;
 }
 
-/*faire en sorte que la loupe n apparraissent pas en mode desktop/ne fonctionne pas*/
 .seek,
 .seek-by-town i {
   border: none;
@@ -247,7 +246,6 @@ a:active {
 
 .search-filters ul {
   display: flex;
-
 }
 
 .search-filters li {
@@ -337,7 +335,6 @@ a:active {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-
   flex-wrap: wrap;
 }
 
@@ -349,8 +346,6 @@ a:active {
   align-content: flex-start;
   width: 63%;
   min-width: 43%;
-
-
 }
 
 .accomodation-by-rating {
@@ -369,7 +364,6 @@ a:active {
 aside {
   background-color: #f2f2f2;
   border-radius: 25px;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -390,33 +384,26 @@ aside h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-
 }
 
 .img1 {
   background-image: url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
-
 }
 
 .img2 {
   background-image: url(images/hebergements/4_small/Au-coeur-de-l-eau-chambres-d-hôtes.jpg);
-
 }
 
 .img3 {
   background-image: url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
-
 }
 
 .img1,
 .img2,
 .img3 {
   background-repeat: no-repeat;
-
-
   border-radius: 25px 0 0 25px;
   object-fit: cover;
-
   background-position: center;
   background-size: cover;
 }
@@ -428,21 +415,13 @@ aside h2 {
 
 .img2 {
   width: 192px;
-
 }
-
-
-
-
-
 
 .clickable-card {
   text-decoration: none;
   color: rgb(0, 0, 0);
-  /*modif pour img en background*/
   display: flex;
   flex-direction: column;
-  /*modif pour img en background*/
 }
 
 .clickable-card .card {
@@ -450,19 +429,15 @@ aside h2 {
   flex-direction: row;
   width: auto;
   margin-bottom: 20px;
-
 }
-
 
 .card,
 .view-card {
-
   transition: .3s ease-in-out;
 }
 
 .card:hover,
 .view-card:hover {
-
   transform: scale(1.06);
 }
 
@@ -479,17 +454,10 @@ footer {
   border-radius: 25px;
 }
 
-
-
 .town-accomodation h2,
 .display-more {
   margin-left: 20px;
 }
-
-
-
-
-
 
 /*
    _____          _____  _____   _____              _____ _____ ____  __  __  ____  _____       _______ _____ ____  _   _
@@ -502,22 +470,18 @@ footer {
 
 */
 
-
 .card {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
   padding: 4px;
-
 }
-
 
 .accomodation-by-rating img {
   max-width: 100%;
   object-fit: cover;
   height: 120px;
   width: 100%;
-
   border-radius: 25px 25px 0 0;
 }
 
@@ -528,7 +492,7 @@ footer {
   margin: 10px
 }
 
-.most-affordable {
+.euro-highlight {
   font-weight: 900;
 }
 
@@ -723,7 +687,7 @@ footer {
 
 .footer-content {
   margin: 15px 250px 15px 15px;
-  /*a modifier margin-right?...flex?*/
+
 }
 
 /*
@@ -756,6 +720,9 @@ footer {
     align-items: center;
   }
 
+  #activities {
+    align-items: center;
+  }
 
   .left,
   .right {
@@ -767,15 +734,15 @@ footer {
     justify-content: space-between;
     margin-bottom: 43px;
   }
-  .clickable-card .view-card
-  {
+
+  .clickable-card .view-card {
     height: 560px;
   }
-  .clickable-card .view-card img 
-  {
+
+  .clickable-card .view-card img {
     height: 500px;
   }
-  
+
 
 
   .double-left,
@@ -789,13 +756,11 @@ footer {
     justify-content: space-evenly;
   }
 
-  .view-card
-  {
+  .view-card {
     margin: 10px;
   }
 
-  .higher
-  {
+  .higher {
     width: auto;
   }
 
@@ -832,14 +797,17 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
   .town-accomodation {
     width: 100%;
     padding: 0px;
   }
+
   .header-content {
     MARGIN-LEFT: 2%;
     margin-right: 2%;
   }
+
   .logo {
     left: 17px;
   }
@@ -864,15 +832,15 @@ footer {
   #activities {
     justify-content: center;
     align-items: center;
-    
+
   }
 
   #activities h2 {
     width: 100%;
     text-align: center;
   }
-  .activities-by-town
-  {
+
+  .activities-by-town {
     width: 94%;
   }
 
@@ -887,12 +855,12 @@ footer {
 
     align-items: center;
 
-    
-  
-      width: 46%;
-      flex-wrap: nowrap;
-      MARGIN-LEFT: 10px;
-      margin-right: 10px;
+
+
+    width: 46%;
+    flex-wrap: nowrap;
+    MARGIN-LEFT: 10px;
+    margin-right: 10px;
 
   }
 
@@ -906,8 +874,7 @@ footer {
     justify-content: space-evenly;
   }
 
-  .wrap-tab
-  {
+  .wrap-tab {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -935,8 +902,9 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+
   }
+
   .search-filters ul {
     flex-wrap: wrap;
   }
@@ -987,7 +955,10 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-  #accomodation h2, aside h2, #activities h2 {
+
+  #accomodation h2,
+  aside h2,
+  #activities h2 {
     margin-bottom: 40px;
 
   }
@@ -1027,32 +998,23 @@ footer {
     margin: 15px 89px 15px 15px;
 
   }
-  .img1, .img3 {
+
+  .img1,
+  .img3 {
     width: 212px;
     height: 100%;
-  
-}
-    .img2
-    {
-      width: 312px;
-      height: 100%;
-    }
 
-
-  
-
-}
-/*.header-nav a, h2 a {
-    text-transform: none;
-    text-decoration: none;
-    display: flex;
-    align-content: stretch;
-    color: #000000;
-    justify-content: space-between;
   }
-  
-  */
 
+  .img2 {
+    width: 312px;
+    height: 100%;
+  }
+
+
+
+
+}
 
 /*
 ##     ##  #######  ########  #### ##       ########
@@ -1068,7 +1030,7 @@ footer {
 
 
 
-/*
+  /*
   _                            _              _                                  _ _  __
  (_)                          | |            | |                                | (_)/ _|
   _ _ __ ___  _ __   ___  _ __| |_ __ _ _ __ | |_ ___  ___   _ __ ___   ___   __| |_| |_ ___
@@ -1083,15 +1045,16 @@ footer {
             | |
             |_|
 */
-    body {
-      padding: 0;
-    }
+  body {
+    padding: 0;
+  }
 
 
-  .nav-activities  ,.nav-accomodations 
-  {
+  .nav-activities,
+  .nav-accomodations {
     width: 50%
   }
+
   .register {
     position: absolute;
     top: -60px;
@@ -1102,15 +1065,15 @@ footer {
     margin: auto;
   }
 
-  .town-search
-  {
+  .town-search {
     justify-content: center;
   }
 
   #town {
     width: 100%;
   }
-/*
+
+  /*
   _                            _              _                                  _ _  __
  (_)                          | |            | |                                | (_)/ _|
   _ _ __ ___  _ __   ___  _ __| |_ __ _ _ __ | |_ ___  ___   _ __ ___   ___   __| |_| |_ ___
@@ -1160,7 +1123,7 @@ footer {
     margin-top: 40px;
   }
 
-  
+
   .header-nav a {
     justify-content: center;
     padding: 30px 30px 10px 30px;
@@ -1175,12 +1138,8 @@ footer {
   }
 
   h1 {
-   
-    line-height: 1.2;
-  }
 
-  p {
-    font-size: smaller;
+    line-height: 1.2;
   }
 
   .picture {
@@ -1212,7 +1171,7 @@ footer {
     margin-bottom: 25px;
   }
 
-/*
+  /*
   __  __  ____  ____ _____ _      ______   _____  ______  _____ _____   ____  _   _  _____ _______      ________
  |  \/  |/ __ \|  _ \_   _| |    |  ____| |  __ \|  ____|/ ____|  __ \ / __ \| \ | |/ ____|_   _\ \    / /  ____|
  | \  / | |  | | |_) || | | |    | |__    | |__) | |__  | (___ | |__) | |  | |  \| | (___   | |  \ \  / /| |__
