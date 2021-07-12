@@ -322,7 +322,7 @@ a:active {
 #accomodation {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -341,7 +341,7 @@ a:active {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .accomodation-by-rating .clickable-card {
@@ -372,6 +372,7 @@ aside h2 {
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
+  padding-top: 16px;
 }
 
 .most-pop .card {
@@ -379,6 +380,7 @@ aside h2 {
   flex-direction: row;
   width: auto;
   margin-bottom: 20px;
+  height: 158px;
 }
 
 .img1 {
@@ -440,6 +442,7 @@ footer {
 
 .town-accomodation {
   border-radius: 25px;
+  padding-top: 45px;
 }
 
 .town-accomodation h2,
