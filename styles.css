@@ -419,13 +419,13 @@ aside h2 {
   margin-bottom: 20px;
 }
 
-.card,
-.view-card {
+.card
+ {
   transition: 0.3s ease-in-out;
 }
 
-.card:hover,
-.view-card:hover {
+.card:hover
+ {
   transform: scale(1.06);
 }
 
@@ -556,7 +556,7 @@ aside h2,
   justify-content: space-between;
 }
 
-.view-card {
+.activities-by-town .card {
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   border-radius: 25px 25px;
   width: 336px;
@@ -565,12 +565,12 @@ aside h2,
   background-color: #fff;
 }
 
-.view-card img {
+.activities-by-town .card img {
   border-radius: 25px 25px 0 0;
   object-fit: cover;
 }
 
-.view-card h3 {
+.activities-by-town .card h3 {
   padding: 20px;
 }
 
@@ -696,11 +696,11 @@ footer {
     margin-bottom: 43px;
   }
 
-  .clickable-card .view-card {
+  .activities-by-town .card {
     height: 560px;
   }
 
-  .clickable-card .view-card img {
+  .activities-by-town .card img {
     height: 500px;
   }
 
@@ -714,7 +714,7 @@ footer {
     justify-content: space-evenly;
   }
 
-  .view-card {
+  .activities-by-town .card {
     margin: 10px;
   }
 
@@ -891,12 +891,12 @@ footer {
     margin-top: 25px;
   }
 
-  .view-card {
+  .activities-by-town .card {
     width: auto;
     height: 242px;
   }
 
-  .view-card img {
+  .activities-by-town .card img {
     max-width: 100%;
     object-fit: cover;
     height: 178px;
@@ -1178,7 +1178,7 @@ footer {
     margin-bottom: 8px;
   }
 
-  .view-card,
+  .activities-by-town .card,
   .accomodation-by-rating .card {
     width: auto;
     height: 222px;
