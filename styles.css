@@ -374,6 +374,13 @@ aside h2 {
   align-content: center;
 }
 
+.most-pop .card {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: 20px;
+}
+
 .img1 {
   background-image: url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
 }
@@ -412,20 +419,13 @@ aside h2 {
   flex-direction: column;
 }
 
-.clickable-card .card {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  margin-bottom: 20px;
-}
 
-.card
- {
+
+.card {
   transition: 0.3s ease-in-out;
 }
 
-.card:hover
- {
+.card:hover {
   transform: scale(1.06);
 }
 
@@ -476,8 +476,7 @@ footer {
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
-  width: 272px;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 
 .euro-highlight {
@@ -496,6 +495,7 @@ footer {
   justify-content: space-around;
   padding: 20px 40px 20px 20px;
 }
+
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
 
 .accomodation-info .rating {
@@ -544,7 +544,7 @@ aside h2,
 .left,
 .right {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 49%;
   flex-wrap: nowrap;
 }
@@ -557,8 +557,6 @@ aside h2,
 }
 
 .activities-by-town .card {
-  box-shadow: 2px 2px 2px 1px #d3d3d3;
-  border-radius: 25px 25px;
   width: 336px;
   display: flex;
   flex-direction: column;
@@ -576,12 +574,6 @@ aside h2,
 
 .higher {
   margin-right: 20px;
-}
-
-.higher,
-.double-left,
-.double-right {
-  height: 560px;
 }
 
 .higher img {
@@ -698,6 +690,8 @@ footer {
 
   .activities-by-town .card {
     height: 560px;
+    width: auto;
+    min-width: 293px;
   }
 
   .activities-by-town .card img {
@@ -722,6 +716,7 @@ footer {
     width: auto;
   }
 }
+
 /*
 ########    ###    ########  ##       ######## ######## ######## ########
    ##      ## ##   ##     ## ##       ##          ##       ##    ##
@@ -748,7 +743,7 @@ footer {
   header,
   #activities {
     width: auto;
-    
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -814,6 +809,12 @@ footer {
   .double-left,
   .double-right {
     justify-content: space-evenly;
+  }
+
+  .higher,
+  .double-left,
+  .double-right {
+    height: 560px;
   }
 
   .wrap-tab {
@@ -947,8 +948,8 @@ footer {
   }
 
   .header-content {
-      margin-left: 10px;
-      margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .town-search {
@@ -1050,10 +1051,32 @@ footer {
   }
 
   header,
+  aside,
   #accomodation,
   #activities,
   footer {
     width: 100%;
+  }
+
+  .most-pop,
+  .town-accomodation,
+  .left,
+  .right,
+  .footer-content {
+    width: 370px;
+  }
+
+  .most-pop,
+  .footer-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header,
+  #activities,
+  #accomodation {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .accomodation-info .rating {
@@ -1062,7 +1085,6 @@ footer {
 
   aside {
     order: -1;
-    width: 100%;
     border-radius: 0;
     padding: 0px;
   }
@@ -1098,27 +1120,6 @@ footer {
 
   #accomodation {
     align-items: center;
-  }
-
-  .most-pop,
-  .footer-content {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  header,
-  #activities,
-  #accomodation {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .most-pop,
-  .town-accomodation,
-  .left,
-  .right,
-  .footer-content {
-    width: 370px;
   }
 
   .town-accomodation {
@@ -1190,12 +1191,8 @@ footer {
 
   .clickable-card img {
     object-fit: cover;
-
     height: 155px;
-
     width: 100%;
-
-    border-radius: 25px 25px 0 0;
   }
 
   footer h4 {
