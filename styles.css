@@ -325,6 +325,7 @@ a:active {
   align-items: stretch;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 4%;
 }
 
 .town-accomodation {
@@ -374,61 +375,9 @@ aside h2 {
   align-content: center;
   padding-top: 16px;
 }
-
-.most-pop .card {
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  margin-bottom: 20px;
-  height: 158px;
-}
-
-.img1 {
-  background-image: url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
-}
-
-.img2 {
-  background-image: url(images/hebergements/4_small/Au-coeur-de-l-eau-chambres-d-hôtes.jpg);
-}
-
-.img3 {
-  background-image: url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
-}
-
-.img1,
-.img2,
-.img3 {
-  background-repeat: no-repeat;
-  border-radius: 25px 0 0 25px;
-  object-fit: cover;
-  background-position: center;
-  background-size: cover;
-}
-
-.img1,
-.img3 {
-  width: 140px;
-}
-
-.img2 {
-  width: 192px;
-}
-
-.clickable-card {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.card {
-  transition: 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: scale(1.06);
+.nowrap
+{
+  white-space: nowrap;
 }
 
 .accomodation-by-rating-info {
@@ -465,7 +414,59 @@ footer {
   border-radius: 25px;
   box-shadow: 2px 2px 2px 1px #d3d3d3;
   background-color: #fff;
-  padding: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+#accomodation .card
+{
+  padding: 4px;
+}
+
+.most-pop .card {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  margin-bottom: 20px;
+  height: 158px;
+}
+
+.img1 {
+  background-image: url(images/hebergements/4_small/Hôtel-soleil-du-matin.jpg);
+}
+
+.img2 {
+  background-image: url(images/hebergements/4_small/Au-coeur-de-l-eau-chambres-d-hôtes.jpg);
+}
+
+.img3 {
+  background-image: url(images/hebergements/4_small/Hôtel-tout-bleu-et-blanc.jpg);
+}
+
+.img1,
+.img2,
+.img3 {
+  background-repeat: no-repeat;
+  border-radius: 25px 0 0 25px;
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+.img1,
+.img2,
+.img3 {
+  width: 140px;
+}
+
+.clickable-card {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.06);
 }
 
 .accomodation-by-rating img {
@@ -497,6 +498,11 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   padding: 20px 40px 20px 20px;
+  max-height: 140px;
+}
+.accomodation-info h3
+{
+  margin-top: 10px;
 }
 
 /*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
@@ -661,13 +667,14 @@ footer {
 */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
   aside {
-    width: 35%;
+    width: auto;
     flex-direction: column;
   }
 
   #accomodation {
     margin-left: auto;
     margin-right: auto;
+    justify-content: space-around;
   }
 
   .accomodation-by-rating
@@ -676,10 +683,14 @@ footer {
   }
 
   .town-accomodation {
-    min-width: 43%;
+    
     max-width: 50%;
     align-items: center;
   }
+
+  .town-accomodation h2, .display-more {
+    margin-left: 0px;
+}
 
   #activities {
     align-items: center;
@@ -1092,18 +1103,13 @@ footer {
   .right,
   .footer-content {
     min-width: 370px;
-    max-width: 450px;
+    max-width: 397px;
   }
   .left, .right {
     
     width: unset;
   }
   
-  #activities,
-  {
-    width: auto;
-  }
-
   .town-accomodation h2, .display-more {
     margin-left: 0px;
 }
@@ -1146,7 +1152,7 @@ footer {
   }
 
   .img2 {
-    width: 207px;
+    
     height: 100%;
   }
 
