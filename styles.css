@@ -32,7 +32,6 @@ h3 {
 
 h4 {
   font-weight: 900;
-
 }
 
 p {
@@ -61,7 +60,6 @@ header {
   left: 0px;
   top: 10px;
   width: 100px;
-
 }
 
 .header-content {
@@ -86,13 +84,11 @@ The padding increases the area that can be clicked
 The negative margin keeps the flow of surrounding text as it should be (beware of over lapping links)
 */
 a .logo {
-
   display: inline-block;
   /*position: relative; non sinon prends toute la largeur */
   z-index: 1;
   padding: 2em;
   margin: -2em;
-
 }
 
 .header-nav {
@@ -111,8 +107,6 @@ a .logo {
   width: 100%;
   height: 50px;
 }
-
-
 
 .header-nav .submit-inscription {
   font-weight: bold;
@@ -155,8 +149,6 @@ a:active {
 .footer-content a:active {
   background-color: #fff;
 }
-
-
 
 .display-more,
 .display-more a:active {
@@ -201,7 +193,6 @@ a:active {
   border-radius: 8px 0 0 8px;
   height: 18px;
   width: 18px;
-
 }
 
 .picture {
@@ -287,8 +278,6 @@ a:active {
 }
 
 .search-filters li:hover i {
-
-
   transform: rotate(360deg);
 }
 
@@ -339,7 +328,6 @@ a:active {
 }
 
 .town-accomodation {
-
   display: flex;
   flex-direction: column;
   padding: 2%;
@@ -433,7 +421,7 @@ aside h2 {
 
 .card,
 .view-card {
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card:hover,
@@ -489,7 +477,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 272px;
-  margin: 10px
+  margin: 10px;
 }
 
 .euro-highlight {
@@ -676,8 +664,7 @@ footer {
 ##    ## ##     ##
  ######  ########
 */
-@media screen and (min-width:1024px) and (max-width: 1366px) {
-
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
   aside {
     width: 35%;
     flex-direction: column;
@@ -734,7 +721,6 @@ footer {
   .higher {
     width: auto;
   }
-
 }
 /*
 ########    ###    ########  ##       ######## ######## ######## ########
@@ -745,8 +731,7 @@ footer {
    ##    ##     ## ##     ## ##       ##          ##       ##    ##
    ##    ##     ## ########  ######## ########    ##       ##    ########
 */
-@media screen and (min-width:768px) and (max-width: 1023px) {
-
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   aside {
     width: auto;
     margin-top: 3%;
@@ -763,7 +748,7 @@ footer {
   header,
   #activities {
     width: auto;
-    margin-top: 3%;
+    
     margin-left: auto;
     margin-right: auto;
   }
@@ -774,7 +759,7 @@ footer {
   }
 
   .header-content {
-    MARGIN-LEFT: 2%;
+    margin-left: 2%;
     margin-right: 2%;
   }
 
@@ -818,7 +803,7 @@ footer {
     align-items: center;
     width: 46%;
     flex-wrap: nowrap;
-    MARGIN-LEFT: 10px;
+    margin-left: 10px;
     margin-right: 10px;
   }
 
@@ -877,7 +862,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    MARGIN: 10px;
+    margin: 10px;
   }
 
   aside h2 {
@@ -888,7 +873,8 @@ footer {
   #accomodation h2,
   aside h2,
   #activities h2 {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
 
   .fa-chart-line {
@@ -932,7 +918,6 @@ footer {
     width: 312px;
     height: 100%;
   }
-
 }
 
 /*
@@ -946,14 +931,13 @@ footer {
 */
 
 @media screen and (max-width: 767px) {
-
   body {
     padding: 0;
   }
 
   .nav-activities,
   .nav-accomodations {
-    width: 50%
+    width: 50%;
   }
 
   .register {
@@ -963,7 +947,8 @@ footer {
   }
 
   .header-content {
-    margin: auto;
+      margin-left: 10px;
+      margin-right: 10px;
   }
 
   .town-search {
@@ -1013,12 +998,10 @@ footer {
   }
 
   .logo {
-
     left: 18px;
   }
 
   h1 {
-
     line-height: 1.2;
   }
 
@@ -1033,7 +1016,7 @@ footer {
   }
 
   .picture i {
-    background-color: #0065FC;
+    background-color: #0065fc;
     color: #fff;
     padding: 8px;
   }
@@ -1101,7 +1084,7 @@ footer {
 
   .img2 {
     width: 207px;
-    HEIGHT: 100%;
+    height: 100%;
   }
 
   header,
@@ -1111,7 +1094,6 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-
   }
 
   #accomodation {
@@ -1207,7 +1189,6 @@ footer {
   }
 
   .clickable-card img {
-
     object-fit: cover;
 
     height: 155px;
@@ -1222,7 +1203,6 @@ footer {
   }
 
   .foot-page {
-
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 30px;
@@ -1254,5 +1234,4 @@ footer {
     text-decoration: none;
     font-weight: bold;
   }
-
 }
