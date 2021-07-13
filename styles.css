@@ -156,6 +156,12 @@ a:active {
   text-decoration: none;
   font-weight: bold;
 }
+a .charts, a .display-more
+{
+  color: #000000;
+}
+/*a verifier si ok page github*/
+
 
 /*--------------/*
 /*-------------- ######  ########    ###    ########   ######  ##     ## ########     ###    ########
@@ -894,7 +900,7 @@ footer {
 
   aside h2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   #accomodation h2,
