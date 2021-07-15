@@ -1026,21 +1026,6 @@ footer {
     margin: auto;
   }
 
-  /* à modifier, tojours cadre bleu quand on click sur a.card*/
-  .card:hover,
-  .card:active {
-    transform: scale(1.06);
-    background-color: #fff;
-  }
-
-  .card:visited {
-    background-color: #fff;
-    color: brown;
-    text-decoration: coral;
-    box-shadow: green;
-  }
-
-  /* à modifier, tojours cadre bleu quand on click sur a.card*/
   .nav-links {
     border-bottom: 3px solid #f2f2f2;
   }
@@ -1176,11 +1161,11 @@ footer {
   }
 
   .accomodation-info {
-    padding: 10px 20px;
+    padding: 20px;
   }
 
   .accomodation-info .rating {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .most-pop {
@@ -1194,12 +1179,9 @@ footer {
   }
 
   .img1,
+  .img2,
   .img3 {
     width: 140px;
-    height: 100%;
-  }
-
-  .img2 {
     height: 100%;
   }
 
@@ -1309,6 +1291,28 @@ footer {
     width: 100%;
   }
 
+  .most-pop img {
+    object-fit: cover;
+    height: 100%;
+    width: 38%;
+    border-radius: 25px 0 0 25px;
+  }
+  
+  /* à modifier, tojours cadre bleu quand on click sur a.card*/
+  .card:hover,
+  .card:active {
+    transform: scale(1.06);
+    background-color: #fff;
+  }
+
+  .card:visited {
+    background-color: #fff;
+    color: brown;
+    text-decoration: coral;
+    box-shadow: green;
+  }
+  /* à modifier, toujours cadre bleu quand on click sur a.card*/
+
   .town-accomodation h2,
   .display-more {
     margin-left: 0;
@@ -1335,13 +1339,6 @@ footer {
   .fa-chart-line {
     float: right;
     vertical-align: top;
-  }
-
-  .most-pop img {
-    object-fit: cover;
-    height: 100%;
-    width: 38%;
-    border-radius: 25px 0 0 25px;
   }
 
   .display-more,
