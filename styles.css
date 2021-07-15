@@ -106,8 +106,8 @@ a .logo {
   position: relative;
   width: 100%;
   height: 50px;
-  
- 
+
+
 }
 
 .header-nav .submit-inscription {
@@ -435,7 +435,7 @@ footer {
   display: flex;
   flex-direction: row;
   width: auto;
-  
+
   height: 158px;
 }
 
@@ -490,7 +490,7 @@ footer {
 .accomodation-by-rating .card {
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .euro-highlight {
@@ -677,7 +677,7 @@ footer {
  ######  ########
 */
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  
+
   .header-nav ul {
     margin-top: 10px;
   }
@@ -1024,7 +1024,8 @@ footer {
     margin-right: 10px;
   }
 
-  .nav-links:hover, .nav-links :active{
+  .nav-links:hover,
+  .nav-links :active {
     color: #0065fc;
     padding: 30px 30px 10px 30px;
     border-bottom: solid#0065FC;
@@ -1032,7 +1033,8 @@ footer {
     margin: auto;
   }
 
-  .card:hover, .card:active {
+  .card:hover,
+  .card:active {
     transform: scale(1.06);
     text-decoration: none;
   }
@@ -1115,7 +1117,7 @@ footer {
   }
 
   aside {
-    
+
     width: 100%;
     padding: 0px;
   }
@@ -1141,12 +1143,12 @@ footer {
     margin-right: auto;
   }
 
-  header, .town-accomodation,
-  #activities
-   {
-    margin-left: auto; 
+  header,
+  .town-accomodation,
+  #activities {
+    margin-left: auto;
     margin-right: auto;
-    
+
   }
 
   .accomodation-info .rating {
@@ -1188,7 +1190,7 @@ footer {
     flex-wrap: nowrap;
   }
 
-  
+
 
   .town-accomodation {
     display: flex;
@@ -1199,6 +1201,11 @@ footer {
     margin-bottom: 30px;
     margin-top: 30px;
     width: 100%;
+  }
+
+  #activities
+  {
+    margin-top: 0;
   }
 
   .activities-by-town {
@@ -1241,7 +1248,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    
+
   }
 
   .accomodation-by-rating {
@@ -1253,21 +1260,21 @@ footer {
   .accomodation-by-rating .card {
     width: auto;
     height: 222px;
-    
+
   }
+
   .accomodation-by-rating .clickable-card {
     width: auto;
   }
 
   .clickable-card {
-    
+
     max-width: 351px;
     min-width: 272px;
     margin-left: auto;
     margin-right: auto;
-   
-  }
 
+  }
 
   .accomodation-by-rating .card img {
     height: 55%;
@@ -1278,7 +1285,9 @@ footer {
     height: 155px;
     width: 100%;
   }
-  .town-accomodation h2, .display-more {
+
+  .town-accomodation h2,
+  .display-more {
     margin-left: 0;
   }
 
@@ -1318,9 +1327,10 @@ footer {
     text-decoration: none;
     font-weight: bold;
   }
+
   /*ne fonctionne pas*/
-  .clickable-card a:active{
+  .clickable-card a:active {
     color: black;
   }
-  
+
 }
