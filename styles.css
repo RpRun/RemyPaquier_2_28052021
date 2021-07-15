@@ -27,7 +27,7 @@ h1 {
 
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h4 {
@@ -215,8 +215,9 @@ a:active {
   padding: 15px;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  font-weight: bold;
+  font-weight: bolder;
 }
+
 
 .seek {
   background: #0065fc;
@@ -284,6 +285,11 @@ a:active {
 
 .search-filters li:hover i {
   transform: rotate(360deg);
+}
+
+.search-filters p
+{
+  font-weight: 900;
 }
 
 /*
@@ -982,7 +988,7 @@ footer {
   .register {
     position: absolute;
     top: -60px;
-    right: 8px;
+    right: 0px;
   }
 
   .header-content {
@@ -1057,6 +1063,12 @@ footer {
   h1 {
     line-height: 1.2;
   }
+  .activities-by-town .card h3 {
+    
+    padding: 20px;
+    font-size: smaller;
+    font-weight: bolder;
+}
 
   .picture {
     border-radius: 25%;
@@ -1083,6 +1095,18 @@ footer {
 
   .info-logements {
     margin-bottom: 25px;
+  }
+
+  #accomodation p {
+    font-size: smaller;
+  }
+  .rating
+  {
+    margin-top: -7px;
+  }
+  .rating i
+  {
+    font-size: small;
   }
 
   /*
@@ -1134,9 +1158,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
-
+  .accomodation-info
+  {
+    padding: 10px 20px;
+  }
   .accomodation-info .rating {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .most-pop {
@@ -1221,7 +1248,7 @@ footer {
   .most-pop .card {
     display: flex;
     flex-direction: row;
-    height: 170px;
+    height: 150px;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
@@ -1250,12 +1277,12 @@ footer {
   }
 
   .accomodation-by-rating .card img {
-    height: 55%;
+    height: 60%;
   }
 
   .clickable-card img {
     object-fit: cover;
-    height: 155px;
+    height: 170px;
     width: 100%;
   }
 
