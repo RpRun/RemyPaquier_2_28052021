@@ -1114,7 +1114,7 @@ footer {
   }
 
   aside {
-    max-width: 100vw;
+    
     min-width: 100%;
     padding: 0px;
   }
@@ -1152,12 +1152,12 @@ footer {
     margin-right: auto;
   }
 
-  header,
-  #activities,
-  #accomodation {
-    margin-left: auto;
+  header, .town-accomodation,
+  #activities
+   {
+    margin-left: auto; 
     margin-right: auto;
-    width: 100%;
+    
   }
 
   .accomodation-info .rating {
