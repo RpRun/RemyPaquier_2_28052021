@@ -1119,20 +1119,20 @@ footer {
     padding: 0px;
   }
 
-  /*sinon aside deborde ou ne prends pas 100%*/
+  /*sinon aside deborde ou ne prends pas 100%
   #accomodation {
     width: 95vw;
   }
 
-  /*sinon aside deborde ou ne prends pas 100%*/
+  sinon aside deborde ou ne prends pas 100%*/
 
   .most-pop,
   .town-accomodation,
   .left,
   .right,
   .footer-content {
-    min-width: 370px;
-    max-width: 397px;
+    max-width: 458px;
+    min-width: 280px;
   }
 
   .left,
@@ -1157,6 +1157,7 @@ footer {
   #accomodation {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
 
   .accomodation-info .rating {
@@ -1252,8 +1253,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    width: 90%;
-    min-width: 340px;
+    
   }
 
   .accomodation-by-rating {
@@ -1263,16 +1263,19 @@ footer {
 
   .activities-by-town .card,
   .accomodation-by-rating .card {
-    width: 90%;
-    min-width: 340px;
+    width: auto;
     height: 222px;
+    
+  }
+
+  .clickable-card {
+    width: auto;
+    max-width: 300px;
+    min-width: 272px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .accomodation-by-rating .clickable-card {
-    width: auto;
-  }
 
   .accomodation-by-rating .card img {
     height: 55%;
