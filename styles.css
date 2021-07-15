@@ -1116,7 +1116,7 @@ footer {
 
   aside {
     
-    min-width: 100%;
+    width: 100%;
     padding: 0px;
   }
 
@@ -1125,7 +1125,7 @@ footer {
   .left,
   .right,
   .footer-content {
-    max-width: 458px;
+    max-width: 351px;
     min-width: 280px;
   }
 
@@ -1133,11 +1133,6 @@ footer {
   .right {
 
     width: unset;
-  }
-
-  .town-accomodation h2,
-  .display-more {
-    margin-left: 0px;
   }
 
   .most-pop,
@@ -1282,6 +1277,9 @@ footer {
     object-fit: cover;
     height: 155px;
     width: 100%;
+  }
+  .town-accomodation h2, .display-more {
+    margin-left: 0;
   }
 
   footer h4 {
