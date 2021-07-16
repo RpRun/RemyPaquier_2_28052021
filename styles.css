@@ -9,7 +9,6 @@ body {
   font-family: "ralewaythin", "sans-serif";
   font-size: 20px;
   font-weight: normal;
-
   padding: 1%;
 }
 
@@ -217,7 +216,6 @@ a:active {
   border-bottom: 1px solid #f2f2f2;
   font-weight: bolder;
 }
-
 
 .seek {
   background: #0065fc;
@@ -500,7 +498,7 @@ footer {
   vertical-align: top;
 }
 
-/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
+/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.*/
 .accomodation-info {
   display: flex;
   flex-direction: column;
@@ -513,7 +511,7 @@ footer {
   margin-top: 10px;
 }
 
-/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.Justify content inoperant*/
+/*toujours probleme de padding, au coeur de leau pas aligné dans .accomodation-info quand on le retire.*/
 
 .accomodation-info .rating {
   margin-top: 25px;
@@ -1297,20 +1295,14 @@ footer {
     width: 38%;
     border-radius: 25px 0 0 25px;
   }
-  
-  /* à modifier, tojours cadre bleu quand on click sur a.card*/
+
+  /* à modifier, toujours cadre bleu quand on click sur a.card*/
   .card:hover,
   .card:active {
     transform: scale(1.06);
     background-color: #fff;
   }
 
-  .card:visited {
-    background-color: #fff;
-    color: brown;
-    text-decoration: coral;
-    box-shadow: green;
-  }
   /* à modifier, toujours cadre bleu quand on click sur a.card*/
 
   .town-accomodation h2,
