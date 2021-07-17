@@ -238,7 +238,7 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px 0 0 8px;
-  height: 18px;
+  height: 28px;
   width: 18px;
 }
 
@@ -249,7 +249,7 @@ a:active {
 .seek,
 .seek-by-town i {
   border: none;
-  padding: 15px;
+  padding: 10px;
 }
 
 #town {
@@ -1362,7 +1362,7 @@ footer {
     font-size: medium;
     background-color: #0065fc;
     display: block;
-    border: chocolate;
+    border: none;
     margin-left: -15px;
   }
 
@@ -1658,14 +1658,7 @@ footer {
   }
 
   /* à modifier, toujours cadre bleu quand on click sur a.card*/
-  .card:hover,
-  .card:active {
-    -webkit-transform: scale(1.06);
-        -ms-transform: scale(1.06);
-            transform: scale(1.06);
-    background-color: #fff;
-  }
-
+  
   /* à modifier, toujours cadre bleu quand on click sur a.card*/
 
   .town-accomodation h2,
