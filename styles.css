@@ -238,7 +238,7 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 8px 0 0 8px;
-  height: 28px;
+  height: 29px;
   width: 18px;
 }
 
@@ -249,7 +249,7 @@ a:active {
 .seek,
 .seek-by-town i {
   border: none;
-  padding: 10px;
+  padding: 12px;
 }
 
 #town {
