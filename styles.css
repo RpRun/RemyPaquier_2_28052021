@@ -1346,6 +1346,10 @@ footer {
     line-height: 1.2;
   }
 
+  .search-filters li:hover i {
+    transform: none;
+  }
+
   #accomodation h3 {
     font-size: 19px;
   }
@@ -1656,10 +1660,6 @@ footer {
     width: 38%;
     border-radius: 25px 0 0 25px;
   }
-
-  /* à modifier, toujours cadre bleu quand on click sur a.card*/
-  
-  /* à modifier, toujours cadre bleu quand on click sur a.card*/
 
   .town-accomodation h2,
   .display-more {
